@@ -1,8 +1,8 @@
 # VIVO
 
-[vevo link](https://www.vevo.com)
+Original website: [VEVO](https://www.vevo.com)
 
-Trello link
+Progress tracking: [Trello](https://trello.com/b/o3xvBEvg/vivo-full-stack-project)
 
 ## Minimum Viable Product
 
