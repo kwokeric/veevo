@@ -16,10 +16,8 @@ column name         | data type |	 details
 id	                | integer	  | not null, primary key
 song_title          | string	  | not null, indexed
 artist_id           | integer   | not null, foreign_key (artists), indexed
-image_id            | integer   |
-director            | string    |
-producer            | string    |
-copyright           | string    |
+description         | string    |
+image_url           | string    |
 bonus: view_count   | integer	  | not null, default: 1
 
 ## artists
@@ -32,9 +30,9 @@ artist_name         | string	  | not null, indexed
 column name     | data type |	 details
 ----------------|-----------|---------------------------
 id	            | integer	  | not null, primary key
+user_id         | integer   | not null, foreign key (users), indexed
 title           | integer	  | not null
 description     | integer	  | not null
-user_id         | integer   | not null, foreign key (users), indexed
 
 ## playlist_music_videos
 column name     | data type |	 details

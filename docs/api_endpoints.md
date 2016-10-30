@@ -21,13 +21,13 @@
 
 **Music Videos**
 
-- `GET /api/mvids/:id`
+- `GET /api/MVs/:id`
   - Music video index/search
   - accepts artist_name and song_title query param to list music videos
   - accepts playlist_title query params (bonus)
-- `POST /api/mvids` (admin only)
-- `PATCH /api/mvids/:id` (admin only)
-- `DELETE /api/mvids/:id` (admin only)
+- `POST /api/MVs` (admin only)
+- `PATCH /api/MVs/:id` (admin only)
+- `DELETE /api/MVs/:id` (admin only)
 
 **User Page**
 
