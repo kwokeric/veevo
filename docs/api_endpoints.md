@@ -2,24 +2,24 @@
 
 ##HTML API
 
-*Root*
+**Root**
 
 - `GET /` - loads React web app
 
 ##JSON API
 
-*Users*
+**Users**
 
 - `POST /api/users`
 - `PATCH /api/users`
 
-*Session*
+**Session**
 
 - `POST /api/session`
 - `DELETE /api/session`
 - `GET /api/session`
 
-*Music Videos*
+**Music Videos**
 
 - `GET /api/mvids/:id`
   - Music video index/search
@@ -29,7 +29,7 @@
 - `PATCH /api/mvids/:id` (admin only)
 - `DELETE /api/mvids/:id` (admin only)
 
-*User Page*
+**User Page**
 
 - `GET /api/users/:id`
   - Access a user's profile page (shows playlists)
@@ -38,7 +38,7 @@
 - `DELETE /api/users/:id` (bonus)
   - User can delete their own account
 
-*Playlists*
+**Playlists**
 
 - `GET /api/users/:id/playlists`
   - Access a user's playlists
@@ -46,7 +46,7 @@
   - User creates new playlist
 - `GET /api/users/:id/playlists/:id`
   - Access a particular playlist
-- `DELETE /api/playlists/:id`
+- `DELETE /api/users/:id/playlists/:id`
   - User deletes their own playlist
-- `PATCH /api/playlists/:id`
+- `PATCH /api/users/:id/playlists/:id`
   - User edits their own playlist
