@@ -40,13 +40,13 @@
 
 **Playlists**
 
-- `GET /api/users/:id/playlists`
+- `GET /api/users/:UserId/playlists`
   - Access a user's playlists
-- `POST /api/users/:id/playlists`
+- `POST /api/users/:UserId/playlists`
   - User creates new playlist
-- `GET /api/users/:id/playlists/:id`
+- `GET /api/users/:UserId/playlists/:playlistId`
   - Access a particular playlist
-- `DELETE /api/users/:id/playlists/:id`
+- `DELETE /api/users/:UserId/playlists/:playlistId`
   - User deletes their own playlist
-- `PATCH /api/users/:id/playlists/:id`
+- `PATCH /api/users/:UserId/playlists/:playlistId`
   - User edits their own playlist
