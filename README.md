@@ -1,8 +1,8 @@
-# VIVO
+# vivo
 
 This is where the production README goes.
 
-Original website: [VEVO](https://www.vevo.com)
+Original website: [vevo](https://www.vevo.com)
 
 Vevo (/ˈviːvoʊ/; *vee-voh*, stylized as vevo) is an American multinational video hosting service founded as a joint venture between two of the "big three" record companies, Universal Music Group (UMG) and Sony Music Entertainment (SME).
 
