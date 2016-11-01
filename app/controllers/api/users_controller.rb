@@ -10,9 +10,14 @@ class Api::UsersController < ApplicationController
 		end
 	end
 
+	def show
+		# FIND USER BY ID
+		render "api/users/show"
+	end
+
 	private
 
 	def user_params
-		params.require(:user).permit(:username, :password)
+		params.require(:user).permit(:username, :email, :password)
 	end
 end
