@@ -1,12 +1,12 @@
-# VIVO
+# veevo
 
-Original website: [VEVO](https://www.vevo.com)
+Original website: [vevo](https://www.vevo.com)
 
-Progress tracking: [Trello](https://trello.com/b/o3xvBEvg/vivo-full-stack-project)
+Progress tracking: [Trello](https://trello.com/b/o3xvBEvg/veevo-full-stack-project)
 
 ## Minimum Viable Product
 
-Vivo is a web application inspired by Vevo built using Ruby on Rails and React/Redux. The final product will, at a minimum, satisfy the following criteria with smooth, bug-free navigation, adequate seed data, and sufficient CSS styling:
+Veevo is a web application inspired by Vevo built using Ruby on Rails and React/Redux. The final product will, at a minimum, satisfy the following criteria with smooth, bug-free navigation, adequate seed data, and sufficient CSS styling:
 
 - Hosting on Heroku
 - A production README
@@ -28,7 +28,7 @@ Vivo is a web application inspired by Vevo built using Ruby on Rails and React/R
 
 ## Implementation Timeline
 
-###Phase 1: Backend setup and Front End User Authentication (2 days, W1D1-2)
+###Phase 1: Backend setup and Front End User Authentication (1 day, W1D2)
 
 *Objective:* Functioning rails project with front-end Authentication
 
