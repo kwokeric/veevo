@@ -21,32 +21,32 @@
 
 **Music Videos**
 
-- `GET /api/MVs/:id`
+- `GET /api/mvs`
   - Music video index/search
   - accepts artist_name and song_title query param to list music videos
   - accepts playlist_title query params (bonus)
-- `POST /api/MVs` (admin only)
-- `PATCH /api/MVs/:id` (admin only)
-- `DELETE /api/MVs/:id` (admin only)
+- `POST /api/mvs` (admin only)
+- `PATCH /api/mvs/:mv_id` (admin only)
+- `DELETE /api/mvs/:mv_id` (admin only)
 
 **User Page**
 
-- `GET /api/users/:id`
+- `GET /api/users/:user_id`
   - Access a user's profile page (shows playlists)
-- `POST /api/users/:id` (bonus)
+- `PATCH /api/users/:user_id` (bonus)
   - User can edit their own information
-- `DELETE /api/users/:id` (bonus)
+- `DELETE /api/users/:user_id` (bonus)
   - User can delete their own account
 
 **Playlists**
 
-- `GET /api/users/:UserId/playlists`
+- `GET /api/users/:user_id/playlists`
   - Access a user's playlists
-- `POST /api/users/:UserId/playlists`
+- `POST /api/playlists`
   - User creates new playlist
-- `GET /api/users/:UserId/playlists/:playlistId`
+- `GET /api/users/:user_id/playlists/:playlist_id`
   - Access a particular playlist
-- `DELETE /api/users/:UserId/playlists/:playlistId`
+- `DELETE /api/playlists/:playlistId`
   - User deletes their own playlist
-- `PATCH /api/users/:UserId/playlists/:playlistId`
+- `PATCH /api/playlists/:playlistId`
   - User edits their own playlist

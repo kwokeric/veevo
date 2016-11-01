@@ -6,24 +6,23 @@
 **NavbarContainer**
 - Navbar
 
-**SearchContainer**
+**SearchResultsContainer**
 - SearchResults
-  - SeriesIndex
+  - SearchResultItem
 
 **HomeContainer**
 - Home
-  - MostPopular
-  - NewReleases
-  - StaffPicks
+  - MVDisplay
 
 **MusicVideoContainer**
-- WatchMusicVideo
+- MusicVideoPlayer
 
-**UserContainer**
+**UserProfileContainer**
 - User
 
 **Playlist**
 - Playlists
+- MusicVideo
 
 #Routes
 

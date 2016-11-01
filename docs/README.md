@@ -34,6 +34,8 @@ Veevo is a web application inspired by Vevo built using Ruby on Rails and React/
 
 ###Phase 2: Music Videos, Model, API, and components (2 days, W1D3-4)
 
+*Objective:* Splash page design. Scroll through music videos. <<<<<<<<<<<<<<<<
+
 *Objective:* Music videos can play on the app. Music video information is displayed.
 
 ###Phase 3: Users Page (1 day, W1D5)
