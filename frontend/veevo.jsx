@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import configureStore from './store/store';
 
+import Root from './components/root';
+import configureStore from './store/store';
 import {login, signup} from './actions/session_actions';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -9,7 +10,14 @@ document.addEventListener('DOMContentLoaded', () => {
   window.store = store;
   window.login = login;
   window.signup = signup;
-  
+
+  if (window.currentUser) {
+    const preloadedState = {session: {currentUser: window.currentUser}};
+    store = configureStore(preloadedState);
+  } else {
+    store = configureStore();
+  }
+
   const root = document.getElementById('root');
-  ReactDOM.render(<h1>veevo</h1>, root);
+  ReactDOM.render(<Root store={store} />, root);
 });
