@@ -1,0 +1,121 @@
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.header {
+  margin: 0;
+  border: 0;
+  height: 60px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerLogo {
+  margin: 0;
+  border: 0;
+  padding: 10px 0;
+  height: 25px;
+}
+
+.headerLogo {
+  margin: 0;
+  border: 0;
+  padding: 10px 0;
+  width: 120px;
+  height: 100%;
+}
+
+.userDisplay {
+  margin: 0;
+  border: 0;
+  margin-right: 50px;
+  height: 20px;
+  color: white;
+  letter-spacing: 3px;
+  font-size: 15px;
+  font-weight: normal;
+  position: relative;
+}
+
+.logInButton {
+  margin: 5px 50px 5px 0;
+  border: 0;
+  padding: 5px 20px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  height: 20px;
+  color: black;
+  background-color: white;
+  border-radius: 3px;
+  float: right;
+}
+
+.usernameDisplay {
+  margin: 0;
+  border: 0;
+  padding-right: 20px;
+  width: 150px;
+  height: 100%;
+  font-size: 20px;
+  color: white;
+  letter-spacing: 3px;
+  font-size: 15px;
+  font-weight: normal;
+  float: right;
+  text-align: right;
+  cursor: pointer;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.headerLogIn a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.dropdown {
+  background-color: #333333;
+  position: absolute;
+  width: 140px;
+  height: 70px;
+  right: 0;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.fa {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  float: right;
+  padding-top: 2px;
+  cursor: pointer;
+}
+
+.headerList {
+  display: flex;
+  height: 50%;
+}
+
+.userProfile, .headerLogout {
+  font-size: 12px;
+  padding: 8px 0;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: white;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.headerLogout {
+  border-top: 1px solid #646464;
+}

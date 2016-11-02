@@ -11,7 +11,7 @@ class Api::UsersController < ApplicationController
 	end
 
 	def show
-		# FIND USER BY ID !!!!
+		@user = User.find_by(id: params[:id])
 		render "api/users/show"
 	end
 

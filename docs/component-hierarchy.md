@@ -3,8 +3,8 @@
 **AuthFormContainer**
 - AuthForm
 
-**NavbarContainer**
-- Navbar
+**HeaderContainer**
+- Header
 
 **SearchResultsContainer**
 - SearchResults

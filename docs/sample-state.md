@@ -2,7 +2,6 @@
   currentUser: {
     id: 1,
     username: "unicorn_slayer",
-    email: "unicorn@slayer.com",
     admin: "true"
   },
   forms: {
