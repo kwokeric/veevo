@@ -5,12 +5,12 @@ const Footer = () => {
   return(
     <div className="footer">
       <ul className="links">
-        <li className="link">About</li>
-        <li className="link"><a href="https://github.com/kwokeric">Github</a></li>
-        <li className="link">LinkedIn</li>
-        <li className="link">Help</li>
-        <li className="link">Privacy Policy</li>
-        <li className="link">Careers</li>
+        <li><a className="link" href="https://github.com/kwokeric">About</a></li>
+        <li><a className="link" href="https://github.com/kwokeric">Github</a></li>
+        <li><a className="link" href="https://www.linkedin.com/in/eric-kwok">LinkedIn</a></li>
+        <li><a className="link" href="https://github.com/kwokeric">Help</a></li>
+        <li><a className="link" href="https://github.com/kwokeric">Privacy Policy</a></li>
+        <li><a className="link" href="https://github.com/kwokeric">Careers</a></li>
       </ul>
     </div>
   );
