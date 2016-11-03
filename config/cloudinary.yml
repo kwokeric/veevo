@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: kwokeric
+  api_key: '783942262564974'
+  api_secret: sCyzGyDrXvn47DK4I5ZRb91qZKE
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: kwokeric
+  api_key: '783942262564974'
+  api_secret: sCyzGyDrXvn47DK4I5ZRb91qZKE
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: kwokeric
+  api_key: '783942262564974'
+  api_secret: sCyzGyDrXvn47DK4I5ZRb91qZKE
+  enhance_image_tag: true
+  static_image_support: false

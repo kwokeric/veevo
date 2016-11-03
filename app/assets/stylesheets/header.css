@@ -55,6 +55,11 @@
   float: right;
 }
 
+.logInButton:hover {
+  background-color: #7dcfd2;
+  cursor: pointer;
+}
+
 .usernameDisplay {
   margin: 0;
   border: 0;
@@ -73,12 +78,6 @@
 
 .hidden {
   visibility: hidden;
-}
-
-.headerLogIn a:link, a:visited, a:hover, a:active {
-  text-decoration: none;
-  color: white;
-  cursor: pointer;
 }
 
 .dropdown {
@@ -114,6 +113,10 @@
   color: white;
   letter-spacing: 2px;
   cursor: pointer;
+}
+
+.userProfile:hover, .headerLogout:hover {
+  color: #7dcfd2;
 }
 
 .headerLogout {
