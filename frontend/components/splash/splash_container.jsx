@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { login } from '../../actions/session_actions';
-import Header from './header';
+import Splash from './splash';
 
 const mapStateToProps = () => ({
 });
@@ -12,4 +12,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Header);
+)(Splash);

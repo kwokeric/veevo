@@ -5,6 +5,7 @@ class Splash extends React.Component {
     super(props);
 
     this.handleDemo = this.handleDemo.bind(this);
+    this.demo = this.demo.bind(this);
   }
 
   handleDemo(e) {
@@ -23,7 +24,7 @@ class Splash extends React.Component {
     return(
       <div className="splash">
         <div className="splashText">A PURE MUSIC VIDEO EXPERIENCE</div>
-        {this.demo};
+        {this.demo}
       </div>
     );
   }

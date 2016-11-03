@@ -20,7 +20,7 @@ const Header = ({ login, signup, currentUser, logout }) => {
   return(
     <nav className="header">
       <img
-        className="headerLogo"
+        className="logo"
         alt="Veevo Logo"
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Vevo_2016_Logo.svg/1000px-Vevo_2016_Logo.svg.png" />
       {sessionButton}
