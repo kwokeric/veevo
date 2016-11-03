@@ -4,7 +4,7 @@
   background-color: black;
   width: 100%;
   height: 70px;
-  border-top: 1px solid #646464;
+  border-top: 1px solid $lightGray;
   font-family: Raleway;
   font-size: 10px;
 
@@ -17,12 +17,12 @@
       list-style-type: none;
       padding: 0 10px;
       letter-spacing: 1px;
-      color: #646464;
-    }
+      color: $lightGray;
 
-    .link:hover {
-      color: #7dcfd2;
-      cursor: pointer;
+      &:hover {
+        color: $celest;
+        cursor: pointer;
+      }
     }
   }
 }

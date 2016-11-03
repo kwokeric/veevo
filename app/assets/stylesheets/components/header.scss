@@ -40,14 +40,14 @@
   background-color: white;
   border-radius: 3px;
   float: right;
+
+  &:hover {
+    color: $celest;
+    cursor: pointer;
+  }
 }
 
-.logInButton:hover {
-  background-color: #7dcfd2;
-  cursor: pointer;
-}
-
-.usernameDisplay {
+.username {
   margin: 0;
   border: 0;
   padding-right: 20px;
@@ -61,6 +61,11 @@
   float: right;
   text-align: right;
   cursor: pointer;
+
+  &:hover {
+    color: $celest;
+    cursor: pointer;
+  }
 }
 
 .hidden {
@@ -68,7 +73,7 @@
 }
 
 .dropdown {
-  background-color: #333333;
+  background-color: $darkGray;
   position: absolute;
   width: 140px;
   height: 70px;
@@ -100,12 +105,13 @@
   color: white;
   letter-spacing: 2px;
   cursor: pointer;
-}
 
-.userProfile:hover, .headerLogout:hover {
-  color: #7dcfd2;
+  &:hover {
+    color: $celest;
+    cursor: pointer;
+  }
 }
 
 .headerLogout {
-  border-top: 1px solid #646464;
+  border-top: 1px solid $lightGray;
 }

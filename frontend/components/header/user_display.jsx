@@ -27,7 +27,7 @@ class UserDisplay extends React.Component {
           aria-hidden="true"
           onClick={this.usernameDropdown}></i>
 
-        <span className="usernameDisplay group" onClick={this.usernameDropdown}>
+        <span className="username group" onClick={this.usernameDropdown}>
           {this.props.currentUser.username}
 
           <ul className="dropdown hidden">

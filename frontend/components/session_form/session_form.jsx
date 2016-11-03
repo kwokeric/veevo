@@ -3,6 +3,7 @@ import { Link, withRouter } from 'react-router';
 
 var Modal = require("react-modal");
 
+
 class SessionForm extends React.Component {
 	constructor(props) {
 	  super(props);
@@ -46,10 +47,10 @@ class SessionForm extends React.Component {
 	  }
 	}
 
-	// Form setup
-
 	selectLogin() {
 		this.setState({login: true});
+		$(".dropdown").removeClass("selected");
+    $(".dropdown").mouseleave(() => $(".dropdown").addClass("selected"));
 	}
 
 	selectSignup() {
@@ -93,33 +94,30 @@ class SessionForm extends React.Component {
 
 	render() {
 		return (
-			<div className="login-form-container">
-				<button className="login_button" onClick={this.selectLogin}>LOG IN</button>
-				<button className="signup_button" onClick={this.selectSignup}>SIGN UP</button>
-				<form onSubmit={this.handleSubmit} className="login-form-box">
-					<div className="login-form">
-						<label> Username:
-							<input type="text"
-								value={this.state.username}
-								onChange={this.update("username")}
-								className="login-input" />
-						</label>
-						<br/>
-						<label> Password:
-							<input type="password"
-								value={this.state.password}
-								onChange={this.update("password")}
-								className="login-input" />
-						</label>
-						<br/>
-						<input type="submit" value="Submit" />
+			<div className="login-modal">
+				<div className="buttons">
+					<button className="login selected" onClick={this.selectLogin}>LOG IN</button>
+					<button className="signup" onClick={this.selectSignup}>SIGN UP</button>
+				</div>
+
+				<form onSubmit={this.handleSubmit} className="modal-form">
+					<div className="input">
+						<input type="text"
+							value={this.state.username}
+							onChange={this.update("username")}
+							className="username" />
+						<input type="password"
+							value={this.state.password}
+							onChange={this.update("password")}
+							className="password" />
+						<input className="submit" type="submit" value="CONTINUE" />
 					</div>
-					{this.renderErrors()}
+
+					<div className="errors">{this.renderErrors()}</div>
 				</form>
 			</div>
 		);
 	}
-
 }
 
 export default withRouter(SessionForm);

@@ -15,15 +15,17 @@ class Splash extends React.Component {
   }
 
   demo () {
-    return(
-      <button className="demoButton" onClick={this.handleDemo}>DEMO</button>
-    );
+    if (!this.props.currentUser) {
+      return(
+        <button className="demo-button" onClick={this.handleDemo}>DEMO</button>
+      );
+    }
   }
 
   render () {
     return(
       <div className="splash">
-        <div className="splashText">A PURE MUSIC VIDEO EXPERIENCE</div>
+        <div className="text">A PURE MUSIC VIDEO EXPERIENCE</div>
         {this.demo()}
       </div>
     );

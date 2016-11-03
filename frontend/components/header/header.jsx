@@ -5,6 +5,7 @@ var Modal = require("react-modal");
 
 import UserDisplay from './user_display';
 import SessionFormContainer from '../session_form/session_form_container';
+import modalStyle from './modal_style';
 
 class Header extends React.Component {
   constructor(props) {
@@ -44,8 +45,10 @@ class Header extends React.Component {
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Vevo_2016_Logo.svg/1000px-Vevo_2016_Logo.svg.png" />
         {this.whichButton()}
         <Modal
+          className="login_modal"
 					isOpen={this.state.modalOpen}
 					onRequestClose={this.closeModal}
+          style={modalStyle}
 					>
           <SessionFormContainer
             closeModal={this.closeModal}/>
@@ -56,4 +59,3 @@ class Header extends React.Component {
 }
 
 export default Header;
-// style={modalStyle}

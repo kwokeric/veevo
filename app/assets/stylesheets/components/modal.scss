@@ -1,0 +1,74 @@
+.login-modal {
+  background: #000000; /* Old browsers */
+  background: -moz-linear-gradient(45deg,  #000000 0%, #262626 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg,  #000000 0%,#262626 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg,  #000000 0%,#262626 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#262626',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  border: 1px solid $lightGray;
+  border-radius: 10px;
+  padding: 40px;
+
+  .buttons {
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+
+    .login, .signup {
+      width: 100px;
+      border: 0;
+      padding: 8px 20px;
+      letter-spacing: 2px;
+      font-weight: bold;
+      height: 20px;
+      color: black;
+      background-color: white;
+      border-radius: 3px;
+    }
+  }
+}
+
+.modal-form {
+  padding: 20px 0;
+
+  .input {
+    display: flex;
+    padding-top: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .username, .password {
+      height: 35px;
+      margin: 15px 0;
+      border: none;
+      border-radius: 3px;
+    }
+
+    .submit {
+      border: 0;
+      margin: 20px 0;
+      padding: 8px 20px;
+      letter-spacing: 2px;
+      font-weight: bold;
+      background-color: white;
+      border-radius: 3px;
+
+      &:focus { outline: 0; }
+
+      &:hover {
+        background-color: $celest;
+        cursor: pointer;
+      }
+    }
+
+    .errors {
+      text-align: center;
+      color: $lightGray;
+    }
+  }
+}
+
+.selected {
+  background-color: $celest;
+  cursor: default;
+}
