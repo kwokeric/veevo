@@ -27,6 +27,27 @@
   font-size: 15px;
   font-weight: normal;
   position: relative;
+
+  .username {
+    margin: 0;
+    border: 0;
+    padding-right: 20px;
+    width: 150px;
+    height: 100%;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 15px;
+    font-weight: normal;
+    float: right;
+    text-align: right;
+    cursor: pointer;
+
+    &:hover {
+      color: $celest;
+      cursor: pointer;
+    }
+  }
 }
 
 .logInButton {
@@ -42,31 +63,11 @@
   float: right;
 
   &:hover {
-    color: $celest;
+    background-color: $celest;
     cursor: pointer;
   }
 }
 
-.username {
-  margin: 0;
-  border: 0;
-  padding-right: 20px;
-  width: 150px;
-  height: 100%;
-  font-size: 20px;
-  color: white;
-  letter-spacing: 3px;
-  font-size: 15px;
-  font-weight: normal;
-  float: right;
-  text-align: right;
-  cursor: pointer;
-
-  &:hover {
-    color: $celest;
-    cursor: pointer;
-  }
-}
 
 .hidden {
   visibility: hidden;

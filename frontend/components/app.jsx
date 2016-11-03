@@ -8,8 +8,7 @@ import Footer from './footer/footer';
 const App = ({ children }) => (
   <div>
     <HeaderContainer/>
-    <SplashContainer/>
-    {children}
+      {children}
     <Footer/>
   </div>
 );

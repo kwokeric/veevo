@@ -3,7 +3,6 @@ import { Link, withRouter } from 'react-router';
 
 var Modal = require("react-modal");
 
-
 class SessionForm extends React.Component {
 	constructor(props) {
 	  super(props);

@@ -1,0 +1,18 @@
+.profile {
+  display: block;
+  height: 400px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10%;
+
+  .picture {
+    height: 200px;
+    width: 200px;
+    float: left;
+  }
+
+  .info {
+    height: 200px;
+    float: left;
+  }
+}

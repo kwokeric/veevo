@@ -16,6 +16,12 @@ class Header extends React.Component {
 	  this.closeModal = this.closeModal.bind(this);
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (!nextProps.currentUser) {
+      hashHistory.push("/");
+    }
+  }
+
   closeModal() {
     this.setState({ modalOpen: false });
   }

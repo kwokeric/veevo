@@ -33,5 +33,5 @@
 | /home                              | HomeContainer       |
 | /watch/:MVId                       | MusicVideoContainer |
 | /search                            | SearchContainer     |
-| /user/:UserI                       | UserContainer       |
+| /user/:UserId                      | UserContainer       |
 | /user/:UserId/playlist/:PlaylistId | PlaylistContainer   |
