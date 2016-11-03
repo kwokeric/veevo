@@ -31,7 +31,7 @@ column name     | data type |	 details
 ----------------|-----------|---------------------------
 id	            | integer	  | not null, primary key
 user_id         | integer   | not null, foreign key (users), indexed
-title           | integer	  | not null
+playlist_title  | integer	  | not null
 description     | integer	  | not null
 
 ## playlist_music_videos

@@ -24,7 +24,7 @@ class Splash extends React.Component {
     return(
       <div className="splash">
         <div className="splashText">A PURE MUSIC VIDEO EXPERIENCE</div>
-        {this.demo}
+        {this.demo()}
       </div>
     );
   }

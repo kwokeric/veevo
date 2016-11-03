@@ -1,45 +1,59 @@
 import React from 'react';
-
-import UserDisplay from './user_display';
-import LogInButton from './login_button';
+import { hashHistory, Link } from 'react-router';
 
 var Modal = require("react-modal");
 
-// class Header extends React.Component {
+import UserDisplay from './user_display';
+import SessionFormContainer from '../session_form/session_form_container';
 
-const Header = ({ login, signup, currentUser, logout }) => {
-  // getInitialState: function() {
-  //   return({ modalOpen: false })
-  // }
+class Header extends React.Component {
+  constructor(props) {
+    super(props);
 
-  let sessionButton;
-
-  if (currentUser) {
-    sessionButton = <UserDisplay
-                        currentUser={currentUser}
-                        logout={logout} />;
-  } else {
-    sessionButton = <LogInButton
-                        login={login}
-                        sigup={signup} />;
+    this.state = {modalOpen: false};
+	  this.openModal = this.openModal.bind(this);
+	  this.closeModal = this.closeModal.bind(this);
   }
 
-  return(
-    <nav className="header">
-      <img
-        className="logo"
-        alt="Veevo Logo"
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Vevo_2016_Logo.svg/1000px-Vevo_2016_Logo.svg.png" />
-      {sessionButton}
+  closeModal() {
+    this.setState({ modalOpen: false });
+  }
 
+  openModal() {
+    this.setState({ modalOpen: true });
+  }
 
-    </nav>
-  );
-};
+  whichButton () {
+    if (this.props.currentUser) {
+      return <UserDisplay
+        currentUser={this.props.currentUser}
+        logout={this.props.logout} />;
+    } else {
+      return <button
+        className="logInButton"
+        onClick={this.openModal}>LOG IN</button>;
+    }
+  }
+
+  render () {
+    return(
+      <nav className="header">
+        <img
+          className="logo"
+          alt="Veevo Logo"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Vevo_2016_Logo.svg/1000px-Vevo_2016_Logo.svg.png" />
+        {this.whichButton()}
+        <Modal
+					isOpen={this.state.modalOpen}
+					onRequestClose={this.closeModal}
+					>
+          <SessionFormContainer
+            closeModal={this.closeModal}/>
+        </Modal>
+      </nav>
+    );
+  }
+}
 
 export default Header;
-// <Modal
-//   isOpen={this.state.modalOpen}
-//   >
-//
-// </Modal>
+// style={modalStyle}

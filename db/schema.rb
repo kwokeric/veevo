@@ -11,10 +11,51 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161101211918) do
+ActiveRecord::Schema.define(version: 20161103171348) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "artists", force: :cascade do |t|
+    t.string   "artist_name", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "artists", ["artist_name"], name: "index_artists_on_artist_name", unique: true, using: :btree
+
+  create_table "music_videos", force: :cascade do |t|
+    t.string   "song_title",               null: false
+    t.integer  "artist_id",                null: false
+    t.string   "description"
+    t.string   "mv_image_url"
+    t.integer  "view_count",   default: 1, null: false
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
+
+  add_index "music_videos", ["artist_id"], name: "index_music_videos_on_artist_id", using: :btree
+  add_index "music_videos", ["song_title"], name: "index_music_videos_on_song_title", unique: true, using: :btree
+
+  create_table "playlist_music_videos", force: :cascade do |t|
+    t.integer  "playlist_id", null: false
+    t.integer  "mv_id",       null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "playlist_music_videos", ["mv_id"], name: "index_playlist_music_videos_on_mv_id", unique: true, using: :btree
+  add_index "playlist_music_videos", ["playlist_id"], name: "index_playlist_music_videos_on_playlist_id", unique: true, using: :btree
+
+  create_table "playlists", force: :cascade do |t|
+    t.integer  "user_id",        null: false
+    t.string   "playlist_title", null: false
+    t.string   "description"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  add_index "playlists", ["user_id"], name: "index_playlists_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "username",                        null: false

@@ -22,7 +22,10 @@ class UserDisplay extends React.Component {
   render () {
     return(
       <div className="userDisplay">
-        <i className="fa fa-angle-down" aria-hidden="true" onClick={this.usernameDropdown}></i>
+        <i
+          className="fa fa-angle-down"
+          aria-hidden="true"
+          onClick={this.usernameDropdown}></i>
 
         <span className="usernameDisplay group" onClick={this.usernameDropdown}>
           {this.props.currentUser.username}
