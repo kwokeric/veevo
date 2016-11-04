@@ -27,6 +27,7 @@ class Splash extends React.Component {
       <div className="splash">
         <div className="text">A PURE MUSIC VIDEO EXPERIENCE</div>
         {this.demo()}
+        <a href="http://localhost:3000/#/mv/1">CLICK ME</a>
       </div>
     );
   }

@@ -1,6 +1,7 @@
 .header {
-  z-index: 1;
-  position: absolute;
+  z-index: 10;
+  position: fixed;
+  top: 0;
   height: 60px;
   width: 100%;
   background-color: rgba(0,0,0,0.5);
@@ -25,19 +26,19 @@
       box-sizing: border-box;
       font-size: 18px;
       background-color: transparent;
-      background-image: url('http://res.cloudinary.com/kwokeric/image/upload/v1478235742/search_icon_pys8l1.png');
+      background-image: url("http://res.cloudinary.com/kwokeric/image/upload/v1478235742/search_icon_pys8l1.png");
       background-position: 5px 5px;
       background-size: 20px;
       background-repeat: no-repeat;
       padding-left: 40px;
-      padding-top: 3px;
+      padding-top: 2px;
       color: white;
       -webkit-transition: width 0.4s ease-in-out;
       transition: width 0.4s ease-in-out;
       cursor: default;
 
       &:focus {
-        width: 300px;
+        width: 350px;
         border-bottom: 1px solid $celest;
         letter-spacing: 2px;
         outline: 0;
@@ -46,13 +47,12 @@
   }
 }
 
-.userDisplay {
+.user-display {
   display: flex;
   justify-content: flex-end;
   flex-direction: row;
   align-items: center;
   margin-right: 60px;
-  height: 100%;
   color: white;
   letter-spacing: 3px;
   font-size: 15px;
@@ -80,20 +80,25 @@
     float: right;
     text-align: right;
     cursor: pointer;
-
-    &:hover {
-      color: $celest;
-      cursor: pointer;
-    }
   }
 
-  .fa {
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    float: right;
-    padding-top: 2px;
+  .username-hover {
+    color: $celest;
     cursor: pointer;
+  }
+
+  .icon-div {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-image: url("http://res.cloudinary.com/kwokeric/image/upload/v1478277518/drop_down_icon_2_rwwzog.png");
+    background-size: 20px;
+    background-position-y: 1px;
+
+    .icon {
+      width: 20px;
+      height: 20px;
+    }
   }
 }
 

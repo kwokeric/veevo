@@ -14,7 +14,7 @@
       id: 3
       songTitle: "Walter White",
       artistId: 6,
-      description: "directed by: me, produced by: him, (C) my records ",
+      description: "directed by: me, produced by: you, (C) their records ",
       imageUrl: "thumbnail.jpg"
     }
   },

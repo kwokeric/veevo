@@ -44,15 +44,15 @@ Veevo is a web application inspired by Vevo built using Ruby on Rails and React/
 
 ###Phase 4: Playlists (2 days, W2D1-2)
 
-*Objective:* Playlists can be created, played, edited and destroyed through the API.
+*Objective:* Allow autoplaying of playlists.
 
-###Phase 5: Search (1 day, W2D3)
+###Phase 5: Index (1 day, W2D3)
+
+*Objective:* Playlists can be seen on the index page.
+
+###Phase 6: Search (1 day, W2D4)
 
 *Objective:* Videos are searchable by name and artist (bonus: by playlist).
-
-###Phase 6: Playlists (1 day, W2D4)
-
-*Objective:* Allow autoplaying of playlists.
 
 ###Phase 7: Bonus Features and final styling (1 day, W2D5)
 

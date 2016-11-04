@@ -14,7 +14,7 @@ const Root = ({ store }) => (
       <Route path="/" component={App}>
         <IndexRoute component={SplashContainer}/>
         <Route path="users/:user_id" component={ProfileContainer} />
-        <Route path="mv/:mv_id" component={PlayerContainer} />
+        <Route path="mv/:mv_url" component={PlayerContainer} />
       </Route>
     </Router>
   </Provider>

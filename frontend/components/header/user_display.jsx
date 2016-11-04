@@ -8,6 +8,7 @@ class UserDisplay extends React.Component {
 
     this.profileButton = this.profileButton.bind(this);
     this.usernameDropdown = this.usernameDropdown.bind(this);
+    this.userHover = this.userHover.bind(this);
   }
 
   profileButton () {
@@ -19,15 +20,26 @@ class UserDisplay extends React.Component {
     $(".dropdown").mouseleave(() => $(".dropdown").addClass("hidden"));
   }
 
+  userHover () {
+    $(".icon").addClass("hidden");
+    $(".username").addClass("username-hover");
+  }
+
+  userLeave () {
+    $(".icon").removeClass("hidden");
+    $(".username").removeClass("username-hover");
+  }
+
   render () {
     return(
-      <div className="userDisplay">
-        <div>
-          <img
-            className="thumbnail"
-            onClick={this.usernameDropdown}
-            src={this.props.currentUser.user_image_url} />
-        </div>
+      <div
+        className="user-display"
+        onMouseEnter={this.userHover}
+        onMouseLeave={this.userLeave}>
+        <img
+          className="thumbnail"
+          onClick={this.usernameDropdown}
+          src={this.props.currentUser.user_image_url} />
 
         <span className="username group" onClick={this.usernameDropdown}>
           {this.props.currentUser.username}
@@ -42,10 +54,11 @@ class UserDisplay extends React.Component {
           </ul>
         </span>
 
-        <i
-          className="fa fa-angle-down"
-          aria-hidden="true"
-          onClick={this.usernameDropdown}></i>
+        <div className="icon-div">
+          <img
+            className="icon"
+            src="http://res.cloudinary.com/kwokeric/image/upload/v1478277518/drop_down_icon_zj3min.png" />
+        </div>
 
       </div>
     );
