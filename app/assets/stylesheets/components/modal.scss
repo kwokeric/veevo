@@ -8,6 +8,9 @@
   border: 1px solid $lightGray;
   border-radius: 10px;
   padding: 40px;
+  height: 400px;
+  max-height: 400px;
+  box-sizing: border-box;
 
   .buttons {
     display: flex;
@@ -15,12 +18,12 @@
     justify-content: space-between;
 
     .login, .signup {
-      width: 100px;
+      width: 120px;
+      height: 35px;
       border: 0;
       padding: 8px 20px;
       letter-spacing: 2px;
       font-weight: bold;
-      height: 20px;
       color: black;
       background-color: white;
       border-radius: 3px;
@@ -29,19 +32,23 @@
 }
 
 .modal-form {
-  padding: 20px 0;
+  padding-top: 30px;
 
   .input {
     display: flex;
     padding-top: 20px;
     flex-direction: column;
     justify-content: space-between;
+    border-top: 1px solid $lightGray;
 
     .username, .password {
       height: 35px;
       margin: 15px 0;
       border: none;
       border-radius: 3px;
+      padding: 0 15px;
+      text-align: center;
+      outline: 0;
     }
 
     .submit {
@@ -61,7 +68,7 @@
       }
     }
 
-    .errors {
+    .errors > li {
       text-align: center;
       color: $lightGray;
     }

@@ -17,13 +17,13 @@ export default (
       left                       : '50%',
       right                      : '50%',
       bottom                     : '550%',
-      height                     : '600px',
-      width                      : '400px',
-      margin                     : '-300px -200px',
+      height                     : '410px',
+      maxHeight                  : '410px',
+      width                      : '380px',
+      margin                     : '-205px -180px',
       overflow                   : 'auto',
       WebkitOverflowScrolling    : 'touch',
       outline                    : 'none',
-      padding                    : '40px'
     }
   }
 );

@@ -30,6 +30,15 @@ class Header extends React.Component {
     this.setState({ modalOpen: true });
   }
 
+  search() {
+    return(
+      <div className="search">
+
+        <input type="text" name="search-bar" />
+      </div>
+    );
+  }
+
   whichButton () {
     if (this.props.currentUser) {
       return <UserDisplay
@@ -54,7 +63,11 @@ class Header extends React.Component {
           alt="Veevo Logo"
           onClick={this.toIndex}
           src="http://www.pupsor.com/wp-content/uploads/2016/03/golden-retriever-puppies-facts.jpg" />
+
+        {this.search()}
+
         {this.whichButton()}
+
         <Modal
           className="login_modal"
 					isOpen={this.state.modalOpen}

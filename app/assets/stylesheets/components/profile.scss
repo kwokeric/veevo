@@ -3,7 +3,7 @@
   height: 200px;
   justify-content: flex-start;
   align-items: center;
-  padding: 8%;
+  padding: 16% 8% 8% 8%;
   background-image: url("http://res.cloudinary.com/kwokeric/image/upload/v1478217275/dark_gray_noise_i2buah.png");
   background-repeat: repeat;
 
@@ -11,6 +11,7 @@
     height: 200px;
     width: 200px;
     float: left;
+    border: 2px solid white;
     border-radius: 50%;
   }
 
@@ -23,5 +24,6 @@
     float: left;
     color: white;
     font-size: 25px;
+    letter-spacing: 5px;
   }
 }

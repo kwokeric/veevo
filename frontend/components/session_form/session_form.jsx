@@ -102,13 +102,15 @@ class SessionForm extends React.Component {
 				<form onSubmit={this.handleSubmit} className="modal-form">
 					<div className="input">
 						<input type="text"
+							className="username"
+							placeholder="USERNAME"
 							value={this.state.username}
-							onChange={this.update("username")}
-							className="username" />
+							onChange={this.update("username")} />
 						<input type="password"
+							className="password"
+							placeholder="PASSWORD"
 							value={this.state.password}
-							onChange={this.update("password")}
-							className="password" />
+							onChange={this.update("password")} />
 						<input className="submit" type="submit" value="CONTINUE" />
 					</div>
 
