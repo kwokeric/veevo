@@ -42,13 +42,18 @@ class Header extends React.Component {
     }
   }
 
+  toIndex() {
+    hashHistory.push("/");
+  }
+
   render () {
     return(
       <nav className="header">
         <img
           className="logo"
           alt="Veevo Logo"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Vevo_2016_Logo.svg/1000px-Vevo_2016_Logo.svg.png" />
+          onClick={this.toIndex}
+          src="http://www.pupsor.com/wp-content/uploads/2016/03/golden-retriever-puppies-facts.jpg" />
         {this.whichButton()}
         <Modal
           className="login_modal"

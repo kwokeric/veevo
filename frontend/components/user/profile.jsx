@@ -6,13 +6,13 @@ class Profile extends React.Component {
     super(props);
   }
 
-  render () {
+  render() {
     return(
       <nav className="profile">
         <img
           className="picture"
-          src={this.props.currentUser.user_image_url} />
-        <div className="info">{this.props.currentUser.username}</div>
+          src={this.props.currentUser.user_image_url}/>
+        <div className="info">Welcome, {this.props.currentUser.username}</div>
       </nav>
     );
   }

@@ -6,7 +6,23 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-User.create({username: "admin", password: "@user=admin", admin: true})
-User.create({username: "guest", password: "password"})
+User.create({
+  username: "admin",
+  password: "@user=admin",
+  user_image_url: "http://res.cloudinary.com/kwokeric/image/upload/v1478216260/guest_profile_gkhlmn.png",
+  admin: true
+})
+User.create({
+  username: "guest",
+  password: "password",
+  user_image_url: "http://res.cloudinary.com/kwokeric/image/upload/v1478216260/guest_profile_gkhlmn.png",
+})
 
-MusicVideo.create({username: "guest", password: "password"})
+Artist.create({artist_name: "Drake"})
+
+MusicVideo.create({
+  song_title: "Child's Play",
+  artist_id: 1,
+  description: "",
+  mv_image_url: ""
+})

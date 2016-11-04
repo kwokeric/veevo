@@ -3,12 +3,12 @@ class User < ActiveRecord::Base
   validates :username, uniqueness: true
   validates :password, length: {minimum: 6}, allow_nil: :true
 
+  has_many :playlists
+
   attr_reader :password
 
   after_initialize :ensure_session_token
   before_validation :ensure_session_token_uniqueness
-
-  # has_many :playlists
 
   def password=(password)
     @password = password
