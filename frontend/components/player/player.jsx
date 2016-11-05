@@ -1,22 +1,34 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
 
+import PlayerTabs from './player_tabs';
+
 class VideoPlayer extends React.Component {
   constructor(props) {
     super(props);
-
-    this.showDetails = this.showDetails.bind(this);
   }
 
   componentWillMount () {
     this.props.fetchVideos();
   }
 
-  showDetails() {
-    return("hi");
+  videoInfo () {
+    return(
+      <div className="video-info-container">
+        <ul className="video-info">
+          <li>{this.props.currentMV.song_title}</li>
+          <li>{this.props.currentMV.artist_name}</li>
+        </ul>
+
+        <ul className="video-info-more">
+          <li>+ Add</li>
+          <li>{this.props.currentMV.view_count} <span className="small-text">Views</span></li>
+        </ul>
+      </div>
+    );
   }
 
-  render() {
+  render () {
     if (Object.keys(this.props.mvs).length === 0) {
       return (
         <div className="loading">
@@ -29,16 +41,13 @@ class VideoPlayer extends React.Component {
           <div className="player-div">
             <iframe
               className="player"
-              src={`https://www.youtube.com/embed/
-                ${this.props.mv_url}
-                ?autoplay=1&showinfo=0&modestbranding=1&rel=0`} />
-          </div>
+              src={`https://www.youtube.com/embed/${this.props.mvUrl}?autoplay=1&showinfo=0&modestbranding=1&rel=0`} />
 
-          <div className="mv-info">
-            Drake - Child's Play
-          </div>
+              {this.videoInfo}
 
-          {this.showDetails()}
+            {this.videoInfo()}
+          </div>
+          <PlayerTabs currentMV={this.props.currentMV} />
         </div>
       );
     }

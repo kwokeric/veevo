@@ -6,7 +6,7 @@ import SplashContainer from './splash/splash_container';
 import Footer from './footer/footer';
 
 const App = ({ children }) => (
-  <div>
+  <div className="app">
     <HeaderContainer/>
       {children}
     <Footer/>

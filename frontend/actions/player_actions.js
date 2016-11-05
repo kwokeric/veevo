@@ -5,9 +5,7 @@ export const fetchVideos = () => ({
   type: FETCH_VIDEOS
 });
 
-export const receiveVideos = videos => {
-  return({
+export const receiveVideos = videos => ({
   type: RECEIVE_VIDEOS,
   videos
 });
-};

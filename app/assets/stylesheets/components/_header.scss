@@ -19,6 +19,8 @@
   }
 
   .search {
+    font-family: Roboto;
+
     input[type=text] {
       width: 30px;
       height: 30px;
@@ -55,6 +57,7 @@
   margin-right: 60px;
   color: white;
   letter-spacing: 3px;
+  font-family: Roboto;
   font-size: 15px;
   font-weight: normal;
   position: relative;
@@ -80,6 +83,7 @@
     float: right;
     text-align: right;
     cursor: pointer;
+    font-family: Roboto;
   }
 
   .username-hover {
@@ -114,9 +118,10 @@
   background-color: white;
   border-radius: 3px;
   float: right;
+  font-family: Roboto;
 
   &:hover {
-    background-color: $celest;
+    background: linear-gradient(0deg, $celest, $lightCelest);
     cursor: pointer;
   }
 }
@@ -149,6 +154,7 @@
   color: white;
   letter-spacing: 2px;
   cursor: pointer;
+  font-family: Roboto;
 
   &:hover {
     color: $celest;

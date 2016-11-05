@@ -54,7 +54,7 @@ class UserDisplay extends React.Component {
           </ul>
         </span>
 
-        <div className="icon-div">
+        <div className="icon-div" onClick={this.usernameDropdown}>
           <img
             className="icon"
             src="http://res.cloudinary.com/kwokeric/image/upload/v1478277518/drop_down_icon_zj3min.png" />

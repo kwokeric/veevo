@@ -1,11 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
-
 User.create({
   username: "admin",
   password: "@user=admin",
@@ -19,6 +11,7 @@ User.create({
 })
 
 Artist.create({artist_name: "Drake"})
+Artist.create({artist_name: "OK GO"})
 Artist.create({artist_name: "Dillon Francis"})
 Artist.create({artist_name: "Ariana Grande"})
 
@@ -30,4 +23,24 @@ MusicVideo.create({
   writer: "Aubrey Graham, Shebib, Leland Wayne, Mark Morales, Darren Robinson, Damon Wimbley",
   producer: "40, Metro Boomin, Ullman, Nineteen85",
   label: "Young Money, Cash Money, Republic"
+})
+
+MusicVideo.create({
+  song_title: "Play",
+  artist_id: 1,
+  mv_url: "HBnI5QavaKA",
+  director: "Aubrey Graham, Carlos “Spiff TV” Suarez",
+  writer: "Aubrey Graham, Shebib, Leland Wayne, Mark Morales, Darren Robinson, Damon Wimbley",
+  producer: "40, Metro Boomin, Ullman, Nineteen85",
+  label: "Young Money, Cash Money, Republic"
+})
+
+MusicVideo.create({
+  song_title: "I Won't Let You Down",
+  artist_id: 2,
+  mv_url: "u1ZB_rGFyeU",
+  director: "Kulash and Kazuaki Seki",
+  writer: "OK GO",
+  producer: "Mori Inc.",
+  label: "Paracadute, BMG"
 })

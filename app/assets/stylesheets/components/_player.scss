@@ -1,0 +1,108 @@
+.mv-div {
+  display: block;
+  padding-top: 60px;
+  width: 90%;
+  margin: 0 auto;
+
+  .player-div {
+    width: 100%;
+
+    .player {
+      width: 100%;
+      height: 500px;
+      border: none;
+    }
+
+    .mv-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      height: 150px;
+      background: black;
+      color: white;
+      border-top: 1px solid $darkGray;
+      text-align: left;
+    }
+  }
+}
+
+.video-info-container {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  letter-spacing: 1px;
+  font-family: Muli;
+
+  .video-info-more {
+    text-align: right;
+  }
+}
+
+.player-tabs-container {
+  display: block;
+  padding-top: 20px;
+
+  .tab-list {
+    border-bottom: 1px solid $darkGray;
+    height: 25px;
+
+    .related-tab, .new-tab, .details-tab {
+      height: 25px;
+      float: left;
+      font-size: 12px;
+      letter-spacing: 3px;
+      padding: 0 15px;
+
+      &:hover {
+        color: $celest;
+        cursor: pointer;
+      }
+    }
+
+    .active {
+      border-bottom: 2px solid white;
+    }
+  }
+
+  .related-tab {
+    display: block;
+    height: 350px;
+    padding: 35px 15px;
+  }
+
+  .new-tab {
+    display: block;
+    height: 350px;
+    padding: 35px 15px;
+  }
+
+  .detail-tab {
+    display: block;
+    height: 350px;
+    padding: 35px 15px;
+
+    .details-li {
+      font-size: 14px;
+      height: 25px
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//

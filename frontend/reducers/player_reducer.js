@@ -5,7 +5,6 @@ import {
 
 const PlayerReducer = (state = {}, action) => {
   Object.freeze(state);
-
   let videos;
 
   switch(action.type) {
