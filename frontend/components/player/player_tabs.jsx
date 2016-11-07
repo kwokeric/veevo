@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
 
+import Carousel from '../carousel/carousel.jsx';
+
 class PlayerTabs extends React.Component {
   constructor(props) {
     super(props);
@@ -25,15 +27,26 @@ class PlayerTabs extends React.Component {
     let tab;
 
     if (this.state.selectedTab === "related") {
+      let relatedVideos = this.props.currentMV.related_videos;
+
       tab = (
         <div className="related-tab">
-
+          <Carousel videos={relatedVideos}/>
         </div>
       );
     } else if (this.state.selectedTab === "new") {
+      let newVideos = [
+        this.props.videos["ANS9sSJA9Yc"],
+        this.props.videos["u1ZB_rGFyeU"],
+        this.props.videos["b4Bj7Zb-YD4"],
+        this.props.videos["-CmadmM5cOk"],
+        this.props.videos["G5Mv2iV0wkU"],
+        this.props.videos["zjVSewbKllk"]
+      ];
+
       tab = (
         <div className="new-tab">
-
+          <Carousel videos={newVideos}/>
         </div>
       );
     } else if (this.state.selectedTab === "details") {

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import IndexCarousels from './index_carousels';
 
 class Splash extends React.Component {

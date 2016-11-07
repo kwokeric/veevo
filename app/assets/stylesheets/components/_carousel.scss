@@ -92,7 +92,7 @@
     font-size: 16px;
     color: white;
     letter-spacing: 5px;
-    padding-bottom: 10px;
+    padding: 50px 0 10px 10px;
   }
 }
 
@@ -100,13 +100,14 @@
   background-color: black;
   transition: all 0.2s;
   width: 20%;
-  margin: 0 1%;
+  margin: 0 10px;
 
   .thumbnail {
     width: 100%;
 
     &:hover {
       opacity: 0.6;
+      cursor: pointer;
     }
   }
 }
@@ -132,7 +133,6 @@
     padding: 0 10px 10px 10px;
   }
 }
-
 
 /* Arrows */
 .slick-prev, .slick-next {

@@ -47,11 +47,10 @@ class VideoPlayer extends React.Component {
 
             {this.videoInfo()}
           </div>
-          <PlayerTabs currentMV={this.props.currentMV} />
+          <PlayerTabs currentMV={this.props.currentMV} videos={this.props.videos} />
         </div>
       );
     }
-
   }
 }
 

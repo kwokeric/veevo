@@ -16,6 +16,10 @@ Artist.create({artist_name: "Maroon 5"})
 Artist.create({artist_name: "Calvin Harris"})
 Artist.create({artist_name: "Taylor Swift"})
 Artist.create({artist_name: "Diclosure"})
+Artist.create({artist_name: "Coldplay"})
+Artist.create({artist_name: "Jack Ü"})
+Artist.create({artist_name: "Dillon Francis"})
+Artist.create({artist_name: "The Chainsmokers"})
 
 MusicVideo.create({
   song_title: "Child's Play",
@@ -48,7 +52,7 @@ MusicVideo.create({
 })
 
 MusicVideo.create({
-  song_title: "Take Care ft. Rihanna",
+  song_title: "Take Care Ft. Rihanna",
   artist_id: 1,
   mv_url: "-zzP29emgpg",
   director: "Yoann Lemoine",
@@ -442,7 +446,7 @@ MusicVideo.create({
 })
 
 MusicVideo.create({
-  song_title: "Holding On ft. Gregory Porter",
+  song_title: "Holding On Ft. Gregory Porter",
   artist_id: 6,
   mv_url: "3mmTMSZkXQY",
   director: "Andreas Ytu",
@@ -452,11 +456,271 @@ MusicVideo.create({
 })
 
 MusicVideo.create({
-  song_title: "White Noise ft. AlunaGeorge",
+  song_title: "White Noise Ft. AlunaGeorge",
   artist_id: 6,
   mv_url: "bkk2H3Ztrfk",
   director: "I Want Bagels",
   writer: "Disclosure",
   producer: "Mr Disclosure",
   label: "Island Records"
+})
+
+MusicVideo.create({
+  song_title: "Hymn For The Weekend",
+  artist_id: 7,
+  mv_url: "YykjpeuMNEk",
+  director: "Ben Mor",
+  writer: "Coldplay",
+  producer: "Nina Dluhy-Miller",
+  label: "Island Records"
+})
+
+MusicVideo.create({
+  song_title: "A Sky Full Of Stars",
+  artist_id: 7,
+  mv_url: "VPRjCeoBqrI",
+  director: "Ben Mor",
+  writer: "Coldplay",
+  producer: "Avicii, Coldplay",
+  label: "Parlophone"
+})
+
+MusicVideo.create({
+  song_title: "Up&Up",
+  artist_id: 7,
+  mv_url: "BPNTC7uZYrI",
+  director: "Vania Heymann and Gal Muggia",
+  writer: "Coldplay",
+  producer: "Natan Schottenfels and Juliette Larthe",
+  label: "Parlophone"
+})
+
+MusicVideo.create({
+  song_title: "A Head Full Of Dreams",
+  artist_id: 7,
+  mv_url: "vGZMvV9KBp8",
+  director: "James Marcus Haney",
+  writer: "Coldplay",
+  producer: "Coldplay",
+  label: "Parlophone"
+})
+
+MusicVideo.create({
+  song_title: "Every Teardrop Is a Waterfall",
+  artist_id: 7,
+  mv_url: "fyMhvkC3A84",
+  director: "Some Dude",
+  writer: "Coldplay",
+  producer: "Coldplay",
+  label: "Parlophone"
+})
+
+MusicVideo.create({
+  song_title: "A Sky Full Of Stars (Hardwell Remix)",
+  artist_id: 7,
+  mv_url: "nhBVOsNJ_O0",
+  director: "Some Dude",
+  writer: "Coldplay, Hardwell",
+  producer: "Coldplay, Hardwell",
+  label: "Parlophone"
+})
+
+MusicVideo.create({
+  song_title: "Adventure Of A Lifetime (Audien Remix)",
+  artist_id: 7,
+  mv_url: "7Iqgcfwl8WE",
+  director: "Not A Music Video",
+  writer: "Coldplay, Audien",
+  producer: "Coldplay, Audien",
+  label: "Parlophone"
+})
+
+MusicVideo.create({
+  song_title: "Mind Ft. Kai",
+  artist_id: 8,
+  mv_url: "fDrTbLXHKu8",
+  director: "Liam Underwood",
+  writer: "Skrillex and Diplo",
+  producer: "Liam Underwood",
+  label: "Atlantic, Mad Decent, OWSLA"
+})
+
+MusicVideo.create({
+  song_title: "Take Ü There Ft. Kiesza",
+  artist_id: 8,
+  mv_url: "C9slkeFXogU",
+  director: "Kyle dePinna, Dillon Moore, & Daniel Streit",
+  writer: "Skrillex and Diplo",
+  producer: "Kyle dePinna & George Mays",
+  label: "Atlantic, Mad Decent, OWSLA"
+})
+
+MusicVideo.create({
+  song_title: "Where Are Ü Now Ft. Justin Beiber",
+  artist_id: 8,
+  mv_url: "nntGTK2Fhb0",
+  director: "Brewer",
+  writer: "Skrillex and Diplo",
+  producer: "Nathan Scherrer",
+  label: "Atlantic, Mad Decent, OWSLA"
+})
+
+MusicVideo.create({
+  song_title: "To Ü Ft. AlunaGeorge",
+  artist_id: 8,
+  mv_url: "9NwZdxiLvGo",
+  director: "Mr Director",
+  writer: "Skrillex and Diplo",
+  producer: "Nathan Scherrer",
+  label: "Atlantic, Mad Decent, OWSLA"
+})
+
+MusicVideo.create({
+  song_title: "Beats Knockin",
+  artist_id: 8,
+  mv_url: "wO6EeBCWuzI",
+  director: "Mr Director",
+  writer: "Skrillex and Diplo",
+  producer: "Nathan Scherrer",
+  label: "Atlantic, Mad Decent, OWSLA"
+})
+
+MusicVideo.create({
+  song_title: "To Ü Ft. AlunaGeorge (Oliver Remix)",
+  artist_id: 8,
+  mv_url: "8ahzUa1hG1M",
+  director: "Mr Director",
+  writer: "Skrillex and Diplo, Oliver",
+  producer: "Oliver probably",
+  label: "Atlantic, Mad Decent, OWSLA"
+})
+
+MusicVideo.create({
+  song_title: "Anywhere Ft. Will Heard",
+  artist_id: 9,
+  mv_url: "v9rdDwH1JAo",
+  director: "Brother Willis",
+  writer: "Dillon Francis",
+  producer: "Russell Sanzgiri",
+  label: "Fool's Gold, Mad Decent, OWSLA"
+})
+
+MusicVideo.create({
+  song_title: "Need You",
+  artist_id: 9,
+  mv_url: "6byaTlhGJXM",
+  director: "Jack Wagner",
+  writer: "Dillon Francis & NGHTMRE",
+  producer: "DJ Hanzel",
+  label: "Fool's Gold, Mad Decent, OWSLA"
+})
+
+MusicVideo.create({
+  song_title: "Get Low",
+  artist_id: 9,
+  mv_url: "12CeaxLiMgE",
+  director: "Money Sucks, Friends Rule",
+  writer: "Dillon Francis & NGHTMRE",
+  producer: "DJ Hanzel",
+  label: "Columbia Records"
+})
+
+MusicVideo.create({
+  song_title: "Coming Over ft. James Hersey",
+  artist_id: 9,
+  mv_url: "5AOtEnH87Mg",
+  director: "Money Sucks, Friends Rule",
+  writer: "Dillon Francis, Kygo",
+  producer: "DJ Hanzel, Not Kygo",
+  label: "Columbia Records"
+})
+
+MusicVideo.create({
+  song_title: "Without You Ft. T.E.E.D",
+  artist_id: 9,
+  mv_url: "aKb9VQpoe_U",
+  director: "Mr. Director",
+  writer: "Dillon Francis, Totally Enormous Extinct Dinosaurs",
+  producer: "DJ Hanzel",
+  label: "Columbia Records"
+})
+
+MusicVideo.create({
+  song_title: "Exit Through The Donut Hole (I Can't Take It)",
+  artist_id: 9,
+  mv_url: "9qjom-EwXB4",
+  director: "Agata Alexander",
+  writer: "Dillon Francis",
+  producer: "Ed Buhr",
+  label: "Columbia Records"
+})
+
+MusicVideo.create({
+  song_title: "Bun Up the Dance",
+  artist_id: 9,
+  mv_url: "3ArOBAt5Ml0",
+  director: "Agata Alexander",
+  writer: "Dillon Francis, Skrillex",
+  producer: "Dillex",
+  label: "OWSLA"
+})
+
+MusicVideo.create({
+  song_title: "Don't Let Me Down ft. Daya",
+  artist_id: 10,
+  mv_url: "Io0fBr1XBUA",
+  director: "Marcus Kuhne",
+  writer: "The Chainsmokers",
+  producer: "Thom Fennessey & Eric Ro",
+  label: "Disruptor, Columbia"
+})
+
+MusicVideo.create({
+  song_title: "Closer Ft. Halsey",
+  artist_id: 10,
+  mv_url: "PT2_F-1esPk",
+  director: "Rory Kramer",
+  writer: "The Chainsmokers, Halsey",
+  producer: "Alyssa Lynch and Jordan Wright",
+  label: "Disruptor, Columbia"
+})
+
+MusicVideo.create({
+  song_title: "Roses Ft. ROZES",
+  artist_id: 10,
+  mv_url: "G5Mv2iV0wkU",
+  director: "Impossible Brief",
+  writer: "The Chainsmokers, ROZES",
+  producer: "Flaxman Films",
+  label: "Disruptor, Columbia"
+})
+
+MusicVideo.create({
+  song_title: "Let You Go Ft. Great Good Fine Ok",
+  artist_id: 10,
+  mv_url: "iiNXf0n_hrA",
+  director: "Joe Zohar",
+  writer: "The Chainsmokers, ROZES",
+  producer: "Steve Vasquez, Alison Lani, Joe Zohar",
+  label: "Dim Mak Inc."
+})
+
+MusicVideo.create({
+  song_title: "Don't Let Me Down (Illenium Remix)",
+  artist_id: 10,
+  mv_url: "s8XIgR5OGJc",
+  director: "Not Applicable",
+  writer: "The Chainsmokers, Illenium",
+  producer: "Trap Nation I guess",
+  label: "Dim Mak Inc."
+})
+
+MusicVideo.create({
+  song_title: "Kanye Ft. SirenXX",
+  artist_id: 10,
+  mv_url: "8ELh8eOzq_0",
+  director: "Niklaus Lange",
+  writer: "The Chainsmokers, SirenXX",
+  producer: "Youtube",
+  label: "Dim Mak Inc."
 })
