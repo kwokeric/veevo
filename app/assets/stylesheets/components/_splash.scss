@@ -11,7 +11,7 @@
 
   .text {
     padding: 180px 0;
-    font-family: Raleway;
+    font-family: Muli;
     font-size: 50px;
     color: white;
     text-shadow: 0 0 10px black;
@@ -26,15 +26,18 @@
     padding: 8px 20px;
     border: 1px solid white;
     border-radius: 3px;
+    font-size: 12px;
     letter-spacing: 2px;
     font-weight: bold;
     color: white;
     background: transparent;
+    transition: font-size 0.2s;
 
     &:hover {
       border-color: $celest;
       color: $celest;
       cursor: pointer;
+      font-size: 14px;
     }
   }
 }

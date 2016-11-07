@@ -1,0 +1,178 @@
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  width: 20%;
+  min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+  width: 100%;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-slide:hover {
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-dots {
+  display: hidden;
+}
+
+.slick-slide.slick-active.carousel-item {
+  width: 20%;
+}
+
+@charset 'UTF-8';
+
+/* Carousel */
+
+.carousel-container {
+  margin: 20px;
+
+  .carousel-title {
+    font-family: Muli;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+  }
+}
+
+.carousel-item {
+  background-color: black;
+  transition: all 0.2s;
+  width: 20%;
+  margin: 0 1%;
+
+  .thumbnail {
+    width: 100%;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+.item-info {
+  background-image: url("http://res.cloudinary.com/kwokeric/image/upload/v1478217275/dark_gray_noise_i2buah.png");
+  background-repeat: repeat;
+
+  p.artist, p.song-title {
+    color: white;
+    font-family: Roboto;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+  p.artist {
+    font-weight: 500;
+    padding: 10px;
+  }
+
+  p.song-title {
+    font-weight: 300;
+    padding: 0 10px 10px 10px;
+  }
+}
+
+
+/* Arrows */
+.slick-prev, .slick-next {
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+
+  top: 50%;
+  width: 50px;
+  height: 100%;
+}
+
+.slick-prev {
+  left: 0;
+  opacity: 0;
+  transition: all 0.2s;
+
+  &:hover {
+    background-image: url("http://res.cloudinary.com/kwokeric/image/upload/v1478472279/back_rk29no.png");
+    background-size: 100% 80px;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    opacity: 1;
+  }
+}
+
+.slick-next {
+  right: 0;
+  opacity: 0;
+  transition: all 0.2s;
+
+  &:hover {
+    background-image: url("http://res.cloudinary.com/kwokeric/image/upload/v1478472278/next_qrovpt.png");
+    background-size: 100% 80px;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    opacity: 1;
+  }
+}
+
+.slick-prev:before, .slick-next:before {
+  content: "";
+}

@@ -4,7 +4,7 @@ import PlayerReducer from './player_reducer';
 
 const RootReducer = combineReducers({
   session: SessionReducer,
-  mvs: PlayerReducer
+  videos: PlayerReducer
 });
 
 export default RootReducer;

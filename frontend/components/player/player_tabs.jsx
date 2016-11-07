@@ -6,11 +6,13 @@ class PlayerTabs extends React.Component {
     super(props);
 
     this.state = {selectedTab: "related-tab"};
+    this.isActive = this.isActive.bind(this);
   }
 
   changeTab (tab) {
     return (e) => {
       e.preventDefault();
+      this.isActive();
       this.setState({selectedTab: tab});
     };
   }

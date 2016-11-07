@@ -2,18 +2,18 @@ import { connect } from 'react-redux';
 import { fetchVideos } from '../../actions/player_actions';
 import Player from './player';
 
-const mapStateToProps = ({ mvs }, ownProps) => {
+const mapStateToProps = ({ videos }, ownProps) => {
   let mvUrl = ownProps.params.mv_url;
   let currentMV;
 
-  if (mvs.videos) {
-    currentMV = mvs.videos[mvUrl];
+  if (videos) {
+    currentMV = videos[mvUrl];
   }
 
   return({
     mvUrl,
     currentMV,
-    mvs
+    videos
   });
 };
 

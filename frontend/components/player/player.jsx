@@ -29,10 +29,10 @@ class VideoPlayer extends React.Component {
   }
 
   render () {
-    if (Object.keys(this.props.mvs).length === 0) {
+    if (Object.keys(this.props.videos).length === 0) {
       return (
         <div className="loading">
-          "loading.."
+          loading...
         </div>
       );
     } else {

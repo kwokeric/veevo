@@ -1,4 +1,5 @@
 import React from 'react';
+import IndexCarousels from './index_carousels';
 
 class Splash extends React.Component {
   constructor (props) {
@@ -6,6 +7,10 @@ class Splash extends React.Component {
 
     this.handleDemo = this.handleDemo.bind(this);
     this.demo = this.demo.bind(this);
+  }
+
+  componentWillMount () {
+    this.props.fetchVideos();
   }
 
   handleDemo(e) {
@@ -24,9 +29,13 @@ class Splash extends React.Component {
 
   render () {
     return(
-      <div className="splash">
-        <div className="text">A PURE MUSIC VIDEO EXPERIENCE</div>
-        {this.demo()}
+      <div className="index">
+        <div className="splash">
+          <div className="text">A PURE MUSIC VIDEO EXPERIENCE</div>
+          {this.demo()}
+        </div>
+
+        <IndexCarousels videos={this.props.videos}/>
       </div>
     );
   }
