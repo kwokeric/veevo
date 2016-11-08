@@ -33,9 +33,10 @@ class Api::PlaylistsController < ApplicationController
 
   def destroy
     @playlist = current_user.playlists.find_by(id: params[:id])
+    id = @playlist.id
 
     if @playlist.destroy
-      render "api/users/#{current_user.id}"
+      render json: id
     else
       render(
         json: ["Playlist could not be deleted"],

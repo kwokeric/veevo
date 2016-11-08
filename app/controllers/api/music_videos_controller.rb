@@ -1,6 +1,6 @@
 class Api::MusicVideosController < ApplicationController
 	def index
-		@music_videos = MusicVideo.all
+		@music_videos = MusicVideo.includes(:artist)
 	end
 
 	def mv_show

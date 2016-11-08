@@ -9,8 +9,6 @@ class VideoPlayer extends React.Component {
   }
 
   componentWillMount () {
-    this.props.fetchVideo(this.props.params.mvUrl);
-    this.props.fetchVideos(this.props.params.mvUrl);
     this.props.incrementViewCount(this.props.params.mvUrl);
   }
 

@@ -5,8 +5,6 @@ var Modal = require("react-modal");
 
 import Root from './components/root';
 import configureStore from './store/store';
-import {login, signup} from './actions/session_actions';
-import {fetchVideos} from './actions/player_actions';
 
 document.addEventListener('DOMContentLoaded', () => {
   let store;
@@ -18,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
     store = configureStore();
   }
   window.store = store;
-  window.fetchVideos = fetchVideos;
 
   const root = document.getElementById('root');
   Modal.setAppElement(document.body);

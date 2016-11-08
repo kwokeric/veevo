@@ -1,10 +1,7 @@
 import { connect } from 'react-redux';
 
 import Player from './player';
-import {
-  fetchVideo,
-  fetchVideos,
-  incrementViewCount } from '../../actions/player_actions';
+import { incrementViewCount } from '../../actions/player_actions';
 
 const mapStateToProps = ({ videos }, ownProps) => {
   let mvUrl = ownProps.params.mvUrl;
@@ -21,8 +18,6 @@ const mapStateToProps = ({ videos }, ownProps) => {
 };
 
 const mapDispatchToProps = (dispatch) => ({
-  fetchVideo: (mvUrl) => dispatch(fetchVideo(mvUrl)),
-  fetchVideos: (mvUrl) => dispatch(fetchVideos(mvUrl)),
   incrementViewCount: (mvUrl) => dispatch(incrementViewCount(mvUrl))
 });
 

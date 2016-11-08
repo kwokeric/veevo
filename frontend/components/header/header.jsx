@@ -33,7 +33,6 @@ class Header extends React.Component {
   search() {
     return(
       <div className="search">
-
         <input type="text" name="search-bar" />
       </div>
     );
@@ -62,7 +61,7 @@ class Header extends React.Component {
           className="logo"
           alt="Veevo Logo"
           onClick={this.toIndex}
-          src="http://www.pupsor.com/wp-content/uploads/2016/03/golden-retriever-puppies-facts.jpg" />
+          src="http://res.cloudinary.com/kwokeric/image/upload/c_scale,w_200/v1478596755/veevo_logo_w4ycla.png" />
 
         {this.search()}
 

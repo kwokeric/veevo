@@ -20,6 +20,36 @@ class Splash extends React.Component {
     this.props.login(guest);
   }
 
+  headline () {
+    return(
+      // <section className="headline">
+      // 	<h2 className="rw-sentence">
+      // 		<span>Real poetry is like</span>
+      // 		<span>creating</span>
+      // 		<div className="rw-words rw-words-1">
+      // 			<span>breathtaking moments</span>
+      // 			<span>lovely sounds</span>
+      // 			<span>incredible magic</span>
+      // 			<span>unseen experiences</span>
+      // 			<span>happy feelings</span>
+      // 			<span>beautiful butterflies</span>
+      // 		</div>
+      // 		<br />
+      // 		<span>with a silent touch of</span>
+      // 		<div className="rw-words rw-words-2">
+      // 			<span>sugar</span>
+      // 			<span>spice</span>
+      // 			<span>colors</span>
+      // 			<span>happiness</span>
+      // 			<span>wonder</span>
+      // 			<span>happiness</span>
+      // 		</div>
+      // 	</h2>
+      // </section>
+      <div>this is bananas</div>
+    );
+  }
+
   demo () {
     if (!this.props.currentUser) {
       return(
@@ -32,7 +62,7 @@ class Splash extends React.Component {
     return(
       <div className="index">
         <div className="splash">
-          <div className="text">A PURE MUSIC VIDEO EXPERIENCE</div>
+asdf
           {this.demo()}
         </div>
 
