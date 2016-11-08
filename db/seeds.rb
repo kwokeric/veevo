@@ -7,7 +7,7 @@ User.create({
 User.create({
   username: "guest",
   password: "password",
-  user_image_url: "http://res.cloudinary.com/kwokeric/image/upload/v1478216260/guest_profile_gkhlmn.png",
+  user_image_url: "http://res.cloudinary.com/kwokeric/image/upload/v1478217756/guest_profile_klixi7.png",
 })
 
 Artist.create({artist_name: "Drake"})
@@ -28,7 +28,8 @@ MusicVideo.create({
   director: "Aubrey Graham, Carlos “Spiff TV” Suarez",
   writer: "Aubrey Graham, N. Shebib, Leland Wayne, Mark Morales, Darren Robinson, Damon Wimbley",
   producer: "40, Metro Boomin, Ullman, Nineteen85",
-  label: "Young Money, Cash Money, Republic"
+  label: "Young Money, Cash Money, Republic",
+  view_count: 22222556
 })
 
 MusicVideo.create({
@@ -38,7 +39,8 @@ MusicVideo.create({
   director: "Director X",
   writer: "Aubrey Graham, Paul Jefferies, Timmy Thomas",
   producer: "Evan Landry",
-  label: "Cash Money Records Inc"
+  label: "Cash Money Records Inc",
+  view_count: 199867
 })
 
 MusicVideo.create({
@@ -48,7 +50,8 @@ MusicVideo.create({
   director: "Bill Pope",
   writer: "Aubrey Graham, M. Samuels, N. Shebib",
   producer: "Dawn Rose, Keith Brown",
-  label: "Cash Money Records Inc"
+  label: "Cash Money Records Inc",
+  view_count: 1346
 })
 
 MusicVideo.create({
@@ -58,7 +61,8 @@ MusicVideo.create({
   director: "Yoann Lemoine",
   writer: "Aubrey Graham, M. Samuels, N. Shebib",
   producer: "Oualid Mouaness",
-  label: "Cash Money Records Inc"
+  label: "Cash Money Records Inc",
+  view_count: 9034
 })
 
 MusicVideo.create({
@@ -68,7 +72,8 @@ MusicVideo.create({
   director: "Fleur&Manu",
   writer: "Aubrey Graham, M. Samuels",
   producer: "Roman Pichon Herrera, Jules de Chateleux, Peligroso",
-  label: "Cash Money Records Inc"
+  label: "Cash Money Records Inc",
+  view_count: 84831
 })
 
 MusicVideo.create({
@@ -78,7 +83,8 @@ MusicVideo.create({
   director: "Hyghly, Lamar, Drake, Oliver El-Khatib",
   writer: "Aubrey Graham, M. Samuels, N. Shebib",
   producer: "Mazin Elsadig, Al Mukadam, Jonathan Malen",
-  label: "Cash Money Records Inc"
+  label: "Cash Money Records Inc",
+  view_count: 2626
 })
 
 MusicVideo.create({
@@ -88,7 +94,8 @@ MusicVideo.create({
   director: "Director X",
   writer: "Aubrey Graham, M. Samuels, N. Shebib",
   producer: "DJ Dahi",
-  label: "Cash Money Records Inc"
+  label: "Cash Money Records Inc",
+  view_count: 1772
 })
 
 MusicVideo.create({
@@ -98,7 +105,8 @@ MusicVideo.create({
   director: "Kulash and Kazuaki Seki",
   writer: "OK Go",
   producer: "Mori Inc.",
-  label: "Paracadute, BMG"
+  label: "Paracadute, BMG",
+  view_count: 8242
 })
 
 MusicVideo.create({
@@ -108,7 +116,8 @@ MusicVideo.create({
   director: "Damian Kulash, Jr. & Trish Sie",
   writer: "OK Go",
   producer: "John O’Grady & Melissa Murphy for BOB Industries",
-  label: "Paracadute, BMG"
+  label: "Paracadute, BMG",
+  view_count: 179
 })
 
 MusicVideo.create({
@@ -118,7 +127,8 @@ MusicVideo.create({
   director: "James Frost, OK Go and Syyn Labs",
   writer: "OK Go",
   producer: "Shirley Moyers",
-  label: "Paracadute, BMG"
+  label: "Paracadute, BMG",
+  view_count: 10300
 })
 
 MusicVideo.create({
@@ -128,7 +138,8 @@ MusicVideo.create({
   director: "Aaron Duffy, Damian Kulash, Jr. & Bob Partington",
   writer: "OK Go",
   producer: "Garrett Fennelly",
-  label: "Paracadute, BMG"
+  label: "Paracadute, BMG",
+  view_count: 345
 })
 
 MusicVideo.create({
@@ -138,7 +149,8 @@ MusicVideo.create({
   director: "Trish Sie and OK Go",
   writer: "OK Go",
   producer: "Shirley Moyers",
-  label: "Paracadute, BMG"
+  label: "Paracadute, BMG",
+  view_count: 878
 })
 
 MusicVideo.create({
@@ -148,7 +160,8 @@ MusicVideo.create({
   director: "Trish Sie and OK Go",
   writer: "OK Go",
   producer: "Mori Inc.",
-  label: "Paracadute, BMG"
+  label: "Paracadute, BMG",
+  view_count: 928
 })
 
 MusicVideo.create({
@@ -158,7 +171,8 @@ MusicVideo.create({
   director: "David Dobkin",
   writer: "Kendrick Lamar, Adam Levine",
   producer: "Benny Blanco, The Arcade, Louie Lastic",
-  label: "222 Records/Interscope Records"
+  label: "222 Records/Interscope Records",
+  view_count: 88
 })
 
 MusicVideo.create({
@@ -168,7 +182,8 @@ MusicVideo.create({
   director: "Joseph Kahn",
   writer: "Adam Levine, Jesse Carmichael",
   producer: "Robert John Lange",
-  label: "A&M/Octone Records"
+  label: "A&M/Octone Records",
+  view_count: 10
 })
 
 MusicVideo.create({
@@ -178,7 +193,8 @@ MusicVideo.create({
   director: "John Hillcoat",
   writer: "Adam Levine, Jesse Carmichael, Mickey Madden",
   producer: "Mark Endert, Maroon 5",
-  label: "OctoScope Music, LLC"
+  label: "OctoScope Music, LLC",
+  view_count: 2356
 })
 
 MusicVideo.create({
@@ -188,7 +204,8 @@ MusicVideo.create({
   director: "Samuel Bayer",
   writer: "Adam Levine, Shellback, Benjamin Levin",
   producer: "Shellback",
-  label: "Interscope Records"
+  label: "Interscope Records",
+  view_count: 166
 })
 
 MusicVideo.create({
@@ -198,7 +215,8 @@ MusicVideo.create({
   director: "David Dobkin",
   writer: "Mike Posner, Adam Levine, Joshua Coleman",
   producer: "Ammo, Cirkut",
-  label: "Interscope Records"
+  label: "Interscope Records",
+  view_count: 5
 })
 
 MusicVideo.create({
@@ -208,7 +226,8 @@ MusicVideo.create({
   director: "David Dobkin",
   writer: "Adam Levine, James Valentine",
   producer: "Matt Wallace",
-  label: "OctoScope Music, LLC"
+  label: "OctoScope Music, LLC",
+  view_count: 12
 })
 
 MusicVideo.create({
@@ -218,7 +237,8 @@ MusicVideo.create({
   director: "Emil Nava",
   writer: "Calvin Harris, Rihanna",
   producer: "Calvin Harris",
-  label: "Sony, Columbia, Westbury Road"
+  label: "Sony, Columbia, Westbury Road",
+  view_count: 987
 })
 
 MusicVideo.create({
@@ -228,7 +248,8 @@ MusicVideo.create({
   director: "Emil Nava",
   writer: "Calvin Harris, Nathan Duvall, Gavin Koolmon",
   producer: "Calvin Harris, Disciples",
-  label: "Deconstruction, Columbia, Fly Eye"
+  label: "Deconstruction, Columbia, Fly Eye",
+  view_count: 653
 })
 
 MusicVideo.create({
@@ -238,7 +259,8 @@ MusicVideo.create({
   director: "Vincent Haycock",
   writer: "Calvin Harris",
   producer: "Calvin Harris",
-  label: "Deconstruction, Columbia, Fly Eye, Ultra"
+  label: "Deconstruction, Columbia, Fly Eye, Ultra",
+  view_count: 1234
 })
 
 MusicVideo.create({
@@ -248,7 +270,8 @@ MusicVideo.create({
   director: "Emil Nava",
   writer: "Calvin Harris",
   producer: "Calvin Harris",
-  label: "Deconstruction, Columbia, Fly Eye"
+  label: "Deconstruction, Columbia, Fly Eye",
+  view_count: 12
 })
 
 MusicVideo.create({
@@ -258,7 +281,8 @@ MusicVideo.create({
   director: "Emil Nava",
   writer: "Calvin Harris",
   producer: "Calvin Harris",
-  label: "Sony, Columbia"
+  label: "Sony, Columbia",
+  view_count: 12345678
 })
 
 
@@ -269,7 +293,8 @@ MusicVideo.create({
   director: "Emil Nava",
   writer: "Calvin Harris, Ellie Goulding",
   producer: "Calvin Harris",
-  label: "Deconstruction, Fly Eye, Columbia"
+  label: "Deconstruction, Fly Eye, Columbia",
+  view_count: 111
 })
 
 MusicVideo.create({
@@ -279,7 +304,8 @@ MusicVideo.create({
   director: "Emil Nava",
   writer: "Calvin Harris, Ellie Goulding",
   producer: "Calvin Harris",
-  label: "Deconstruction, Fly Eye, Columbia"
+  label: "Deconstruction, Fly Eye, Columbia",
+  view_count: 569
 })
 
 
@@ -290,7 +316,8 @@ MusicVideo.create({
   director: "Vincent Haycock",
   writer: "Calvin Harris, Florence Welch, Kid Harpoon",
   producer: "Calvin Harris",
-  label: "Deconstruction, Fly Eye, Columbia"
+  label: "Deconstruction, Fly Eye, Columbia",
+  view_count: 24251
 })
 
 MusicVideo.create({
@@ -300,7 +327,8 @@ MusicVideo.create({
   director: "Joseph Kahn",
   writer: "Taylor Swift, Max Martin, Shellback",
   producer: "Max Martin, Shellback",
-  label: "Big Machine Records, Republic"
+  label: "Big Machine Records, Republic",
+  view_count: 4883
 })
 
 MusicVideo.create({
@@ -310,7 +338,8 @@ MusicVideo.create({
   director: "Joseph Kahn",
   writer: "Taylor Swift, Max Martin, Shellback",
   producer: "Max Martin, Shellback",
-  label: "Big Machine Records"
+  label: "Big Machine Records",
+  view_count: 277
 })
 
 
@@ -321,7 +350,8 @@ MusicVideo.create({
   director: "Roman White",
   writer: "Taylor Swift, Liz Rose",
   producer: "Taylor Swift, Nathan Chapman",
-  label: "Big Machine Records"
+  label: "Big Machine Records",
+  view_count: 9
 })
 
 MusicVideo.create({
@@ -331,7 +361,8 @@ MusicVideo.create({
   director: "Joseph Kahn",
   writer: "Taylor Swift, Kendrick Lamar, Max Martin, Shellback",
   producer: "Max Martin, Shellback",
-  label: "Big Machine Records"
+  label: "Big Machine Records",
+  view_count: 2
 })
 
 
@@ -342,7 +373,8 @@ MusicVideo.create({
   director: "Anthony Mandler",
   writer: "Taylor Swift, Max Martin, Shellback",
   producer: "Max Martin, Shellback",
-  label: "Big Machine Records"
+  label: "Big Machine Records",
+  view_count: 26
 })
 
 MusicVideo.create({
@@ -352,7 +384,8 @@ MusicVideo.create({
   director: "Kyle Newman",
   writer: "Taylor Swift, Max Martin, Shellback, Ali Payami",
   producer: "Max Martin, Shellback, Ali Payami",
-  label: "Big Machine Records"
+  label: "Big Machine Records",
+  view_count: 34891
 })
 
 MusicVideo.create({
@@ -362,7 +395,8 @@ MusicVideo.create({
   director: "Trey Fanjoy",
   writer: "Taylor Swift",
   producer: "Taylor Swift, Nathan Chapman",
-  label: "Big Machine Records"
+  label: "Big Machine Records",
+  view_count: 11
 })
 
 MusicVideo.create({
@@ -372,7 +406,8 @@ MusicVideo.create({
   director: "Declan Whitebloom",
   writer: "Taylor Swift, Max Martin, Shellback",
   producer: "Max Martin, Shellback",
-  label: "Big Machine Records"
+  label: "Big Machine Records",
+  view_count: 917803
 })
 
 MusicVideo.create({
@@ -382,7 +417,8 @@ MusicVideo.create({
   director: "Anthony Mandler",
   writer: "Taylor Swift, Max Martin, Shellback",
   producer: "Max Martin, Shellback",
-  label: "Big Machine Records"
+  label: "Big Machine Records",
+  view_count: 9812
 })
 
 MusicVideo.create({
@@ -392,7 +428,8 @@ MusicVideo.create({
   director: "Ross McDowell & Ben Murray",
   writer: "Disclosure, Sam Smith",
   producer: "Bullion",
-  label: "Universal Island Records"
+  label: "Universal Island Records",
+  view_count: 686
 })
 
 MusicVideo.create({
@@ -402,7 +439,8 @@ MusicVideo.create({
   director: "Ross McDowell & Ben Murray",
   writer: "Disclosure, Sam Smith",
   producer: "Bullion",
-  label: "Universal Island Records"
+  label: "Universal Island Records",
+  view_count: 4
 })
 
 MusicVideo.create({
@@ -412,7 +450,8 @@ MusicVideo.create({
   director: "James Caracal",
   writer: "Disclosure, Lourde",
   producer: "Bullion",
-  label: "Universal Island Records"
+  label: "Universal Island Records",
+  view_count: 30008
 })
 
 MusicVideo.create({
@@ -422,7 +461,8 @@ MusicVideo.create({
   director: "Toby Pike",
   writer: "Disclosure, Flume",
   producer: "Toby and Pete",
-  label: "Universal Island Records"
+  label: "Universal Island Records",
+  view_count: 67
 })
 
 MusicVideo.create({
@@ -432,7 +472,8 @@ MusicVideo.create({
   director: "Fire Fire Fire",
   writer: "Disclosure",
   producer: "What they like",
-  label: "PMR Records"
+  label: "PMR Records",
+  view_count: 10000001
 })
 
 MusicVideo.create({
@@ -442,7 +483,8 @@ MusicVideo.create({
   director: "Enough is Enough",
   writer: "Disclosure",
   producer: "Mr Disclosure",
-  label: "PMR Records"
+  label: "PMR Records",
+  view_count: 734
 })
 
 MusicVideo.create({
@@ -452,7 +494,8 @@ MusicVideo.create({
   director: "Andreas Ytu",
   writer: "Disclosure",
   producer: "Mr Disclosure",
-  label: "Island Records"
+  label: "Island Records",
+  view_count: 80
 })
 
 MusicVideo.create({
@@ -462,7 +505,8 @@ MusicVideo.create({
   director: "I Want Bagels",
   writer: "Disclosure",
   producer: "Mr Disclosure",
-  label: "Island Records"
+  label: "Island Records",
+  view_count: 90
 })
 
 MusicVideo.create({
@@ -472,7 +516,8 @@ MusicVideo.create({
   director: "Ben Mor",
   writer: "Coldplay",
   producer: "Nina Dluhy-Miller",
-  label: "Island Records"
+  label: "Island Records",
+  view_count: 91
 })
 
 MusicVideo.create({
@@ -482,7 +527,8 @@ MusicVideo.create({
   director: "Ben Mor",
   writer: "Coldplay",
   producer: "Avicii, Coldplay",
-  label: "Parlophone"
+  label: "Parlophone",
+  view_count: 7367
 })
 
 MusicVideo.create({
@@ -492,7 +538,8 @@ MusicVideo.create({
   director: "Vania Heymann and Gal Muggia",
   writer: "Coldplay",
   producer: "Natan Schottenfels and Juliette Larthe",
-  label: "Parlophone"
+  label: "Parlophone",
+  view_count: 898
 })
 
 MusicVideo.create({
@@ -502,7 +549,8 @@ MusicVideo.create({
   director: "James Marcus Haney",
   writer: "Coldplay",
   producer: "Coldplay",
-  label: "Parlophone"
+  label: "Parlophone",
+  view_count: 17
 })
 
 MusicVideo.create({
@@ -512,7 +560,8 @@ MusicVideo.create({
   director: "Some Dude",
   writer: "Coldplay",
   producer: "Coldplay",
-  label: "Parlophone"
+  label: "Parlophone",
+  view_count: 1998
 })
 
 MusicVideo.create({
@@ -522,7 +571,8 @@ MusicVideo.create({
   director: "Some Dude",
   writer: "Coldplay, Hardwell",
   producer: "Coldplay, Hardwell",
-  label: "Parlophone"
+  label: "Parlophone",
+  view_count: 3588
 })
 
 MusicVideo.create({
@@ -532,7 +582,8 @@ MusicVideo.create({
   director: "Not A Music Video",
   writer: "Coldplay, Audien",
   producer: "Coldplay, Audien",
-  label: "Parlophone"
+  label: "Parlophone",
+  view_count: 12
 })
 
 MusicVideo.create({
@@ -542,7 +593,8 @@ MusicVideo.create({
   director: "Liam Underwood",
   writer: "Skrillex and Diplo",
   producer: "Liam Underwood",
-  label: "Atlantic, Mad Decent, OWSLA"
+  label: "Atlantic, Mad Decent, OWSLA",
+  view_count: 3451
 })
 
 MusicVideo.create({
@@ -552,7 +604,8 @@ MusicVideo.create({
   director: "Kyle dePinna, Dillon Moore, & Daniel Streit",
   writer: "Skrillex and Diplo",
   producer: "Kyle dePinna & George Mays",
-  label: "Atlantic, Mad Decent, OWSLA"
+  label: "Atlantic, Mad Decent, OWSLA",
+  view_count: 8
 })
 
 MusicVideo.create({
@@ -562,7 +615,8 @@ MusicVideo.create({
   director: "Brewer",
   writer: "Skrillex and Diplo",
   producer: "Nathan Scherrer",
-  label: "Atlantic, Mad Decent, OWSLA"
+  label: "Atlantic, Mad Decent, OWSLA",
+  view_count: 99999770
 })
 
 MusicVideo.create({
@@ -572,7 +626,8 @@ MusicVideo.create({
   director: "Mr Director",
   writer: "Skrillex and Diplo",
   producer: "Nathan Scherrer",
-  label: "Atlantic, Mad Decent, OWSLA"
+  label: "Atlantic, Mad Decent, OWSLA",
+  view_count: 9279349
 })
 
 MusicVideo.create({
@@ -582,7 +637,8 @@ MusicVideo.create({
   director: "Mr Director",
   writer: "Skrillex and Diplo",
   producer: "Nathan Scherrer",
-  label: "Atlantic, Mad Decent, OWSLA"
+  label: "Atlantic, Mad Decent, OWSLA",
+  view_count: 981
 })
 
 MusicVideo.create({
@@ -592,7 +648,8 @@ MusicVideo.create({
   director: "Mr Director",
   writer: "Skrillex and Diplo, Oliver",
   producer: "Oliver probably",
-  label: "Atlantic, Mad Decent, OWSLA"
+  label: "Atlantic, Mad Decent, OWSLA",
+  view_count: 16
 })
 
 MusicVideo.create({
@@ -602,7 +659,8 @@ MusicVideo.create({
   director: "Brother Willis",
   writer: "Dillon Francis",
   producer: "Russell Sanzgiri",
-  label: "Fool's Gold, Mad Decent, OWSLA"
+  label: "Fool's Gold, Mad Decent, OWSLA",
+  view_count: 2
 })
 
 MusicVideo.create({
@@ -612,7 +670,8 @@ MusicVideo.create({
   director: "Jack Wagner",
   writer: "Dillon Francis & NGHTMRE",
   producer: "DJ Hanzel",
-  label: "Fool's Gold, Mad Decent, OWSLA"
+  label: "Fool's Gold, Mad Decent, OWSLA",
+  view_count: 10010
 })
 
 MusicVideo.create({
@@ -622,7 +681,8 @@ MusicVideo.create({
   director: "Money Sucks, Friends Rule",
   writer: "Dillon Francis & NGHTMRE",
   producer: "DJ Hanzel",
-  label: "Columbia Records"
+  label: "Columbia Records",
+  view_count: 555555
 })
 
 MusicVideo.create({
@@ -632,7 +692,8 @@ MusicVideo.create({
   director: "Money Sucks, Friends Rule",
   writer: "Dillon Francis, Kygo",
   producer: "DJ Hanzel, Not Kygo",
-  label: "Columbia Records"
+  label: "Columbia Records",
+  view_count: 3217
 })
 
 MusicVideo.create({
@@ -642,7 +703,8 @@ MusicVideo.create({
   director: "Mr. Director",
   writer: "Dillon Francis, Totally Enormous Extinct Dinosaurs",
   producer: "DJ Hanzel",
-  label: "Columbia Records"
+  label: "Columbia Records",
+  view_count: 50
 })
 
 MusicVideo.create({
@@ -652,7 +714,8 @@ MusicVideo.create({
   director: "Agata Alexander",
   writer: "Dillon Francis",
   producer: "Ed Buhr",
-  label: "Columbia Records"
+  label: "Columbia Records",
+  view_count: 2
 })
 
 MusicVideo.create({
@@ -662,7 +725,8 @@ MusicVideo.create({
   director: "Agata Alexander",
   writer: "Dillon Francis, Skrillex",
   producer: "Dillex",
-  label: "OWSLA"
+  label: "OWSLA",
+  view_count: 674323462
 })
 
 MusicVideo.create({
@@ -672,7 +736,8 @@ MusicVideo.create({
   director: "Marcus Kuhne",
   writer: "The Chainsmokers",
   producer: "Thom Fennessey & Eric Ro",
-  label: "Disruptor, Columbia"
+  label: "Disruptor, Columbia",
+  view_count: 3448
 })
 
 MusicVideo.create({
@@ -682,7 +747,8 @@ MusicVideo.create({
   director: "Rory Kramer",
   writer: "The Chainsmokers, Halsey",
   producer: "Alyssa Lynch and Jordan Wright",
-  label: "Disruptor, Columbia"
+  label: "Disruptor, Columbia",
+  view_count: 5000
 })
 
 MusicVideo.create({
@@ -692,7 +758,8 @@ MusicVideo.create({
   director: "Impossible Brief",
   writer: "The Chainsmokers, ROZES",
   producer: "Flaxman Films",
-  label: "Disruptor, Columbia"
+  label: "Disruptor, Columbia",
+  view_count: 709
 })
 
 MusicVideo.create({
@@ -702,7 +769,8 @@ MusicVideo.create({
   director: "Joe Zohar",
   writer: "The Chainsmokers, ROZES",
   producer: "Steve Vasquez, Alison Lani, Joe Zohar",
-  label: "Dim Mak Inc."
+  label: "Dim Mak Inc.",
+  view_count: 5
 })
 
 MusicVideo.create({
@@ -712,7 +780,8 @@ MusicVideo.create({
   director: "Not Applicable",
   writer: "The Chainsmokers, Illenium",
   producer: "Trap Nation I guess",
-  label: "Dim Mak Inc."
+  label: "Dim Mak Inc.",
+  view_count: 6009
 })
 
 MusicVideo.create({
@@ -722,5 +791,6 @@ MusicVideo.create({
   director: "Niklaus Lange",
   writer: "The Chainsmokers, SirenXX",
   producer: "Youtube",
-  label: "Dim Mak Inc."
+  label: "Dim Mak Inc.",
+  view_count: 190091
 })

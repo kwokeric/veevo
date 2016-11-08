@@ -44,7 +44,7 @@ Veevo is a web application inspired by Vevo built using Ruby on Rails and React/
 
 ###Phase 4: Playlists (2 days, W2D1-2)
 
-*Objective:* Allow autoplaying of playlists.
+*Objective:* Program creation, reading, updating, and destroying of playlists. Allow autoplaying of playlists.
 
 ###Phase 5: Index (1 day, W2D3)
 

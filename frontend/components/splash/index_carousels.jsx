@@ -14,6 +14,8 @@ class IndexCarousels extends React.Component {
       this.props.videos["b4Bj7Zb-YD4"],
       this.props.videos["-CmadmM5cOk"],
       this.props.videos["G5Mv2iV0wkU"],
+      this.props.videos["nntGTK2Fhb0"],
+      this.props.videos["v9rdDwH1JAo"],
       this.props.videos["zjVSewbKllk"]
     ];
 

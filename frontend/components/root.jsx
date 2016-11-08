@@ -13,8 +13,8 @@ const Root = ({ store }) => (
     <Router history={hashHistory}>
       <Route path="/" component={App}>
         <IndexRoute component={SplashContainer}/>
-        <Route path="users/:user_id" component={ProfileContainer} />
-        <Route path="mv/:mv_url" component={PlayerContainer} />
+        <Route path="users/:userId" component={ProfileContainer} />
+        <Route path="mv/:mvUrl" component={PlayerContainer} />
       </Route>
     </Router>
   </Provider>

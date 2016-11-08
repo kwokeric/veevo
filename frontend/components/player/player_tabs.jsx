@@ -7,20 +7,19 @@ class PlayerTabs extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {selectedTab: "related-tab"};
+    this.state = {selectedTab: "related"};
     this.isActive = this.isActive.bind(this);
   }
 
   changeTab (tab) {
     return (e) => {
       e.preventDefault();
-      this.isActive();
       this.setState({selectedTab: tab});
     };
   }
 
-  isActive (tag) {
-    return ((tag === this.state.selectedTab) ? "active" : "default" );
+  isActive (tab) {
+    return ((tab === this.state.selectedTab) ? "active" : "default" );
   }
 
   render() {
@@ -64,9 +63,9 @@ class PlayerTabs extends React.Component {
     return (
       <section className="player-tabs-container">
         <ul className="tab-list">
-          <li className={`related-tab ${this.isActive("related-tab")}`} onClick={this.changeTab("related")}>RELATED VIDEOS</li>
-          <li className={`new-tab ${this.isActive("new-tab")}`} onClick={this.changeTab("new")}>NEW VIDEOS</li>
-          <li className={`details-tab ${this.isActive("detail-tab")}`} onClick={this.changeTab("details")}>DETAILS</li>
+          <li className={`related-tab ${this.isActive("related")}`} onClick={this.changeTab("related")}>RELATED VIDEOS</li>
+          <li className={`new-tab ${this.isActive("new")}`} onClick={this.changeTab("new")}>NEW VIDEOS</li>
+          <li className={`details-tab ${this.isActive("details")}`} onClick={this.changeTab("details")}>DETAILS</li>
         </ul>
 
         {tab}

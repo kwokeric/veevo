@@ -14,18 +14,16 @@ a:link, a:visited, a:hover, a:active {
   color: #646464;
 }
 
-button:focus { outline: 0; }
-
-.group:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 li { list-style-type: none; }
 
+html {
+  overflow-y: scroll;
+}
+
 ::-webkit-scrollbar {
-    width: 12px;
+  position: absolute;
+  float: right;
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
@@ -36,12 +34,4 @@ li { list-style-type: none; }
   background-color: #242424;
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
-}
-
-body {
-  background-color: black;
-}
-
-.small-text {
-  font-size: 12px;
 }

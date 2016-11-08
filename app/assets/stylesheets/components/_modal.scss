@@ -14,7 +14,7 @@
 
   .buttons {
     display: flex;
-    height: 40px;
+    height: 35px;
     justify-content: space-between;
 
     .login, .signup {
@@ -32,46 +32,74 @@
 }
 
 .modal-form {
-  padding-top: 30px;
+  padding-top: 25px;
 
   .input {
     display: flex;
-    padding-top: 20px;
+    padding-top: 25px;
     flex-direction: column;
     justify-content: space-between;
     border-top: 1px solid $lightGray;
+    font-size: 12px;
 
     .username, .password {
       height: 35px;
-      margin: 15px 0;
+      margin-bottom: 25px;
       border: none;
       border-radius: 3px;
       padding: 0 15px;
       text-align: center;
       outline: 0;
+      letter-spacing: 2px;
     }
 
     .submit {
       border: 0;
-      margin: 20px 0;
-      padding: 8px 20px;
+      margin-bottom: 25px;
+      height: 35px;
       letter-spacing: 2px;
       font-weight: bold;
-      background-color: white;
+      background-color: $celest;
       border-radius: 3px;
+      transition: all 0.2s;
 
       &:focus { outline: 0; }
 
       &:hover {
-        background-color: $celest;
+        background: linear-gradient(0deg, $celest, $lightCelest);
         cursor: pointer;
+        font-size: 12px;
       }
     }
+  }
 
-    .errors > li {
-      text-align: center;
-      color: $lightGray;
+  .guest-login {
+    border: 0;
+    margin-bottom: 20px;
+    height: 35px;
+    width: 100%;
+    letter-spacing: 2px;
+    font-weight: bold;
+    background-color: $darkGray;
+    color: white;
+    border-radius: 3px;
+    transition: all 0.2s;
+
+    &:focus { outline: 0; }
+
+    &:hover {
+      background: linear-gradient(0deg, $darkGray, $lightGray);
+      cursor: pointer;
+      font-size: 12px;
     }
+  }
+
+  .errors > li {
+    text-align: center;
+    color: $lightGray;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 12px;
   }
 }
 

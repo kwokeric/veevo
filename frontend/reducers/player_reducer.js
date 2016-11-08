@@ -1,15 +1,17 @@
 import merge from 'lodash/merge';
 
-import { RECEIVE_VIDEOS } from '../actions/player_actions';
+import { RECEIVE_VIDEOS, RECEIVE_VIDEO } from '../actions/player_actions';
 
 const PlayerReducer = (state = {}, action) => {
   Object.freeze(state);
-  let videos;
 
   switch(action.type) {
     case RECEIVE_VIDEOS:
-      videos = action.videos;
+      let videos = action.videos;
       return merge({}, videos);
+    case RECEIVE_VIDEO:
+      let video = action.video;
+      return merge({}, state, video);
     default:
       return state;
   }

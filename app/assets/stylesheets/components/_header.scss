@@ -49,6 +49,62 @@
   }
 }
 
+.logInButton {
+  margin: 5px 50px 5px 0;
+  border: 0;
+  padding: 5px 0;
+  width: 100px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  height: 20px;
+  color: black;
+  background-color: white;
+  border-radius: 3px;
+  float: right;
+  font-family: Roboto;
+
+  &:hover {
+    background: linear-gradient(0deg, $celest, $lightCelest);
+    cursor: pointer;
+  }
+}
+
+.dropdown {
+  background-color: $darkGray;
+  position: absolute;
+  width: 140px;
+  height: 70px;
+  right: 0;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.headerList {
+  display: flex;
+  height: 50%;
+}
+
+.userProfile, .headerLogout {
+  font-size: 12px;
+  padding: 8px 0;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: white;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-family: Roboto;
+
+  &:hover {
+    color: $celest;
+    cursor: pointer;
+  }
+}
+
+.headerLogout {
+  border-top: 1px solid $lightGray;
+}
+
 .user-display {
   display: flex;
   justify-content: flex-end;
@@ -104,64 +160,4 @@
       height: 20px;
     }
   }
-}
-
-.logInButton {
-  margin: 5px 50px 5px 0;
-  border: 0;
-  padding: 5px 0;
-  width: 100px;
-  letter-spacing: 2px;
-  font-weight: bold;
-  height: 20px;
-  color: black;
-  background-color: white;
-  border-radius: 3px;
-  float: right;
-  font-family: Roboto;
-
-  &:hover {
-    background: linear-gradient(0deg, $celest, $lightCelest);
-    cursor: pointer;
-  }
-}
-
-.hidden {
-  visibility: hidden;
-}
-
-.dropdown {
-  background-color: $darkGray;
-  position: absolute;
-  width: 140px;
-  height: 70px;
-  right: 0;
-  border-radius: 8px;
-  margin-top: 15px;
-}
-
-.headerList {
-  display: flex;
-  height: 50%;
-}
-
-.userProfile, .headerLogout {
-  font-size: 12px;
-  padding: 8px 0;
-  width: 100%;
-  background-color: transparent;
-  border: none;
-  color: white;
-  letter-spacing: 2px;
-  cursor: pointer;
-  font-family: Roboto;
-
-  &:hover {
-    color: $celest;
-    cursor: pointer;
-  }
-}
-
-.headerLogout {
-  border-top: 1px solid $lightGray;
 }

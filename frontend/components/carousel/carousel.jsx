@@ -41,13 +41,43 @@ class Carousel extends React.Component {
       infinite: true,
       speed: 500,
       slidesToShow: 5,
-      slidesToScroll: 2
+      slidesToScroll: 1,
+      responsive: [
+        {
+        breakpoint: 1200,
+          settings: {
+            slidesToShow: 4
+          }
+        },
+        {
+        breakpoint: 1000,
+          settings: {
+            slidesToShow: 3
+          }
+        },
+        {
+        breakpoint: 750,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+        breakpoint: 450,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
     };
 
     if (!this.props.videos || !this.props.videos[0]) {
       return (
         <div className="loading">
-          loading...
+          <div className="loader">
+            <svg className="circular" viewBox="25 25 50 50">
+              <circle className="path" cx="50" cy="50" r="20" fill="none" />
+            </svg>
+          </div>
         </div>
       );
     } else {

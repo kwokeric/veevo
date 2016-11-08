@@ -16,6 +16,9 @@ class SessionForm extends React.Component {
 
 	  this.selectLogin = this.selectLogin.bind(this);
 	  this.selectSignup = this.selectSignup.bind(this);
+
+	  this.guestLogin = this.guestLogin.bind(this);
+	  this.handleDemo = this.handleDemo.bind(this);
 	}
 
 	updateForm(property){
@@ -31,7 +34,7 @@ class SessionForm extends React.Component {
 	    return true;
 	  }
 	}
-
+	// ON closeModal CLEAR ERRORS MAKE IT EMPTY ARRAY
 	renderErrors() {
 	  if(this.props.errors && this.props.errors.length > 0) {
 	    return(
@@ -91,6 +94,19 @@ class SessionForm extends React.Component {
 		}
 	}
 
+	handleDemo(e) {
+    e.preventDefault();
+		debugger
+    const guest = {username: "guest", password: "password"};
+    this.props.login(guest);
+  }
+
+  guestLogin () {
+    return(
+      <button className="guest-login" onClick={this.handleDemo}>GUEST LOGIN</button>
+    );
+  }
+
 	render() {
 		return (
 			<div className="login-modal">
@@ -114,7 +130,9 @@ class SessionForm extends React.Component {
 						<input className="submit" type="submit" value="CONTINUE" />
 					</div>
 
-					<div className="errors">{this.renderErrors()}</div>
+					{this.guestLogin()}
+
+					{this.renderErrors()}
 				</form>
 			</div>
 		);

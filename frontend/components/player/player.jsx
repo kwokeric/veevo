@@ -9,7 +9,13 @@ class VideoPlayer extends React.Component {
   }
 
   componentWillMount () {
-    this.props.fetchVideos();
+    this.props.fetchVideo(this.props.params.mvUrl);
+    this.props.fetchVideos(this.props.params.mvUrl);
+    this.props.incrementViewCount(this.props.params.mvUrl);
+  }
+
+  handleAdd () {
+
   }
 
   videoInfo () {
@@ -21,7 +27,7 @@ class VideoPlayer extends React.Component {
         </ul>
 
         <ul className="video-info-more">
-          <li>+ Add</li>
+          <li className="add-to" onClick={this.handleAdd}><div className="plus">+</div> Add</li>
           <li>{this.props.currentMV.view_count} <span className="small-text">Views</span></li>
         </ul>
       </div>
@@ -29,10 +35,14 @@ class VideoPlayer extends React.Component {
   }
 
   render () {
-    if (Object.keys(this.props.videos).length === 0) {
+    if (this.props.currentMV === undefined) {
       return (
         <div className="loading">
-          loading...
+          <div className="loader">
+            <svg className="circular" viewBox="25 25 50 50">
+              <circle className="path" cx="50" cy="50" r="20" fill="none" />
+            </svg>
+          </div>
         </div>
       );
     } else {
@@ -41,12 +51,10 @@ class VideoPlayer extends React.Component {
           <div className="player-div">
             <iframe
               className="player"
-              src={`https://www.youtube.com/embed/${this.props.mvUrl}?autoplay=1&showinfo=0&modestbranding=1&rel=0`} />
-
-              {this.videoInfo}
-
-            {this.videoInfo()}
+              src={`https://www.youtube.com/embed/${this.props.params.mvUrl}?autoplay=1&showinfo=0&modestbranding=1&rel=0`} />
           </div>
+
+          {this.videoInfo()}
           <PlayerTabs currentMV={this.props.currentMV} videos={this.props.videos} />
         </div>
       );
