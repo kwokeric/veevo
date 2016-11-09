@@ -5,15 +5,20 @@ var Modal = require("react-modal");
 
 import UserDisplay from './user_display';
 import SessionFormContainer from '../session_form/session_form_container';
+import SearchContainer from '../search/search_container';
 import modalStyle from './modal_style';
 
 class Header extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {modalOpen: false};
+    this.state = {
+      modalOpen: false,
+      searchStr: ""
+    };
 	  this.openModal = this.openModal.bind(this);
 	  this.closeModal = this.closeModal.bind(this);
+    this.handleSearchQuery = this.handleSearchQuery.bind(this);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -30,10 +35,25 @@ class Header extends React.Component {
     this.setState({ modalOpen: true });
   }
 
+  handleSearch (e) {
+    if (e.key === 'Enter') {
+      hashHistory.push("search");
+    }
+  }
+
+  handleSearchQuery(e){
+    this.props.search(e.target.value);
+    this.setState({searchStr: e.target.value});
+  }
+
   search() {
     return(
       <div className="search">
-        <input type="text" name="search-bar" />
+        <input type="text"
+               name="search-bar"
+               onChange={this.handleSearchQuery}
+               value={this.state.searchStr}
+               onKeyPress={this.handleSearch} />
       </div>
     );
   }

@@ -96,7 +96,6 @@ class SessionForm extends React.Component {
 
 	handleDemo(e) {
     e.preventDefault();
-		debugger
     const guest = {username: "guest", password: "password"};
     this.props.login(guest);
   }

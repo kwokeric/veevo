@@ -1,0 +1,17 @@
+.search-div {
+  padding-top: 60px;
+  max-width: 1200px;
+  min-height: 70vh;
+  width: 80%;
+  margin: 60px auto 0 auto;
+
+  .empty-results {
+    position: relative;
+    top: 100px;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 5px;
+  }
+}

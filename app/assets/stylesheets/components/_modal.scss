@@ -75,14 +75,15 @@
 
   .guest-login {
     border: 0;
+    border-radius: 3px;
     margin-bottom: 20px;
-    height: 35px;
     width: 100%;
-    letter-spacing: 2px;
-    font-weight: bold;
+    height: 35px;
     background-color: $darkGray;
     color: white;
-    border-radius: 3px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-weight: 300;
     transition: all 0.2s;
 
     &:focus { outline: 0; }

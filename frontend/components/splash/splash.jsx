@@ -22,31 +22,21 @@ class Splash extends React.Component {
 
   headline () {
     return(
-      // <section className="headline">
-      // 	<h2 className="rw-sentence">
-      // 		<span>Real poetry is like</span>
-      // 		<span>creating</span>
-      // 		<div className="rw-words rw-words-1">
-      // 			<span>breathtaking moments</span>
-      // 			<span>lovely sounds</span>
-      // 			<span>incredible magic</span>
-      // 			<span>unseen experiences</span>
-      // 			<span>happy feelings</span>
-      // 			<span>beautiful butterflies</span>
-      // 		</div>
-      // 		<br />
-      // 		<span>with a silent touch of</span>
-      // 		<div className="rw-words rw-words-2">
-      // 			<span>sugar</span>
-      // 			<span>spice</span>
-      // 			<span>colors</span>
-      // 			<span>happiness</span>
-      // 			<span>wonder</span>
-      // 			<span>happiness</span>
-      // 		</div>
-      // 	</h2>
-      // </section>
-      <div>this is bananas</div>
+      <div className="headline">
+        <div id="sentence-wrapper">
+          <h2 className="sentence">
+            <span>A music video experience that is</span>
+            <div className="words words-1">
+              <span>inspiring</span>
+              <span>pure</span>
+              <span>personalized</span>
+              <span>uncomplicated</span>
+              <span>engaging</span>
+              <span>optimized</span>
+            </div>
+          </h2>
+        </div>
+      </div>
     );
   }
 
@@ -62,7 +52,7 @@ class Splash extends React.Component {
     return(
       <div className="index">
         <div className="splash">
-asdf
+          {this.headline()}
           {this.demo()}
         </div>
 
