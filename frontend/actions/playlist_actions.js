@@ -10,9 +10,8 @@ export const RECEIVE_PLAYLIST = "RECEIVE_PLAYLIST";
 export const RECEIVE_DELETED_PLAYLIST = "RECEIVE_DELETED_PLAYLIST";
 export const RECEIVE_ERRORS = "RECEIVE_ERRORS";
 
-export const fetchPlaylists = user => ({
-  type: FETCH_PLAYLISTS,
-  user
+export const fetchPlaylists = () => ({
+  type: FETCH_PLAYLISTS
 });
 
 export const fetchPlaylist = playlistId => ({

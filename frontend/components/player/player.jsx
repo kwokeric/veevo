@@ -16,6 +16,10 @@ class VideoPlayer extends React.Component {
 
   }
 
+  numberWithCommas (x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+
   videoInfo () {
     return(
       <div className="video-info-container">
@@ -26,7 +30,7 @@ class VideoPlayer extends React.Component {
 
         <ul className="video-info-more">
           <li className="add-to" onClick={this.handleAdd}><div className="plus">+</div> Add</li>
-          <li>{this.props.currentMV.view_count} <span className="small-text">Views</span></li>
+          <li>{this.numberWithCommas(this.props.currentMV.view_count)} <span className="small-text">Views</span></li>
         </ul>
       </div>
     );
@@ -53,6 +57,7 @@ class VideoPlayer extends React.Component {
           </div>
 
           {this.videoInfo()}
+
           <PlayerTabs currentMV={this.props.currentMV} videos={this.props.videos} />
         </div>
       );

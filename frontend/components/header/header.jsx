@@ -77,15 +77,19 @@ class Header extends React.Component {
   render () {
     return(
       <nav className="header">
-        <img
-          className="logo"
-          alt="Veevo Logo"
-          onClick={this.toIndex}
-          src="http://res.cloudinary.com/kwokeric/image/upload/c_scale,w_200/v1478596755/veevo_logo_w4ycla.png" />
+        <div className="left-div">
+          <img
+            className="logo-img"
+            alt="Veevo Logo"
+            onClick={this.toIndex}
+            src="http://res.cloudinary.com/kwokeric/image/upload/c_scale,w_200/v1478596755/veevo_logo_w4ycla.png" />
+        </div>
 
         {this.search()}
 
-        {this.whichButton()}
+        <div className="right-div">
+          {this.whichButton()}
+        </div>
 
         <Modal
           className="login_modal"

@@ -6,10 +6,11 @@ export const fetchVideos = (success) => {
   });
 };
 
-export const fetchVideo = (mvUrl, success) => {
+export const fetchRelatedVideos = (mvUrl, success) => {
   $.ajax({
     type: 'GET',
-    url: `api/music_videos/${mvUrl}`,
+    url: `api/music_videos/related_videos`,
+    data: {mv_url: mvUrl},
     success
   });
 };
@@ -18,6 +19,6 @@ export const incrementViewCount = ( mvUrl ) => {
   $.ajax({
     type: 'PATCH',
     url: "api/music_videos/increment_view_count",
-    data: {mvUrl}
+    data: {mv_url: mvUrl}
   });
 };

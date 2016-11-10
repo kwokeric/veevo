@@ -1,25 +1,26 @@
 import {
   receiveVideos,
   receiveVideo,
+  receiveRelatedVideos,
   FETCH_VIDEOS,
-  FETCH_VIDEO,
+  FETCH_RELATED_VIDEOS,
   INCREMENT_VIEW_COUNT } from '../actions/player_actions';
 
 import {
   fetchVideos,
-  fetchVideo,
+  fetchRelatedVideos,
   incrementViewCount } from '../util/player_api_util';
 
 export default ({getState, dispatch}) => next => action => {
   const fetchVideosSuccess = videos => dispatch(receiveVideos(videos));
-  const fetchVideoSuccess = video => dispatch(receiveVideo(video));
+  const fetchRelatedVideosSuccess = video => dispatch(receiveRelatedVideos(video));
 
   switch(action.type){
     case FETCH_VIDEOS:
       fetchVideos(fetchVideosSuccess);
       break;
-    case FETCH_VIDEO:
-      fetchVideo(action.mvUrl, fetchVideoSuccess);
+    case FETCH_RELATED_VIDEOS:
+      fetchRelatedVideos(action.mvUrl, fetchRelatedVideosSuccess);
       break;
     case INCREMENT_VIEW_COUNT:
       incrementViewCount(action.mvUrl);

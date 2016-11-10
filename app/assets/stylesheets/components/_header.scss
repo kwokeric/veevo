@@ -9,12 +9,18 @@
   justify-content: space-between;
   align-items: center;
 
-  .logo {
-    margin-left: 30px;
+  .left-div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 40px;
     border: 0;
-    padding: 10px 0;
-    height: 35px;
-    cursor: pointer;
+    width: 30%;
+
+    .logo-img {
+      height: 28px;
+      cursor: pointer;
+    }
   }
 
   .search {
@@ -39,28 +45,34 @@
       cursor: default;
 
       &:focus {
-        width: 350px;
+        width: 40vh;
         border-bottom: 1px solid $celest;
         letter-spacing: 2px;
         outline: 0;
       }
     }
   }
+
+  .right-div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 40px;
+    border: 0;
+    width: 30%;
+  }
 }
 
 .logInButton {
-  margin: 5px 50px 5px 0;
-  border: 0;
-  padding: 5px 0;
   width: 100px;
+  height: 30px;
+  margin-right: 30px;
+  border: 0;
   letter-spacing: 2px;
   font-weight: bold;
-  height: 20px;
   color: black;
   background-color: white;
   border-radius: 3px;
-  float: right;
-  font-family: Roboto;
 
   &:hover {
     background: linear-gradient(0deg, $celest, $lightCelest);
@@ -109,7 +121,6 @@
   justify-content: flex-end;
   flex-direction: row;
   align-items: center;
-  margin-right: 60px;
   color: white;
   letter-spacing: 3px;
   font-family: Roboto;

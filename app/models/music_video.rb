@@ -6,6 +6,6 @@ class MusicVideo < ActiveRecord::Base
   has_many :playlist_music_videos
 
   def related_videos
-    MusicVideo.where(artist: self.artist).where.not(id: self.id)
+    MusicVideo.where(artist: self.artist).where.not(id: self.id).includes(:artist)
   end
 end

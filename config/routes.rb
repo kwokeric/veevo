@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     resources :music_videos, only: [:index] do
       collection do
         patch :increment_view_count
+        get :related_videos
       end
     end
 

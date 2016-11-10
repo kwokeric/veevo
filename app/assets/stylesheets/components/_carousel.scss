@@ -118,6 +118,9 @@
   cursor: pointer;
 
   p.artist, p.song-title {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
     color: white;
     font-family: Roboto;
     font-size: 13px;

@@ -1,19 +1,46 @@
-.profile {
+.user-page {
+  margin-top: 60px;
+}
+
+.profile-div {
   display: flex;
+  padding: 8%;
   height: 200px;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 60px;
-  padding: 8%;
   background-image: url("http://res.cloudinary.com/kwokeric/image/upload/v1478217275/dark_gray_noise_i2buah.png");
   background-repeat: repeat;
 
-  .picture {
-    height: 200px;
-    width: 200px;
-    float: left;
-    border: 2px solid white;
-    border-radius: 50%;
+  .picture-div {
+    display: flex;
+    justify-content: space-around;;
+    align-items: center;
+
+    .picture {
+      height: 200px;
+      width: 200px;
+      float: left;
+      border: 2px solid white;
+      border-radius: 50%;
+    }
+
+    .upload-img-btn {
+      position: absolute;
+      padding: 6px 12px;
+      border: 1px solid white;
+      border-radius: 4px;
+      background: rgba(0, 0, 0, 0.6);
+      font-family: Roboto;
+      font-weight: 300px;
+      font-size: 12px;
+      letter-spacing: 1px;
+      cursor: pointer;
+
+      &:hover {
+        color: $celest;
+        border: 1px solid $celest;
+      }
+    }
   }
 
   .info {
@@ -24,7 +51,8 @@
     padding-left: 40px;
     float: left;
     color: white;
-    font-size: 25px;
+    font-size: 22px;
     letter-spacing: 5px;
+    text-transform: uppercase;
   }
 }

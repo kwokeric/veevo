@@ -8,8 +8,5 @@ class Api::SearchController < ApplicationController
       @videos.concat(artist.music_videos)
     end
     @videos.concat(MusicVideo.where('song_title ILIKE ?', "%#{q}%"))
-    # @videos = MusicVideo.where("lower(song_title) LIKE :q OR lower(artist) LIKE :q", q: "%#{q.downcase}%")
   end
 end
-
-# @artists = Artist.where("lower(artist_name) LIKE :q", q: "%#{search_params[:q].downcase}%")

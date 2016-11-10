@@ -11,7 +11,7 @@ User.create({
 })
 
 Artist.create({artist_name: "Drake"})
-Artist.create({artist_name: "OK GO"})
+Artist.create({artist_name: "OK Go"})
 Artist.create({artist_name: "Maroon 5"})
 Artist.create({artist_name: "Calvin Harris"})
 Artist.create({artist_name: "Taylor Swift"})
@@ -20,17 +20,9 @@ Artist.create({artist_name: "Coldplay"})
 Artist.create({artist_name: "Jack Ü"})
 Artist.create({artist_name: "Dillon Francis"})
 Artist.create({artist_name: "The Chainsmokers"})
-
-MusicVideo.create({
-  song_title: "Child's Play",
-  artist_id: 1,
-  mv_url: "HBnI5QevaKA",
-  director: "Aubrey Graham, Carlos “Spiff TV” Suarez",
-  writer: "Aubrey Graham, N. Shebib, Leland Wayne, Mark Morales, Darren Robinson, Damon Wimbley",
-  producer: "40, Metro Boomin, Ullman, Nineteen85",
-  label: "Young Money, Cash Money, Republic",
-  view_count: 22222556
-})
+Artist.create({artist_name: "Justin Timberlake"})
+Artist.create({artist_name: "Kaskade"})
+Artist.create({artist_name: "CHVRCHES"})
 
 MusicVideo.create({
   song_title: "Hotline Bling",
@@ -63,6 +55,17 @@ MusicVideo.create({
   producer: "Oualid Mouaness",
   label: "Cash Money Records Inc",
   view_count: 9034
+})
+
+MusicVideo.create({
+  song_title: "Child's Play",
+  artist_id: 1,
+  mv_url: "HBnI5QevaKA",
+  director: "Aubrey Graham, Carlos “Spiff TV” Suarez",
+  writer: "Aubrey Graham, N. Shebib, Leland Wayne, Mark Morales, Darren Robinson, Damon Wimbley",
+  producer: "40, Metro Boomin, Ullman, Nineteen85",
+  label: "Young Money, Cash Money, Republic",
+  view_count: 22222556
 })
 
 MusicVideo.create({
@@ -119,7 +122,7 @@ MusicVideo.create({
   label: "Paracadute, BMG",
   view_count: 179
 })
-
+# 10
 MusicVideo.create({
   song_title: "This Too Shall Pass",
   artist_id: 2,
@@ -176,28 +179,6 @@ MusicVideo.create({
 })
 
 MusicVideo.create({
-  song_title: "Misery",
-  artist_id: 3,
-  mv_url: "6g6g2mvItp4",
-  director: "Joseph Kahn",
-  writer: "Adam Levine, Jesse Carmichael",
-  producer: "Robert John Lange",
-  label: "A&M/Octone Records",
-  view_count: 10
-})
-
-MusicVideo.create({
-  song_title: "Makes Me Wonder",
-  artist_id: 3,
-  mv_url: "sAebYQgy4n4",
-  director: "John Hillcoat",
-  writer: "Adam Levine, Jesse Carmichael, Mickey Madden",
-  producer: "Mark Endert, Maroon 5",
-  label: "OctoScope Music, LLC",
-  view_count: 2356
-})
-
-MusicVideo.create({
   song_title: "Animals",
   artist_id: 3,
   mv_url: "qpgTC9MDx1o",
@@ -220,6 +201,28 @@ MusicVideo.create({
 })
 
 MusicVideo.create({
+  song_title: "Misery",
+  artist_id: 3,
+  mv_url: "6g6g2mvItp4",
+  director: "Joseph Kahn",
+  writer: "Adam Levine, Jesse Carmichael",
+  producer: "Robert John Lange",
+  label: "A&M/Octone Records",
+  view_count: 10
+})
+
+MusicVideo.create({
+  song_title: "Makes Me Wonder",
+  artist_id: 3,
+  mv_url: "sAebYQgy4n4",
+  director: "John Hillcoat",
+  writer: "Adam Levine, Jesse Carmichael, Mickey Madden",
+  producer: "Mark Endert, Maroon 5",
+  label: "OctoScope Music, LLC",
+  view_count: 2356
+})
+
+MusicVideo.create({
   song_title: "She Will Be Loved",
   artist_id: 3,
   mv_url: "nIjVuRTm-dc",
@@ -229,7 +232,7 @@ MusicVideo.create({
   label: "OctoScope Music, LLC",
   view_count: 12
 })
-
+# 20
 MusicVideo.create({
   song_title: "This Is What You Came For",
   artist_id: 4,
@@ -308,7 +311,6 @@ MusicVideo.create({
   view_count: 569
 })
 
-
 MusicVideo.create({
   song_title: "Sweet Nothing",
   artist_id: 4,
@@ -341,8 +343,7 @@ MusicVideo.create({
   label: "Big Machine Records",
   view_count: 277
 })
-
-
+# 30
 MusicVideo.create({
   song_title: "You Belong With Me",
   artist_id: 5,
@@ -364,7 +365,6 @@ MusicVideo.create({
   label: "Big Machine Records",
   view_count: 2
 })
-
 
 MusicVideo.create({
   song_title: "22",
@@ -453,7 +453,7 @@ MusicVideo.create({
   label: "Universal Island Records",
   view_count: 30008
 })
-
+# 40
 MusicVideo.create({
   song_title: "You & Me feat. Eliza Doolittle (Flume Remix)",
   artist_id: 6,
@@ -563,7 +563,7 @@ MusicVideo.create({
   label: "Parlophone",
   view_count: 1998
 })
-
+# 50
 MusicVideo.create({
   song_title: "A Sky Full Of Stars (Hardwell Remix)",
   artist_id: 7,
@@ -673,7 +673,7 @@ MusicVideo.create({
   label: "Fool's Gold, Mad Decent, OWSLA",
   view_count: 10010
 })
-
+# 60
 MusicVideo.create({
   song_title: "Get Low",
   artist_id: 9,
@@ -783,7 +783,7 @@ MusicVideo.create({
   label: "Dim Mak Inc.",
   view_count: 6009
 })
-
+# 70
 MusicVideo.create({
   song_title: "Kanye Ft. SirenXX",
   artist_id: 10,
@@ -794,3 +794,238 @@ MusicVideo.create({
   label: "Dim Mak Inc.",
   view_count: 190091
 })
+
+MusicVideo.create({
+  song_title: "Can't Stop The Feeling!",
+  artist_id: 11,
+  mv_url: "ru0K8uYEZWw",
+  director: "Mark Romanek",
+  writer: "Justin Timberlake, Max Martin, Shellback",
+  producer: "Justin Timberlake, Max Martin, Shellback",
+  label: "RCA, Sony",
+  view_count: 150001
+})
+
+MusicVideo.create({
+  song_title: "Suit & Tie",
+  artist_id: 11,
+  mv_url: "IsUsVbTj2AY",
+  director: "Mark Romanek",
+  writer: "Justin Timberlake, Jay-Z",
+  producer: "Justin Timberlake, Max Martin, Shellback",
+  label: "RCA, Sony",
+  view_count: 414006
+})
+
+MusicVideo.create({
+  song_title: "Mirrors",
+  artist_id: 11,
+  mv_url: "uuZE_IRwLNI",
+  director: "Floria Sigismondi",
+  writer: "Justin Timberlake, Timothy Mosley, Jerome Harmon, James Fauntleroy",
+  producer: "Justin Timberlake, Timbaland, J-Roc",
+  label: "RCA, Sony",
+  view_count: 150001
+})
+
+MusicVideo.create({
+  song_title: "Take Back the Night",
+  artist_id: 11,
+  mv_url: "DEzREJbln-o",
+  director: "Jeff Nicholas, Jonathan Craven and Darren Craig",
+  writer: "Justin Timberlake, Timothy Mosley, Jerome Harmon, James Fauntleroy",
+  producer: "Justin Timberlake, Timbaland",
+  label: "RCA, Sony",
+  view_count: 10
+})
+
+MusicVideo.create({
+  song_title: "True Colors Ft. Anna Kendrick",
+  artist_id: 11,
+  mv_url: "la0-5QFLr14",
+  director: "It's A Lyric Video",
+  writer: "Justin Timberlake, Anna Kendrick",
+  producer: "Justin Timberlake, Timbaland",
+  label: "RCA, Sony",
+  view_count: 10
+})
+
+MusicVideo.create({
+  song_title: "TKO",
+  artist_id: 11,
+  mv_url: "FyXtoTLLcDk",
+  director: "It's A Lyric Video",
+  writer: "Justin Timberlake",
+  producer: "Justin Timberlake, Timbaland",
+  label: "RCA, Sony",
+  view_count: 10
+})
+
+MusicVideo.create({
+  song_title: "Beneath With Me With With Deadmau5 Ft. Skylar Grey",
+  artist_id: 12,
+  mv_url: "3dyojUNrPeg",
+  director: "It's A Lyric Video",
+  writer: "Kaskade, Deadmau5, Skylar Grey",
+  producer: "Kaskade, Deadmau5",
+  label: "mau5trap",
+  view_count: 100
+})
+
+MusicVideo.create({
+  song_title: "Atmosphere",
+  artist_id: 12,
+  mv_url: "sXQVicNodMw",
+  director: "Director X",
+  writer: "Kaskade",
+  producer: "Kaskade",
+  label: "OM Records",
+  view_count: 100
+})
+
+MusicVideo.create({
+  song_title: "Sweet Memories Ft. CID",
+  artist_id: 12,
+  mv_url: "qiipK0vpCTs",
+  director: "Director X",
+  writer: "Kaskade, CID",
+  producer: "Kaskade, CID",
+  label: "OM Records",
+  view_count: 1001
+})
+# 80
+MusicVideo.create({
+  song_title: "Whatever Ft. KOLAJ",
+  artist_id: 12,
+  mv_url: "75AMrM-8ftg",
+  director: "Walt Jr.",
+  writer: "Kaskade, KOLAJ",
+  producer: "Kaskade, KOLAJ",
+  label: "Warner Brothers, Arkade",
+  view_count: 1001
+})
+
+MusicVideo.create({
+  song_title: "Us Ft. CID",
+  artist_id: 12,
+  mv_url: "e2rz2DPdn6Y",
+  director: "Walt White.",
+  writer: "Kaskade, CID",
+  producer: "Kaskade, CID",
+  label: "Warner Brothers, Arkade",
+  view_count: 1001
+})
+
+MusicVideo.create({
+  song_title: "Never Sleep Alone",
+  artist_id: 12,
+  mv_url: "66vdaLrxN8s",
+  director: "Charles Whitcher",
+  writer: "Kaskade",
+  producer: "Kaskade",
+  label: "Warner Brothers, Arkade",
+  view_count: 106701
+})
+
+MusicVideo.create({
+  song_title: "We Don't Stop",
+  artist_id: 12,
+  mv_url: "zr9Q4QL7w9A",
+  director: "Joe Pease",
+  writer: "Kaskade",
+  producer: "Kaskade",
+  label: "Warner Brothers, Arkade",
+  view_count: 98
+})
+
+MusicVideo.create({
+  song_title: "Leave A Trace",
+  artist_id: 13,
+  mv_url: "4Eo84jDIMKI",
+  director: "Director Man",
+  writer: "CHVRCHES",
+  producer: "Ian Cohen",
+  label: "Virgin EMI, Goodbye",
+  view_count: 6
+})
+
+MusicVideo.create({
+  song_title: "The Mother We Share",
+  artist_id: 130192,
+  mv_url: "_mTRvJ9fugM",
+  director: "Every Open Eye",
+  writer: "CHVRCHES",
+  producer: "Ian Cohen",
+  label: "Virgin EMI, Goodbye",
+  view_count: 9910
+})
+
+MusicVideo.create({
+  song_title: "Recover",
+  artist_id: 13,
+  mv_url: "JyqemIbjcfg",
+  director: "This Guy Harry",
+  writer: "CHVRCHES",
+  producer: "Glassnote Entertainment Group LLC",
+  label: "Virgin EMI, Goodbye",
+  view_count: 910
+})
+
+MusicVideo.create({
+  song_title: "Bury It Ft. Hayley Williams",
+  artist_id: 13,
+  mv_url: "B9BLMNn0PrQ",
+  director: "Alex Cunningham",
+  writer: "CHVRCHES",
+  producer: "Thor Hulk",
+  label: "Virgin EMI, Goodbye",
+  view_count: 171
+})
+
+MusicVideo.create({
+  song_title: "Clearest Blue",
+  artist_id: 13,
+  mv_url: "BZyzX4c1vIs",
+  director: "Benjamin Bottleman",
+  writer: "CHVRCHES",
+  producer: "Glassnote Entertainment Group LLC",
+  label: "Virgin EMI, Goodbye",
+  view_count: 171
+})
+
+MusicVideo.create({
+  song_title: "Empty Threat",
+  artist_id: 13,
+  mv_url: "KNHxwSp-6Og",
+  director: "Austin Peters",
+  writer: "CHVRCHES",
+  producer: "Forever Pictures and All:Expanded",
+  label: "Virgin EMI, Goodbye",
+  view_count: 171
+})
+# 90
+MusicVideo.create({
+  song_title: "Lies",
+  artist_id: 13,
+  mv_url: "81RqEnvczV8",
+  director: "Austin Peters",
+  writer: "CHVRCHES",
+  producer: "Forever Pictures and All:Expanded",
+  label: "Virgin EMI, Goodbye",
+  view_count: 4849
+})
+
+Playlist.create({ user_id: 2,
+  playlist_title: "Straight Bangerz",
+  description: "Tunez that bang"
+})
+
+PlaylistMusicVideo.create({ playlist_id: 2, mv_id: 82 })
+PlaylistMusicVideo.create({ playlist_id: 2, mv_id: 52 })
+PlaylistMusicVideo.create({ playlist_id: 2, mv_id: 33 })
+PlaylistMusicVideo.create({ playlist_id: 2, mv_id: 62 })
+PlaylistMusicVideo.create({ playlist_id: 2, mv_id: 16 })
+PlaylistMusicVideo.create({ playlist_id: 2, mv_id: 57 })
+PlaylistMusicVideo.create({ playlist_id: 2, mv_id: 3 })
+PlaylistMusicVideo.create({ playlist_id: 2, mv_id: 40 })
+PlaylistMusicVideo.create({ playlist_id: 2, mv_id: 20 })

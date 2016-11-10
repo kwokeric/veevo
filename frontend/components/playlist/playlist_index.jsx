@@ -1,14 +1,10 @@
 import React from 'react';
 
-import SearchContainer from '../playlist/playlist_index_container';
+import PlaylistContainer from '../playlist/playlist_index_container';
 
-class Playlist extends React.Component {
+class PlaylistIndex extends React.Component {
   constructor(props) {
     super(props);
-  }
-
-  componentWillMount () {
-    this.props.fetchPlaylists();
   }
 
   render () {
@@ -32,4 +28,4 @@ class Playlist extends React.Component {
   }
 }
 
-export default Playlist;
+export default PlaylistIndex;

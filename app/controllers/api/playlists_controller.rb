@@ -8,7 +8,7 @@ class Api::PlaylistsController < ApplicationController
 	end
 
   def create
-    @playlist = Playlist.new(user_id: current_user.id, :playlist_title, :description)
+    @playlist = Playlist.new({user_id: current_user.id}.merge(playlist_params))
 
     if @playlist.save
       render "api/playlists/show"
@@ -87,7 +87,7 @@ class Api::PlaylistsController < ApplicationController
   private
 
   def playlist_params
-		params.require(:playlist).permit(:user_id, :playlist_title, :description)
+		params.require(:playlist).permit(:playlist_title, :description)
 	end
 
   def find_playlist

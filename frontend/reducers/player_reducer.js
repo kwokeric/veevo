@@ -1,6 +1,6 @@
 import merge from 'lodash/merge';
 
-import { RECEIVE_VIDEOS, RECEIVE_VIDEO } from '../actions/player_actions';
+import { RECEIVE_VIDEOS, RECEIVE_RELATED_VIDEOS } from '../actions/player_actions';
 
 const PlayerReducer = (state = {}, action) => {
   Object.freeze(state);
@@ -9,9 +9,11 @@ const PlayerReducer = (state = {}, action) => {
     case RECEIVE_VIDEOS:
       let videos = action.videos;
       return merge({}, videos);
-    case RECEIVE_VIDEO:
-      let video = action.video;
-      return merge({}, state, video);
+    case RECEIVE_RELATED_VIDEOS:
+      let mvUrl = Object.keys(action.videos)[0];
+      let video = merge({}, state[mvUrl]);
+      video["related_videos"] = action.videos[mvUrl];
+      return merge({}, state, {[video.mv_url]: video});
     default:
       return state;
   }
