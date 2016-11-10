@@ -951,7 +951,7 @@ MusicVideo.create({
 
 MusicVideo.create({
   song_title: "The Mother We Share",
-  artist_id: 130192,
+  artist_id: 13,
   mv_url: "_mTRvJ9fugM",
   director: "Every Open Eye",
   writer: "CHVRCHES",
@@ -1017,15 +1017,41 @@ MusicVideo.create({
 
 Playlist.create({ user_id: 2,
   playlist_title: "Straight Bangerz",
-  description: "Tunez that bang"
+  description: "A playlist of tunez that bang. What can I say about this playlist that hasn't already been said about the wheel, nuclear fission, or sliced bread?"
 })
 
-PlaylistMusicVideo.create({ playlist_id: 2, mv_id: 82 })
-PlaylistMusicVideo.create({ playlist_id: 2, mv_id: 52 })
-PlaylistMusicVideo.create({ playlist_id: 2, mv_id: 33 })
-PlaylistMusicVideo.create({ playlist_id: 2, mv_id: 62 })
-PlaylistMusicVideo.create({ playlist_id: 2, mv_id: 16 })
-PlaylistMusicVideo.create({ playlist_id: 2, mv_id: 57 })
-PlaylistMusicVideo.create({ playlist_id: 2, mv_id: 3 })
-PlaylistMusicVideo.create({ playlist_id: 2, mv_id: 40 })
-PlaylistMusicVideo.create({ playlist_id: 2, mv_id: 20 })
+Playlist.create({ user_id: 2,
+  playlist_title: "Top 40",
+  description: "Top 40 be a noize industry shorthand fo' tha currently most-popular joints up in a particular genre. When used without qualification it refers ta tha best-pimpin or most frequently broadcast ghettofab beatz. Drop dis like itz hot! Da term is derived from record noize charts, all dem of which traditionally consist of a total of 40 joints, n' you can put dat on yo' toast. Top 40 be also a alternatizzle term fo' tha radio format of such beatz, also known as Contemporary hit radio."
+})
+
+PlaylistMusicVideo.create({ playlist_id: 1, mv_mv_url: "66vdaLrxN8s" })
+PlaylistMusicVideo.create({ playlist_id: 1, mv_mv_url: "fDrTbLXHKu8" })
+PlaylistMusicVideo.create({ playlist_id: 1, mv_mv_url: "-CmadmM5cOk" })
+PlaylistMusicVideo.create({ playlist_id: 1, mv_mv_url: "aKb9VQpoe_U" })
+PlaylistMusicVideo.create({ playlist_id: 1, mv_mv_url: "-zzP29emgpg" })
+PlaylistMusicVideo.create({ playlist_id: 1, mv_mv_url: "dGghkjpNCQ8" })
+PlaylistMusicVideo.create({ playlist_id: 1, mv_mv_url: "b_KfnGBtVeA" })
+PlaylistMusicVideo.create({ playlist_id: 1, mv_mv_url: "8ahzUa1hG1M" })
+PlaylistMusicVideo.create({ playlist_id: 1, mv_mv_url: "v9rdDwH1JAo" })
+PlaylistMusicVideo.create({ playlist_id: 1, mv_mv_url: "G5Mv2iV0wkU" })
+PlaylistMusicVideo.create({ playlist_id: 1, mv_mv_url: "e2rz2DPdn6Y" })
+PlaylistMusicVideo.create({ playlist_id: 1, mv_mv_url: "zjVSewbKllk" })
+PlaylistMusicVideo.create({ playlist_id: 1, mv_mv_url: "C9slkeFXogU" })
+PlaylistMusicVideo.create({ playlist_id: 1, mv_mv_url: "U5pzmGX8Ztg" })
+
+PlaylistMusicVideo.create({ playlist_id: 2, mv_mv_url: "J9NQFACZYEU" })
+PlaylistMusicVideo.create({ playlist_id: 2, mv_mv_url: "uxpDa-c-4Mc" })
+PlaylistMusicVideo.create({ playlist_id: 2, mv_mv_url: "09R8_2nJtjg" })
+PlaylistMusicVideo.create({ playlist_id: 2, mv_mv_url: "b4Bj7Zb-YD4" })
+PlaylistMusicVideo.create({ playlist_id: 2, mv_mv_url: "VPRjCeoBqrI" })
+PlaylistMusicVideo.create({ playlist_id: 2, mv_mv_url: "e-ORhEE9VVg" })
+PlaylistMusicVideo.create({ playlist_id: 2, mv_mv_url: "93ASUImTedo" })
+PlaylistMusicVideo.create({ playlist_id: 2, mv_mv_url: "bkk2H3Ztrfk" })
+PlaylistMusicVideo.create({ playlist_id: 2, mv_mv_url: "nntGTK2Fhb0" })
+PlaylistMusicVideo.create({ playlist_id: 2, mv_mv_url: "fyMhvkC3A84" })
+PlaylistMusicVideo.create({ playlist_id: 2, mv_mv_url: "12CeaxLiMgE" })
+PlaylistMusicVideo.create({ playlist_id: 2, mv_mv_url: "PT2_F-1esPk" })
+PlaylistMusicVideo.create({ playlist_id: 2, mv_mv_url: "ru0K8uYEZWw" })
+PlaylistMusicVideo.create({ playlist_id: 2, mv_mv_url: "sXQVicNodMw" })
+PlaylistMusicVideo.create({ playlist_id: 2, mv_mv_url: "_mTRvJ9fugM" })

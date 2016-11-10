@@ -2,6 +2,7 @@ class CreateArtists < ActiveRecord::Migration
   def change
     create_table :artists do |t|
       t.string :artist_name, null: false
+      t.string :artist_image_url
 
       t.timestamps null: false
     end

@@ -14,6 +14,7 @@ class CreateMusicVideos < ActiveRecord::Migration
     end
 
     add_index :music_videos, :song_title
+    add_index :music_videos, :mv_url
     add_index :music_videos, :artist_id
   end
 end
