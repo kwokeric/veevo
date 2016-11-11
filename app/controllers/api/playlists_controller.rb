@@ -32,7 +32,6 @@ class Api::PlaylistsController < ApplicationController
   end
 
   def destroy
-    @playlist = current_user.playlists.find_by(id: params[:id])
     id = @playlist.id
 
     if @playlist.destroy
@@ -88,7 +87,7 @@ class Api::PlaylistsController < ApplicationController
   private
 
   def playlist_params
-		params.require(:playlist).permit(:playlist_title, :description)
+		params.require(:playlist).permit(:playlist_title, :description, :id)
 	end
 
   def find_playlist

@@ -38,9 +38,9 @@ export const updatePlaylist = playlist => ({
   playlist
 });
 
-export const deletePlaylist = playlist => ({
+export const deletePlaylist = playlistId => ({
   type: DELETE_PLAYLIST,
-  playlist
+  playlistId
 });
 
 export const addPlaylistMV = (playlistId, mvId) => ({

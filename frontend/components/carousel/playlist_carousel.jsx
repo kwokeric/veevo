@@ -13,7 +13,7 @@ class PlaylistCarousel extends React.Component {
     return (e) => {
       e.preventDefault();
       $(document).scrollTop(0);
-      hashHistory.push(`/mv/${mvUrl}`);
+      hashHistory.push(`/pl/${this.props.playlistId}/mv/${mvUrl}`);
     };
   }
 
@@ -42,30 +42,34 @@ class PlaylistCarousel extends React.Component {
       infinite: true,
       speed: 500,
       slidesToShow: 5,
-      slidesToScroll: 1,
+      slidesToScroll: 2,
       responsive: [
         {
         breakpoint: 1200,
           settings: {
-            slidesToShow: 4
+            slidesToShow: 4,
+            slidesToScroll: 2
           }
         },
         {
         breakpoint: 1000,
           settings: {
-            slidesToShow: 3
+            slidesToShow: 3,
+            slidesToScroll: 1
           }
         },
         {
         breakpoint: 750,
           settings: {
-            slidesToShow: 2
+            slidesToShow: 2,
+            slidesToScroll: 1
           }
         },
         {
         breakpoint: 450,
           settings: {
-            slidesToShow: 1
+            slidesToShow: 1,
+            slidesToScroll: 1
           }
         }
       ]

@@ -23,6 +23,7 @@ Artist.create({artist_name: "The Chainsmokers"})
 Artist.create({artist_name: "Justin Timberlake"})
 Artist.create({artist_name: "Kaskade"})
 Artist.create({artist_name: "CHVRCHES"})
+Artist.create({artist_name: "Nero"})
 
 MusicVideo.create({
   song_title: "Hotline Bling",
@@ -1013,6 +1014,105 @@ MusicVideo.create({
   producer: "Forever Pictures and All:Expanded",
   label: "Virgin EMI, Goodbye",
   view_count: 4849
+})
+
+MusicVideo.create({
+  song_title: "Promises",
+  artist_id: 14,
+  mv_url: "llDikI2hTtk",
+  director: "Peter Austin",
+  writer: "Daniel Stephens, Joseph Ray, Alana Stephens",
+  producer: "Forever Pictures",
+  label: "MTA, Interscope, Cherrytree",
+  view_count: 4844209
+})
+
+MusicVideo.create({
+  song_title: "Into The Night",
+  artist_id: 14,
+  mv_url: "ugrFTySNeQk",
+  director: "Markus Lundqvist & Dan Stephens",
+  writer: "Daniel Stephens, Joseph Ray, Alana Stephens",
+  producer: "Forever Pictures",
+  label: "Virgin EMI Records",
+  view_count: 92345
+})
+
+MusicVideo.create({
+  song_title: "Guilt",
+  artist_id: 14,
+  mv_url: "r1ATFedwjnk",
+  director: "Markus Lundqvist & Dan Stephens",
+  writer: "Daniel Stephens, Joseph Ray, Alana Stephens",
+  producer: "Forever Pictures",
+  label: "MTA Records",
+  view_count: 9192
+})
+
+MusicVideo.create({
+  song_title: "Innocence",
+  artist_id: 14,
+  mv_url: "1S35THmZD_E",
+  director: "Chase & Status",
+  writer: "Daniel Stephens, Joseph Ray, Alana Stephens",
+  producer: "Forever Pictures",
+  label: "MTA Records",
+  view_count: 100092
+})
+
+MusicVideo.create({
+  song_title: "The Thrill",
+  artist_id: 14,
+  mv_url: "koeW4g8Y-lg",
+  director: "Chase & Status",
+  writer: "Daniel Stephens, Joseph Ray, Alana Stephens",
+  producer: "Forever Pictures",
+  label: "MTA Records",
+  view_count: 2860900
+})
+
+MusicVideo.create({
+  song_title: "Must Be The Feeling",
+  artist_id: 14,
+  mv_url: "ld50mfW-BCM",
+  director: "Thase Steven",
+  writer: "Daniel Stephens, Joseph Ray, Alana Stephens",
+  producer: "Forever Pictures",
+  label: "MTA Records",
+  view_count: 2860900
+})
+
+MusicVideo.create({
+  song_title: "Two Minds",
+  artist_id: 14,
+  mv_url: "KFWFJGfEaNo",
+  director: "Greg Jardin",
+  writer: "Daniel Stephens, Joseph Ray, Alana Stephens",
+  producer: "Jennifer Heath",
+  label: "MTA Records",
+  view_count: 36582
+})
+
+MusicVideo.create({
+  song_title: "Dark Skies",
+  artist_id: 14,
+  mv_url: "KFWFJGfEaNo",
+  director: "Greg Jardin",
+  writer: "Daniel Stephens, Joseph Ray, Alana Stephens",
+  producer: "Garen Barsegian",
+  label: "MTA Records",
+  view_count: 3847842
+})
+
+MusicVideo.create({
+  song_title: "Doomsday",
+  artist_id: 14,
+  mv_url: "DzyKSyLavUY",
+  director: "Not Applicable",
+  writer: "Daniel Stephens, Joseph Ray, Alana Stephens",
+  producer: "Garen Barsegian",
+  label: "MTA Records",
+  view_count: 3847842
 })
 
 Playlist.create({ user_id: 2,

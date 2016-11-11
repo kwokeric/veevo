@@ -1,7 +1,7 @@
 import React from 'react';
 import { hashHistory } from 'react-router';
 
-var Masonry = require('react-masonry-component');
+import Masonry from 'react-masonry-component';
 
 import SearchContainer from './search_container';
 
@@ -24,7 +24,7 @@ class Search extends React.Component {
         className={`search-item item-${idx}`}
         onClick={this.clickHandler(video.mv_url)}>
         <img
-          className="thumbnail"
+          className="search-thumbnail"
           src={`https://img.youtube.com/vi/${video.mv_url}/hqdefault.jpg`} />
         <div className="item-info">
           <p className="artist">{video.artist_name}</p>
@@ -45,7 +45,9 @@ class Search extends React.Component {
       });
 
       let masonryOptions = {
-        transitionDuration: 0
+        transitionDuration: 1,
+        fitWidth: true,
+        columnWidth: 300
       };
 
       return (

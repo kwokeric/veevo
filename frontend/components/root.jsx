@@ -8,7 +8,7 @@ import SplashContainer from './splash/splash_container';
 import ProfileContainer from './user/profile_container';
 import PlayerContainer from './player/player_container.jsx';
 import SearchContainer from './search/search_container';
-import PlaylistIndexContainer from './playlist/playlist_index_container';
+import PlaylistPlayerContainer from './player/playlist_player_container';
 
 import { fetchVideos, fetchRelatedVideos } from '../actions/player_actions';
 import { fetchPlaylists } from '../actions/playlist_actions';
@@ -16,7 +16,7 @@ import { fetchPlaylists } from '../actions/playlist_actions';
 const Root = ({ store }) => {
   const populateVideosAndPlaylists = () => {
     store.dispatch(fetchVideos());
-    
+
     if (window.currentUser) {
       store.dispatch(fetchPlaylists());
     }
@@ -24,15 +24,20 @@ const Root = ({ store }) => {
   const populateRelatedVideos = (nextState) => {
     store.dispatch(fetchRelatedVideos(nextState.params.mvUrl));
   };
+  // const redirectIfNotCurrentUser = (nextState, replace) => {
+  //   if (store.getState().session.currentUser.id !== parseInt(nextState.params.userId)) {
+  //     replace("/");
+  //   }
+  // };
 
   return(
     <Provider store={store}>
       <Router history={hashHistory}>
         <Route path="/" component={App} onEnter={populateVideosAndPlaylists}>
           <IndexRoute component={SplashContainer}/>
-          <Route path="users/:userId" component={ProfileContainer}/>
+          <Route path="users/:userId" component={ProfileContainer} />
           <Route path="mv/:mvUrl" component={PlayerContainer} onEnter={populateRelatedVideos}/>
-          <Route path="playlist/:playlistId" component={PlaylistIndexContainer} />
+          <Route path="pl/:playlistId/mv/:mvUrl" component={PlaylistPlayerContainer} />
           <Route path="search" component={SearchContainer} />
         </Route>
       </Router>

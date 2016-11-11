@@ -110,3 +110,116 @@
     }
   }
 }
+
+//  PLAYLIST PLAYER
+
+.playlist-player-tabs-container {
+  display: block;
+  padding-top: 20px;
+
+  .tab-list {
+    border-bottom: 1px solid $darkGray;
+    padding: 5px 0;
+    height: 20px;
+
+    .playlist-tab, .next-tab, .details-tab {
+      height: 25px;
+      float: left;
+      font-size: 12px;
+      letter-spacing: 3px;
+      padding: 0 15px;
+
+      &:hover {
+        color: $celest;
+        cursor: pointer;
+      }
+    }
+
+    .active {
+      border-bottom: 2px solid white;
+    }
+  }
+
+  .playlist-tab {
+    display: block;
+    position: relative;
+    height: 350px;
+    padding: 35px 0;
+
+    .playlist-img {
+      height: 200px;
+      width: 200px;
+      float: left;
+      border: 2px solid white;
+      border-radius: 50%;
+      margin-right: 30px;
+      overflow: hidden;
+    }
+
+    .playlist-info {
+      overflow: hidden;
+      margin-top: 30px;
+
+      .pl-title {
+        height: 35px;
+        font-family: Muli;
+        font-size: 18px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        text-overflow: ellipsis;
+      }
+
+      .pl-description {
+        font-size: 14px;
+        font-family: Roboto;
+        font-weight: 100;
+        letter-spacing: 1px;
+        line-height: 1.4;
+      }
+    }
+
+    .btn-edit-playlist {
+      position: absolute;
+      top: 20px;
+      right: 2px;
+      height: 30px;
+      width: 80px;
+      margin-right: 1px;
+      background: none;
+      border: 1px solid white;
+      border-radius: 3px;
+      color: white;
+      font-family: Roboto;
+      font-weight: 100;
+      font-size: 12px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: background 0.4s;
+
+      &:hover {
+        background: #151515;
+        top: 19px;
+        border: 2px solid $celest;
+        color: $celest;
+        margin: 0;
+      }
+    }
+  }
+
+  .next-tab {
+    display: block;
+    height: 350px;
+    padding: 35px 15px;
+  }
+
+  .detail-tab {
+    display: block;
+    height: 350px;
+    padding: 35px 15px;
+
+    .details-li {
+      font-size: 14px;
+      height: 25px
+    }
+  }
+}

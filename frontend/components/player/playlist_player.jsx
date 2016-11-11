@@ -3,8 +3,8 @@ import ReactPlayer from 'react-player';
 
 var Modal = require("react-modal");
 
-import PlayerTabs from './player_tabs';
-import PlaylistFormContainer from '../playlist/playlist_form_container';
+import PlaylistPlayerTabs from './playlist_player_tabs';
+import PlaylistMusicVideoFormContainer from '../playlist/playlist_music_video_form_container';
 import { playlistModalStyle } from '../../util/modal_styles.js';
 
 class PlaylistPlayer extends React.Component {
@@ -49,7 +49,7 @@ class PlaylistPlayer extends React.Component {
   }
 
   render () {
-    if (this.props.currentMV === undefined) {
+    if (this.props.currentMV === undefined || this.props.currentPlaylist === undefined) {
       return (
         <div className="loading">
           <div className="loader">
@@ -75,12 +75,15 @@ class PlaylistPlayer extends React.Component {
   					isOpen={this.state.modalOpen}
   					onRequestClose={this.closeModal}
             style={playlistModalStyle} >
-            <PlaylistFormContainer
+            <PlaylistMusicVideoFormContainer
               mvUrl={this.props.mvUrl}
               closeModal={this.closeModal}/>
           </Modal>
 
-          <PlayerTabs currentMV={this.props.currentMV} videos={this.props.videos} />
+          <PlaylistPlayerTabs
+            currentPlaylist={this.props.currentPlaylist}
+            currentMV={this.props.currentMV}
+            videos={this.props.currentPlaylist.videos} />
         </div>
       );
     }

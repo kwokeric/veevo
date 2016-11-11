@@ -17,6 +17,12 @@ class Profile extends React.Component {
     this.updateImage = this.updateImage.bind(this);
   }
 
+  componentWillReceiveProps(newProps) {
+    if (this.props.playlists && this.props.playlists.length < newProps.playlists.length) {
+      this.closeModal();
+    }
+  }
+
   showUploadBtn() {
     $(".upload-img-btn").removeClass("hidden");
     $(".picture-div").mouseleave(() => $(".upload-img-btn").addClass("hidden"));

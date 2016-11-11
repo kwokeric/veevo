@@ -103,39 +103,39 @@
   padding: 0 6px;
 
   .thumbnail {
-    clip: rect(0, 5%);
+    clip: rect(5%, 0%);
 
     &:hover {
       opacity: 0.6;
       cursor: pointer;
     }
   }
-}
 
-.item-info {
-  background-image: url("http://res.cloudinary.com/kwokeric/image/upload/v1478217275/dark_gray_noise_i2buah.png");
-  background-repeat: repeat;
-  cursor: pointer;
+  .item-info {
+    background-image: url("http://res.cloudinary.com/kwokeric/image/upload/v1478217275/dark_gray_noise_i2buah.png");
+    background-repeat: repeat;
+    cursor: pointer;
 
-  p.artist, p.song-title {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    color: white;
-    font-family: Roboto;
-    font-size: 13px;
-    letter-spacing: 2px;
-  }
+    p.artist, p.song-title {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      color: white;
+      font-family: Roboto;
+      font-size: 13px;
+      letter-spacing: 2px;
+    }
 
-  p.artist {
-    font-weight: 500;
-    padding: 10px;
-  }
+    p.artist {
+      font-weight: 500;
+      padding: 10px;
+    }
 
-  p.song-title {
-    font-weight: 300;
-    padding: 0 10px;
-    height: 30px;
+    p.song-title {
+      font-weight: 300;
+      padding: 0 10px;
+      height: 30px;
+    }
   }
 }
 

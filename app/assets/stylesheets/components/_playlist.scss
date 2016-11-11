@@ -21,7 +21,7 @@
       height: 35px;
       width: 170px;
       margin-right: 1px;
-      background: transparent;
+      background: none;
       border: 1px solid white;
       border-radius: 3px;
       color: white;
@@ -30,11 +30,12 @@
       font-size: 12px;
       letter-spacing: 1px;
       cursor: pointer;
-      transition: color 0.2s;
+      transition: background 0.4s;
 
       &:hover {
+        background: #151515;
         border: 2px solid $celest;
-        color: $lightCelest;
+        color: $celest;
         margin: 0;
       }
     }
@@ -45,5 +46,6 @@
     font-size: 14px;
     letter-spacing: 3px;
     color: $celest;
+    cursor: pointer;
   }
 }

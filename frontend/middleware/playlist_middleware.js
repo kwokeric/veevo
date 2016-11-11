@@ -19,12 +19,17 @@ import {
   addPlaylistMV,
   deletePlaylistMV } from '../util/playlist_api_util';
 
+  import {hashHistory} from 'react-router';
+
 export default ({getState, dispatch}) => next => action => {
   const fetchPlaylistsSuccess = playlists => dispatch(receivePlaylists(playlists));
   const receivePlaylistSuccess = playlist => dispatch(receivePlaylist(playlist));
   const deletePlaylistSuccess = playlistId => dispatch(receiveDeletedPlaylist(playlistId));
   const receivePlaylistMVSuccess = playlist => dispatch(receivePlaylist(playlist));
-  const deletePlaylistMVSuccess = playlist => dispatch(receivePlaylist(playlist));
+  const deletePlaylistMVSuccess = playlist => {
+    dispatch(receivePlaylist(playlist));
+    hashHistory.push('/');
+  };
   const errorCallback = xhr => dispatch(receiveErrors(xhr.responseJSON));
 
   switch(action.type){

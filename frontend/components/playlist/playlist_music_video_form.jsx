@@ -47,7 +47,7 @@ class PlaylistMusicVideoForm extends React.Component {
   }
 
   render () {
-    let playlists = this.props.playlists.playlists;
+    let playlists = this.props.playlists.playlists.sort(function(a,b) { return parseInt(a.id) - parseInt(b.id); } );
 
     return(
       <div className="playlist-mv-modal-div">

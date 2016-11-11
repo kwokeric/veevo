@@ -7,7 +7,7 @@ import {
   RECEIVE_ERRORS } from '../actions/playlist_actions.js';
 
 const _nullPlaylist = Object.freeze({
-  playlists: null,
+  playlists: [],
   errors: []
 });
 
