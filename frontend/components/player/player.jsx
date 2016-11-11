@@ -5,27 +5,27 @@ var Modal = require("react-modal");
 
 import PlayerTabs from './player_tabs';
 import PlaylistMusicVideoFormContainer from '../playlist/playlist_music_video_form_container';
-import { playlistModalStyle } from '../../util/modal_styles.js';
+import { playlistMvModalStyle } from '../../util/modal_styles.js';
 
 class VideoPlayer extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { playlistModalOpen: false };
-	  this.openPlaylistModal = this.openPlaylistModal.bind(this);
-	  this.closePlaylistModal = this.closePlaylistModal.bind(this);
+    this.state = { modalOpen: false };
+	  this.openModal = this.openModal.bind(this);
+	  this.closeModal = this.closeModal.bind(this);
   }
 
   componentWillMount () {
     this.props.incrementViewCount(this.props.params.mvUrl);
   }
 
-  closePlaylistModal() {
-    this.setState({ playlistModalOpen: false });
+  closeModal() {
+    this.setState({ modalOpen: false });
   }
 
-  openPlaylistModal() {
-    this.setState({ playlistModalOpen: true });
+  openModal() {
+    this.setState({ modalOpen: true });
   }
 
   numberWithCommas (x) {
@@ -41,7 +41,7 @@ class VideoPlayer extends React.Component {
         </ul>
 
         <ul className="video-info-more">
-          <li className="add-to" onClick={this.openPlaylistModal}><div className="plus">+</div> Add</li>
+          <li className="add-to" onClick={this.openModal}><div className="plus">+</div> Add</li>
           <li>{this.numberWithCommas(this.props.currentMV.view_count)} <span className="small-text">Views</span></li>
         </ul>
       </div>
@@ -71,13 +71,13 @@ class VideoPlayer extends React.Component {
           {this.videoInfo()}
 
           <Modal
-            className="playlist-modal"
-  					isOpen={this.state.playlistModalOpen}
-  					onRequestClose={this.closePlaylistModal}
-            style={playlistModalStyle} >
+            className="playlist-mv-modal"
+  					isOpen={this.state.modalOpen}
+  					onRequestClose={this.closeModal}
+            style={playlistMvModalStyle} >
             <PlaylistMusicVideoFormContainer
               mvUrl={this.props.mvUrl}
-              closeModal={this.closePlaylistModal}/>
+              closeModal={this.closeModal}/>
           </Modal>
 
           <PlayerTabs currentMV={this.props.currentMV} videos={this.props.videos} />

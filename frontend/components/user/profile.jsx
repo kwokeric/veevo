@@ -1,13 +1,19 @@
 import React from 'react';
 import { hashHistory, Link } from 'react-router';
 
-import PlaylistIndexContainer from '../playlist/playlist_index_container';
+var Modal = require("react-modal");
 
+import PlaylistIndexContainer from '../playlist/playlist_index_container';
+import PlaylistFormContainer from '../playlist/playlist_form_container';
+import { playlistModalStyle } from '../../util/modal_styles.js';
 
 class Profile extends React.Component {
   constructor(props) {
     super(props);
 
+    this.state = { playlistModalOpen: false };
+    this.openModal = this.openModal.bind(this);
+	  this.closeModal = this.closeModal.bind(this);
     this.updateImage = this.updateImage.bind(this);
   }
 
@@ -18,6 +24,14 @@ class Profile extends React.Component {
 
   updateImage(){
 
+  }
+
+  closeModal() {
+    this.setState({ modalOpen: false });
+  }
+
+  openModal() {
+    this.setState({ modalOpen: true });
   }
 
   upload(e){
@@ -48,8 +62,20 @@ class Profile extends React.Component {
         <div className="playlist-div">
           <div className="playlist-header">
             <h2 className="header-text">YOUR  PLAYLISTS</h2>
-            <button className="btn-add-playlist">＋ CREATE PLAYLIST</button>
+            <button
+              className="btn-add-playlist"
+              onClick={this.openModal}>＋ CREATE PLAYLIST</button>
           </div>
+
+          <Modal
+            className="playlist-modal"
+  					isOpen={this.state.modalOpen}
+  					onRequestClose={this.closeModal}
+            style={playlistModalStyle} >
+            <PlaylistFormContainer
+              closeModal={this.closeModal}/>
+          </Modal>
+
           <PlaylistIndexContainer />
         </div>
       </div>

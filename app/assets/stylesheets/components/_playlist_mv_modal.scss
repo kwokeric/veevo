@@ -1,0 +1,78 @@
+.playlist-mv-modal-div {
+  background: #000000; /* Old browsers */
+  background: -moz-linear-gradient(45deg,  #000000 0%, #262626 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg,  #000000 0%,#262626 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg,  #000000 0%,#262626 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#262626',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  border: 1px solid $lightGray;
+  border-radius: 10px;
+  padding: 50px;
+  height: 100%;
+  box-sizing: border-box;
+
+  .title-div {
+    height: 50px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: $celest;
+  }
+
+  .button-close {
+    position: absolute;
+    bottom: 60px;
+    left: 110px;
+    border: 0;
+    border-radius: 3px;
+    width: 240px;
+    height: 35px;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: $celest;
+    border-radius: 3px;
+    transition: font 0.3s;
+
+    &:focus { outline: 0; }
+
+    &:hover {
+      background: linear-gradient(0deg, $celest, $lightCelest);
+      cursor: pointer;
+      font-size: 12px;
+    }
+  }
+
+  .playlist-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+    width: 100%;
+    padding: 0 10px;
+    border-top: 1px solid $lightGray;
+    cursor: default;
+    font-size: 14px;
+    letter-spacing: 1px;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    &:last-child {
+      border-bottom: 1px solid $lightGray
+    }
+
+    .playlist-title {
+      width: 200px;
+      text-overflow: ellipsis;
+    }
+
+    .mv-btn {
+      cursor: pointer;
+    }
+
+    .mv-btn.add:hover { color: $celest; }
+    .mv-btn.remove:hover { color: $red; }
+  }
+}

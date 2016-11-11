@@ -1,5 +1,4 @@
 import React from 'react';
-var Modal = require("react-modal");
 
 import PlaylistMusicVideoFormContainer from '../playlist/playlist_music_video_form_container';
 
@@ -51,7 +50,7 @@ class PlaylistMusicVideoForm extends React.Component {
     let playlists = this.props.playlists.playlists;
 
     return(
-      <div className="playlist-modal-div">
+      <div className="playlist-mv-modal-div">
         <div className="title-div">ADD TO PLAYLIST</div>
 
         <div className="playlist-mv-form">

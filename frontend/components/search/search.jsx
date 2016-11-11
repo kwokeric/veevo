@@ -1,12 +1,13 @@
 import React from 'react';
 import { hashHistory } from 'react-router';
 
+var Masonry = require('react-masonry-component');
+
 import SearchContainer from './search_container';
 
 class Search extends React.Component {
   constructor(props) {
     super(props);
-    debugger
   }
 
   clickHandler (mvUrl) {
@@ -43,11 +44,20 @@ class Search extends React.Component {
         );
       });
 
+      let masonryOptions = {
+        transitionDuration: 0
+      };
+
       return (
         <div className="search-div">
-          <ul>
-            {videos}
-          </ul>
+          <Masonry
+            className={'search-results'}
+            elementType={'ul'}
+            options={masonryOptions}
+            disableImagesLoaded={false}
+            updateOnEachImageLoad={false}>
+              {videos}
+          </Masonry>
         </div>
       );
     } else {

@@ -1,22 +1,18 @@
 import { connect } from 'react-redux';
 
-import PlaylistMusicVideoForm from './playlist_music_video_form';
-import { addPlaylistMV, deletePlaylistMV } from '../../actions/playlist_actions';
+import PlaylistForm from './playlist_form';
+import { createPlaylist } from '../../actions/playlist_actions';
 
-const mapStateToProps = ({ playlists }, ownProps) => {
-  return({
-    playlists,
-    myUrl: ownProps.mvUrl,
-    closeModal: ownProps.closeModal
-  });
-};
+const mapStateToProps = ({ playlists }, ownProps) => ({
+  errors: playlists.errors,
+  closeModal: ownProps.closeModal
+});
 
 const mapDispatchToProps = (dispatch) => ({
-  addToPlaylist: (playlistId, mvUrl) => dispatch(addPlaylistMV(playlistId, mvUrl)),
-  removeFromPlaylist: (playlistId, mvUrl) => dispatch(deletePlaylistMV(playlistId, mvUrl)),
+  createPlaylist: (playlist) => dispatch(createPlaylist(playlist))
 });
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(PlaylistMusicVideoForm);
+)(PlaylistForm);
