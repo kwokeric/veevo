@@ -1116,7 +1116,7 @@ MusicVideo.create({
 })
 
 Playlist.create({ user_id: 2,
-  playlist_title: "Straight Bangerz",
+  playlist_title: "Bangerz",
   description: "A playlist of tunez that bang. What can I say about this playlist that hasn't already been said about the wheel, nuclear fission, or sliced bread?",
   playlist_image_url: "http://res.cloudinary.com/kwokeric/image/upload/v1478808445/headphonesdog_na7uqp.jpg"
 })

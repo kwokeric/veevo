@@ -16,7 +16,9 @@ class IndexCarousels extends React.Component {
       this.props.videos["B9BLMNn0PrQ"],
       this.props.videos["G5Mv2iV0wkU"],
       this.props.videos["nntGTK2Fhb0"],
+      this.props.videos["KFWFJGfEaNo"],
       this.props.videos["ru0K8uYEZWw"],
+      this.props.videos["YykjpeuMNEk"],
       this.props.videos["v9rdDwH1JAo"],
       this.props.videos["zjVSewbKllk"]
     ];
@@ -28,8 +30,10 @@ class IndexCarousels extends React.Component {
       this.props.videos["_mTRvJ9fugM"],
       this.props.videos["fDrTbLXHKu8"],
       this.props.videos["8ELh8eOzq_0"],
+      this.props.videos["5AOtEnH87Mg"],
       this.props.videos["aKb9VQpoe_U"],
       this.props.videos["la0-5QFLr14"],
+      this.props.videos["ugrFTySNeQk"],
       this.props.videos["VPRjCeoBqrI"],
       this.props.videos["09R8_2nJtjg"]
     ];
@@ -38,11 +42,14 @@ class IndexCarousels extends React.Component {
       this.props.videos["3ArOBAt5Ml0"],
       this.props.videos["4nsKDJlpUbA"],
       this.props.videos["kOkQ4T5WO9E"],
+      this.props.videos["kOkQ4T5WO9E"],
       this.props.videos["uxpDa-c-4Mc"],
       this.props.videos["66vdaLrxN8s"],
       this.props.videos["qybUFnY7Y8w"],
       this.props.videos["iiNXf0n_hrA"],
+      this.props.videos["DzyKSyLavUY"],
       this.props.videos["FyXtoTLLcDk"],
+      this.props.videos["aKb9VQpoe_U"],
       this.props.videos["6byaTlhGJXM"]
     ];
 
