@@ -1,0 +1,110 @@
+.playlist-modal-div {
+  background: #000000; /* Old browsers */
+  background: -moz-linear-gradient(45deg,  #000000 0%, #262626 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg,  #000000 0%,#262626 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg,  #000000 0%,#262626 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#262626',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  border: 1px solid $lightGray;
+  border-radius: 10px;
+  padding: 50px;
+  height: 400px;
+  max-height: 400px;
+  box-sizing: border-box;
+
+  .title-div {
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .button-close {
+    position: absolute;
+    bottom: 60px;
+    border: 0;
+    border-radius: 3px;
+    width: 280px;
+    height: 35px;
+    background-color: $darkGray;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-weight: 300;
+    transition: all 0.4s;
+
+    &:focus { outline: 0; }
+
+    &:hover {
+      background: linear-gradient(0deg, $darkGray, $lightGray);
+      cursor: pointer;
+    }
+  }
+
+  .playlist-list-item {
+    height: 35px;
+    width: 100%;
+    border-top: 1px solid $darkGray;
+
+    &:hover {
+      background-color: $lightCelest;
+    }
+  }
+}
+
+.modal-form {
+  padding-top: 25px;
+
+  .input {
+    display: flex;
+    padding-top: 25px;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 1px solid $lightGray;
+    font-size: 12px;
+
+    .username, .password {
+      height: 35px;
+      margin-bottom: 25px;
+      border: none;
+      border-radius: 3px;
+      padding: 0 15px;
+      text-align: center;
+      outline: 0;
+      letter-spacing: 2px;
+    }
+
+    .submit {
+      border: 0;
+      margin-bottom: 25px;
+      height: 35px;
+      letter-spacing: 2px;
+      font-weight: bold;
+      background-color: $celest;
+      border-radius: 3px;
+      transition: all 0.2s;
+
+      &:focus { outline: 0; }
+
+      &:hover {
+        background: linear-gradient(0deg, $celest, $lightCelest);
+        cursor: pointer;
+        font-size: 12px;
+      }
+    }
+  }
+
+
+
+  .errors > li {
+    text-align: center;
+    color: $lightGray;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 12px;
+  }
+}
+
+.selected {
+  background-color: $celest;
+  cursor: default;
+}

@@ -14,22 +14,22 @@ import { fetchVideos, fetchRelatedVideos } from '../actions/player_actions';
 import { fetchPlaylists } from '../actions/playlist_actions';
 
 const Root = ({ store }) => {
-  const populateVideos = () => {
+  const populateVideosAndPlaylists = () => {
     store.dispatch(fetchVideos());
+    if (window.currentUser) {
+      store.dispatch(fetchPlaylists());
+    }
   };
   const populateRelatedVideos = (nextState) => {
     store.dispatch(fetchRelatedVideos(nextState.params.mvUrl));
-  };
-  const populatePlaylists = (nextState) => {
-    store.dispatch(fetchPlaylists());
   };
 
   return(
     <Provider store={store}>
       <Router history={hashHistory}>
-        <Route path="/" component={App} onEnter={populateVideos}>
+        <Route path="/" component={App} onEnter={populateVideosAndPlaylists}>
           <IndexRoute component={SplashContainer}/>
-          <Route path="users/:userId" component={ProfileContainer} onEnter={populatePlaylists}/>
+          <Route path="users/:userId" component={ProfileContainer}/>
           <Route path="mv/:mvUrl" component={PlayerContainer} onEnter={populateRelatedVideos}/>
           <Route path="playlist/:playlistId" component={PlaylistIndexContainer} />
           <Route path="search" component={SearchContainer} />

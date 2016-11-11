@@ -1,5 +1,4 @@
 export const FETCH_PLAYLISTS = "FETCH_PLAYLISTS";
-export const FETCH_PLAYLIST = "FETCH_PLAYLIST";
 export const CREATE_PLAYLIST = "CREATE_PLAYLIST";
 export const UPDATE_PLAYLIST = "UPDATE_PLAYLIST";
 export const DELETE_PLAYLIST = "DELETE_PLAYLIST";
@@ -12,11 +11,6 @@ export const RECEIVE_ERRORS = "RECEIVE_ERRORS";
 
 export const fetchPlaylists = () => ({
   type: FETCH_PLAYLISTS
-});
-
-export const fetchPlaylist = playlistId => ({
-  type: FETCH_PLAYLIST,
-  playlistId
 });
 
 export const receivePlaylists = playlists => ({

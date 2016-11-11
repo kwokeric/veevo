@@ -1,7 +1,5 @@
-json.array! @playlists do |playlist|
-  if playlist.user_id == current_user.id
-    json.playlist.id do
-      json.partial! 'playlist', playlist: playlist
-    end
+@playlists.each do |playlist|
+  json.set! playlist.id do
+    json.partial! 'playlist', playlist: playlist
   end
 end

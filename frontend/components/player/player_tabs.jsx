@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
 
-import Carousel from '../carousel/carousel.jsx';
+import Carousel from '../carousel/carousel_container';
 
 class PlayerTabs extends React.Component {
   constructor(props) {

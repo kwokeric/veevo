@@ -3,5 +3,6 @@ class Playlist < ActiveRecord::Base
 
   belongs_to :user
 
-  has_many :playlist_music_videos
+  has_many :playlist_music_videos, dependent: :destroy
+  has_many :music_videos, through: :playlist_music_videos
 end

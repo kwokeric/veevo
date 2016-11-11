@@ -59,9 +59,9 @@ class Api::PlaylistsController < ApplicationController
   end
 
   def add_mv
-    mv = MusicVideo.find_by(id: params[:mv_id])
+    mv = MusicVideo.find_by(id: params[:mv_url])
 
-    if mv && PlaylistMusicVideo.create(playlist_id: @playlist.id, mv_id: mv.id)
+    if mv && PlaylistMusicVideo.create(playlist_id: @playlist.id, mv_mv_url: mv.mv_url)
       render 'api/playlists/show'
     else
       render json: ["Could not add music video to playlist"], status: 422
@@ -69,10 +69,10 @@ class Api::PlaylistsController < ApplicationController
   end
 
   def remove_mv
-    mv = MusicVideo.find_by(id: params[:mv_id]);
+    mv = MusicVideo.find_by(id: params[:mv_url]);
 
     if mv && @playlist.mvs.include?(mv)
-      playlist_mv = PlaylistMusicVideo.find_by(playlist_id: @playlist.id, mv_id: mv.id)
+      playlist_mv = PlaylistMusicVideo.find_by(playlist_id: @playlist.id, mv_mv_url: mv.mv_url)
 
       if playlist_mv.destroy
         render 'api/playlists/show'

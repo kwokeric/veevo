@@ -10,10 +10,6 @@ class Splash extends React.Component {
     this.demo = this.demo.bind(this);
   }
 
-  componentWillMount () {
-    this.props.fetchVideos();
-  }
-
   handleDemo(e) {
     e.preventDefault();
     const guest = {username: "guest", password: "password"};
@@ -28,8 +24,8 @@ class Splash extends React.Component {
             <span>A music video experience that is</span>
             <div className="words words-1">
               <span>inspiring</span>
-              <span>pure</span>
-              <span>personalized</span>
+              <span>customized</span>
+              <span>captivating</span>
               <span>uncomplicated</span>
               <span>engaging</span>
               <span>optimized</span>

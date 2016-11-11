@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 
-import PlaylistIndex from './playlist_index';
+import { fetchPlaylists } from '../../actions/playlist_actions';
+import Carousel from './carousel';
 
 const mapStateToProps = ({ playlists }, ownProps) => {
   return({
@@ -9,10 +10,10 @@ const mapStateToProps = ({ playlists }, ownProps) => {
 };
 
 const mapDispatchToProps = (dispatch) => ({
-
+  fetchPlaylists: () => dispatch(fetchPlaylists()),
 });
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(PlaylistIndex);
+)(Carousel);

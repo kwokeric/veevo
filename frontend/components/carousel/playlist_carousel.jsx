@@ -12,7 +12,6 @@ class Carousel extends React.Component {
   clickHandler (mvUrl) {
     return (e) => {
       e.preventDefault();
-      $(document).scrollTop(0);
       hashHistory.push(`/mv/${mvUrl}`);
     };
   }

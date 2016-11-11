@@ -1017,12 +1017,14 @@ MusicVideo.create({
 
 Playlist.create({ user_id: 2,
   playlist_title: "Straight Bangerz",
-  description: "A playlist of tunez that bang. What can I say about this playlist that hasn't already been said about the wheel, nuclear fission, or sliced bread?"
+  description: "A playlist of tunez that bang. What can I say about this playlist that hasn't already been said about the wheel, nuclear fission, or sliced bread?",
+  playlist_image_url: "http://res.cloudinary.com/kwokeric/image/upload/v1478808445/headphonesdog_na7uqp.jpg"
 })
 
 Playlist.create({ user_id: 2,
   playlist_title: "Top 40",
-  description: "Top 40 be a noize industry shorthand fo' tha currently most-popular joints up in a particular genre. When used without qualification it refers ta tha best-pimpin or most frequently broadcast ghettofab beatz. Drop dis like itz hot! Da term is derived from record noize charts, all dem of which traditionally consist of a total of 40 joints, n' you can put dat on yo' toast. Top 40 be also a alternatizzle term fo' tha radio format of such beatz, also known as Contemporary hit radio."
+  description: "Top 40 be a noize industry shorthand fo' tha currently most-popular joints up in a particular genre. When used without qualification it refers ta tha best-pimpin or most frequently broadcast ghettofab beatz. Drop dis like itz hot! Da term is derived from record noize charts, all dem of which traditionally consist of a total of 40 joints, n' you can put dat on yo' toast. Top 40 be also a alternatizzle term fo' tha radio format of such beatz, also known as Contemporary hit radio.",
+  playlist_image_url: "http://res.cloudinary.com/kwokeric/image/upload/c_scale,w_300/v1478807553/top40_ro1ohd.png"
 })
 
 PlaylistMusicVideo.create({ playlist_id: 1, mv_mv_url: "66vdaLrxN8s" })

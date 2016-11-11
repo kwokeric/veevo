@@ -5,7 +5,7 @@ var Modal = require("react-modal");
 
 import Root from './components/root';
 import configureStore from './store/store';
-import {fetchSearchResults} from './actions/search_actions';
+import {fetchPlaylists} from './actions/playlist_actions';
 
 document.addEventListener('DOMContentLoaded', () => {
   let store;
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     store = configureStore();
   }
   window.store = store;
-  window.fetchSearchResults = fetchSearchResults;
+  window.fetchPlaylists = fetchPlaylists;
 
   const root = document.getElementById('root');
   Modal.setAppElement(document.body);

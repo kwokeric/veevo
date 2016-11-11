@@ -6,18 +6,18 @@ var Modal = require("react-modal");
 import UserDisplay from './user_display';
 import SessionFormContainer from '../session_form/session_form_container';
 import SearchContainer from '../search/search_container';
-import modalStyle from './modal_style';
+import { authModalStyle } from '../../util/modal_styles.js';
 
 class Header extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      modalOpen: false,
+      loginModalOpen: false,
       searchStr: ""
     };
-	  this.openModal = this.openModal.bind(this);
-	  this.closeModal = this.closeModal.bind(this);
+	  this.openLoginModal = this.openLoginModal.bind(this);
+	  this.closeLoginModal = this.closeLoginModal.bind(this);
     this.handleSearchQuery = this.handleSearchQuery.bind(this);
   }
 
@@ -27,12 +27,13 @@ class Header extends React.Component {
     }
   }
 
-  closeModal() {
-    this.setState({ modalOpen: false });
+  closeLoginModal() {
+    this.setState({ loginModalOpen: false });
+    this.props.clearErrors();
   }
 
-  openModal() {
-    this.setState({ modalOpen: true });
+  openLoginModal() {
+    this.setState({ loginModalOpen: true });
   }
 
   handleSearch (e) {
@@ -66,7 +67,7 @@ class Header extends React.Component {
     } else {
       return <button
         className="logInButton"
-        onClick={this.openModal}>LOG IN</button>;
+        onClick={this.openLoginModal}>LOG IN</button>;
     }
   }
 
@@ -92,13 +93,12 @@ class Header extends React.Component {
         </div>
 
         <Modal
-          className="login_modal"
-					isOpen={this.state.modalOpen}
-					onRequestClose={this.closeModal}
-          style={modalStyle}
-					>
+          className="login-modal"
+					isOpen={this.state.loginModalOpen}
+					onRequestClose={this.closeLoginModal}
+          style={authModalStyle} >
           <SessionFormContainer
-            closeModal={this.closeModal}/>
+            closeModal={this.closeLoginModal}/>
         </Modal>
       </nav>
     );

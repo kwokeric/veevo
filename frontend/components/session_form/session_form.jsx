@@ -26,15 +26,14 @@ class SessionForm extends React.Component {
 	}
 
 	disableButton(){
-	  if(this.state.email.length > 0
-	    && this.state.password.length > 0
+	  if(this.state.password.length > 0
 	      && this.state.username.length > 0) {
 	    return false;
 	  } else {
 	    return true;
 	  }
 	}
-	// ON closeModal CLEAR ERRORS MAKE IT EMPTY ARRAY
+
 	renderErrors() {
 	  if(this.props.errors && this.props.errors.length > 0) {
 	    return(
@@ -108,7 +107,7 @@ class SessionForm extends React.Component {
 
 	render() {
 		return (
-			<div className="login-modal">
+			<div className="login-modal-div">
 				<div className="buttons">
 					<button className="login selected" onClick={this.selectLogin}>LOG IN</button>
 					<button className="signup" onClick={this.selectSignup}>SIGN UP</button>

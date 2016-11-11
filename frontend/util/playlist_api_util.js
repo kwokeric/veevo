@@ -33,21 +33,21 @@ export const deletePlaylist = (playlistId, success, error) => {
   });
 };
 
-export const addPlaylistMV = (playlistId, mvId, success, error) => {
+export const addPlaylistMV = (playlistId, mvUrl, success, error) => {
   $.ajax({
     method: "POST",
     url: `/api/playlists/${playlistId}/add_mv`,
-    data: {mv_id: mvId},
+    data: {mv_url: mvUrl},
     success,
     error
   });
 };
 
-export const deletePlaylistMV = (playlistId, mvId, success, error) => {
+export const deletePlaylistMV = (playlistId, mvUrl, success, error) => {
   $.ajax({
     method: "DELETE",
     url: `/api/playlists/${playlistId}/remove_mv`,
-    data: {mv_id: mvId},
+    data: {mv_url: mvUrl},
     success,
     error
   });

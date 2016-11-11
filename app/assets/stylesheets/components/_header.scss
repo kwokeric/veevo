@@ -96,15 +96,15 @@
 }
 
 .userProfile, .headerLogout {
-  font-size: 12px;
   padding: 8px 0;
   width: 100%;
   background-color: transparent;
   border: none;
   color: white;
+  font-family: Roboto;
+  font-size: 12px;
   letter-spacing: 2px;
   cursor: pointer;
-  font-family: Roboto;
 
   &:hover {
     color: $celest;
@@ -124,7 +124,7 @@
   color: white;
   letter-spacing: 3px;
   font-family: Roboto;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: normal;
   position: relative;
 
@@ -133,7 +133,6 @@
     padding: 0;
     height: 30px;
     width: 30px;
-    border: 1px solid white;
     border-radius: 50%;
     box-sizing: border-box;
     cursor: pointer;
@@ -141,15 +140,13 @@
 
   .username {
     padding: 0 20px;
-    font-size: 20px;
+    float: right;
     color: white;
     letter-spacing: 3px;
-    font-size: 15px;
-    font-weight: normal;
-    float: right;
+    font-family: Roboto;
+    font-size: 14px;
     text-align: right;
     cursor: pointer;
-    font-family: Roboto;
     text-transform: uppercase;
   }
 

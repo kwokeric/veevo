@@ -13,6 +13,7 @@ const mapStateToProps = ({ videos }, ownProps) => {
 
   return({
     currentMV,
+    mvUrl,
     videos
   });
 };

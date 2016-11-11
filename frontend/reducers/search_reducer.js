@@ -4,10 +4,6 @@ import {
   RECEIVE_SEARCH_RESULTS,
   receiveSearchResults } from '../actions/search_actions';
 
-const _default = Object.freeze({
-  videos: []
-});
-
 const SearchReducer = (state = {}, action) => {
   Object.freeze(state);
 
