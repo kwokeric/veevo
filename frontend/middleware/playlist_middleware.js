@@ -24,7 +24,7 @@ export default ({getState, dispatch}) => next => action => {
   const receivePlaylistSuccess = playlist => dispatch(receivePlaylist(playlist));
   const deletePlaylistSuccess = playlistId => dispatch(receiveDeletedPlaylist(playlistId));
   const receivePlaylistMVSuccess = playlist => dispatch(receivePlaylist(playlist));
-  const deletePlaylistMVSuccess = playlistId => dispatch(receiveDeletedPlaylist(playlistId));
+  const deletePlaylistMVSuccess = playlist => dispatch(receivePlaylist(playlist));
   const errorCallback = xhr => dispatch(receiveErrors(xhr.responseJSON));
 
   switch(action.type){

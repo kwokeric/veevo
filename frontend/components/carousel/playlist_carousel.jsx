@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import { hashHistory } from 'react-router';
 
-class Carousel extends React.Component {
+class PlaylistCarousel extends React.Component {
   constructor(props) {
     super(props);
 
@@ -12,6 +12,7 @@ class Carousel extends React.Component {
   clickHandler (mvUrl) {
     return (e) => {
       e.preventDefault();
+      $(document).scrollTop(0);
       hashHistory.push(`/mv/${mvUrl}`);
     };
   }
@@ -90,4 +91,4 @@ class Carousel extends React.Component {
   }
 }
 
-export default Carousel;
+export default PlaylistCarousel;

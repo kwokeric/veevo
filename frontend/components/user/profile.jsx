@@ -46,7 +46,10 @@ class Profile extends React.Component {
         </div>
 
         <div className="playlist-div">
-          <div className="playlist-header">YOUR  PLAYLISTS</div>
+          <div className="playlist-header">
+            <h2 className="header-text">YOUR  PLAYLISTS</h2>
+            <button className="btn-add-playlist">＋ CREATE PLAYLIST</button>
+          </div>
           <PlaylistIndexContainer />
         </div>
       </div>

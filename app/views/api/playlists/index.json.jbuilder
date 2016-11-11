@@ -1,5 +1,1 @@
-@playlists.each do |playlist|
-  json.set! playlist.id do
-    json.partial! 'playlist', playlist: playlist
-  end
-end
+json.partial! 'api/playlists/playlist', collection: @playlists, as: :playlist

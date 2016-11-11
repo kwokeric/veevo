@@ -23,7 +23,7 @@ export default ({getState, dispatch}) => next => action => {
       return next(action);
     case LOGOUT:
       logout(() => next(action));
-      break;
+      return next(action);
     case SIGNUP:
       signup(action.user, signupSuccess, errorCallback);
       return next(action);

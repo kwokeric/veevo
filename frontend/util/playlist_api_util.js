@@ -37,7 +37,7 @@ export const addPlaylistMV = (playlistId, mvUrl, success, error) => {
   $.ajax({
     method: "POST",
     url: `/api/playlists/${playlistId}/add_mv`,
-    data: {mv_url: mvUrl},
+    data: {playlist_id: playlistId, mv_url: mvUrl},
     success,
     error
   });
@@ -47,7 +47,7 @@ export const deletePlaylistMV = (playlistId, mvUrl, success, error) => {
   $.ajax({
     method: "DELETE",
     url: `/api/playlists/${playlistId}/remove_mv`,
-    data: {mv_url: mvUrl},
+    data: {playlist_id: playlistId, mv_url: mvUrl},
     success,
     error
   });

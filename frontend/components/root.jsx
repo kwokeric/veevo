@@ -16,6 +16,7 @@ import { fetchPlaylists } from '../actions/playlist_actions';
 const Root = ({ store }) => {
   const populateVideosAndPlaylists = () => {
     store.dispatch(fetchVideos());
+    
     if (window.currentUser) {
       store.dispatch(fetchPlaylists());
     }

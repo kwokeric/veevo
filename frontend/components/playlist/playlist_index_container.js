@@ -2,11 +2,9 @@ import { connect } from 'react-redux';
 
 import PlaylistIndex from './playlist_index';
 
-const mapStateToProps = ({ playlists }, ownProps) => {
-  return({
+const mapStateToProps = ({ playlists }, ownProps) => ({
     playlists
-  });
-};
+});
 
 const mapDispatchToProps = (dispatch) => ({
 

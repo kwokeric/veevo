@@ -5,6 +5,8 @@ json.title playlist.playlist_title
 json.description playlist.description
 json.image_url playlist.playlist_image_url
 
-json.array! playlist.music_videos do |mv|
-  json.partial! 'api/music_videos/mv', mv: mv
+json.music_videos do
+  json.array! playlist.music_videos do |mv|
+    json.partial! 'api/music_videos/mv', mv: mv
+  end
 end

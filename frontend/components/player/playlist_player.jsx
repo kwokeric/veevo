@@ -4,10 +4,10 @@ import ReactPlayer from 'react-player';
 var Modal = require("react-modal");
 
 import PlayerTabs from './player_tabs';
-import PlaylistMusicVideoFormContainer from '../playlist/playlist_music_video_form_container';
+import PlaylistFormContainer from '../playlist/playlist_form_container';
 import { playlistModalStyle } from '../../util/modal_styles.js';
 
-class VideoPlayer extends React.Component {
+class PlaylistPlayer extends React.Component {
   constructor(props) {
     super(props);
 
@@ -75,7 +75,7 @@ class VideoPlayer extends React.Component {
   					isOpen={this.state.playlistModalOpen}
   					onRequestClose={this.closePlaylistModal}
             style={playlistModalStyle} >
-            <PlaylistMusicVideoFormContainer
+            <PlaylistFormContainer
               mvUrl={this.props.mvUrl}
               closeModal={this.closePlaylistModal}/>
           </Modal>
@@ -87,4 +87,4 @@ class VideoPlayer extends React.Component {
   }
 }
 
-export default VideoPlayer;
+export default PlaylistPlayer;

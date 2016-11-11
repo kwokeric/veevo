@@ -18,9 +18,16 @@ const PlaylistReducer = (state = _nullPlaylist, action) => {
     case RECEIVE_PLAYLISTS:
       return merge({}, state, { playlists: action.playlists });
     case RECEIVE_PLAYLIST:
-      let playlistsCopy = merge({}, state.playlists);
-      playlistsCopy[action.playlist.id] = action.playlist;
-      return merge({}, state, {playlists: playlistsCopy});
+      let playlistsCopy = [];
+      state.playlists.forEach(playlist => {
+        if (playlist.id !== action.playlist.id) {
+          playlistsCopy.push(playlist);
+        }
+      });
+      playlistsCopy.push(action.playlist);
+      let newState = merge({}, state);
+      newState.playlists = playlistsCopy;
+      return newState;
     case RECEIVE_DELETED_PLAYLIST:
       let playlists = merge({}, state.playlists);
       delete playlists[action.playlistId];

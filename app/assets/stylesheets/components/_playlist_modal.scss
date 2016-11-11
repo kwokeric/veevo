@@ -8,103 +8,73 @@
   border: 1px solid $lightGray;
   border-radius: 10px;
   padding: 50px;
-  height: 400px;
-  max-height: 400px;
+  height: 100%;
   box-sizing: border-box;
 
   .title-div {
+    height: 50px;
+    text-align: center;
     font-size: 16px;
     letter-spacing: 2px;
-    text-align: center;
+    color: $celest;
   }
 
   .button-close {
     position: absolute;
     bottom: 60px;
+    left: 110px;
     border: 0;
     border-radius: 3px;
-    width: 280px;
+    width: 240px;
     height: 35px;
     background-color: $darkGray;
     color: white;
     letter-spacing: 2px;
     font-weight: bold;
-    font-weight: 300;
-    transition: all 0.4s;
+    border: 1px solid $lightGray;
 
     &:focus { outline: 0; }
 
     &:hover {
       background: linear-gradient(0deg, $darkGray, $lightGray);
       cursor: pointer;
+      bottom: 58px;
+      left: 108px;
+      border: 2px solid $lightGray;
+      box-sizing: content-box;
     }
   }
 
   .playlist-list-item {
-    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
     width: 100%;
-    border-top: 1px solid $darkGray;
+    padding: 0 10px;
+    border-top: 1px solid $lightGray;
+    cursor: default;
+    font-size: 14px;
+    letter-spacing: 1px;
 
     &:hover {
-      background-color: $lightCelest;
-    }
-  }
-}
-
-.modal-form {
-  padding-top: 25px;
-
-  .input {
-    display: flex;
-    padding-top: 25px;
-    flex-direction: column;
-    justify-content: space-between;
-    border-top: 1px solid $lightGray;
-    font-size: 12px;
-
-    .username, .password {
-      height: 35px;
-      margin-bottom: 25px;
-      border: none;
-      border-radius: 3px;
-      padding: 0 15px;
-      text-align: center;
-      outline: 0;
-      letter-spacing: 2px;
+      background: rgba(0, 0, 0, 0.4);
     }
 
-    .submit {
-      border: 0;
-      margin-bottom: 25px;
-      height: 35px;
-      letter-spacing: 2px;
-      font-weight: bold;
-      background-color: $celest;
-      border-radius: 3px;
-      transition: all 0.2s;
-
-      &:focus { outline: 0; }
-
-      &:hover {
-        background: linear-gradient(0deg, $celest, $lightCelest);
-        cursor: pointer;
-        font-size: 12px;
-      }
+    &:last-child {
+      border-bottom: 1px solid $lightGray
     }
+
+    .playlist-title {
+      width: 200px;
+      text-overflow: ellipsis;
+    }
+
+    .mv-btn {
+      cursor: pointer;
+    }
+
+    .mv-btn.add:hover { color: $celest; }
+    .mv-btn.remove:hover { color: $red; }
   }
-
-
-
-  .errors > li {
-    text-align: center;
-    color: $lightGray;
-    font-family: Roboto;
-    font-weight: 300;
-    font-size: 12px;
-  }
-}
-
-.selected {
-  background-color: $celest;
-  cursor: default;
 }

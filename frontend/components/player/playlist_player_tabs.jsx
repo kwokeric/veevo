@@ -7,7 +7,7 @@ class PlayerTabs extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {selectedTab: "related"};
+    this.state = {selectedTab: "next"};
     this.isActive = this.isActive.bind(this);
   }
 
@@ -25,29 +25,17 @@ class PlayerTabs extends React.Component {
   render() {
     let tab;
 
-    if (this.state.selectedTab === "related") {
-      let relatedVideos = this.props.currentMV.related_videos;
+    if (this.state.selectedTab === "next") {
+      let playlistVideos = this.props.currentMV.playlist_videos;
 
       tab = (
-        <div className="related-tab">
-          <Carousel videos={relatedVideos}/>
+        <div className="playlist-tab">
+          <Carousel videos={playlistVideos}/>
         </div>
       );
-    } else if (this.state.selectedTab === "new") {
-      let newVideos = [
-        this.props.videos["ANS9sSJA9Yc"],
-        this.props.videos["u1ZB_rGFyeU"],
-        this.props.videos["B9BLMNn0PrQ"],
-        this.props.videos["b4Bj7Zb-YD4"],
-        this.props.videos["3dyojUNrPeg"],
-        this.props.videos["-CmadmM5cOk"],
-        this.props.videos["G5Mv2iV0wkU"],
-        this.props.videos["ru0K8uYEZWw"],
-        this.props.videos["zjVSewbKllk"]
-      ];
-
+    } else if (this.state.selectedTab === "playlist") {
       tab = (
-        <div className="new-tab">
+        <div className="playlist-tab">
           <Carousel videos={newVideos}/>
         </div>
       );
@@ -66,8 +54,8 @@ class PlayerTabs extends React.Component {
     return (
       <section className="player-tabs-container">
         <ul className="tab-list">
-          <li className={`related-tab ${this.isActive("related")}`} onClick={this.changeTab("related")}>RELATED VIDEOS</li>
-          <li className={`new-tab ${this.isActive("new")}`} onClick={this.changeTab("new")}>NEW VIDEOS</li>
+          <li className={`next-tab ${this.isActive("next")}`} onClick={this.changeTab("next")}>UP NEXT</li>
+          <li className={`playlist-tab ${this.isActive("playlist")}`} onClick={this.changeTab("playlist")}>PLAYLIST INFO</li>
           <li className={`details-tab ${this.isActive("details")}`} onClick={this.changeTab("details")}>DETAILS</li>
         </ul>
 

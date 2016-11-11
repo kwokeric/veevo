@@ -1,16 +1,49 @@
 .playlist-div {
   padding: 0 8%;
-  height: 200px;
+
+  .playlist-item {
+    height: auto;
+  }
 
   .playlist-header {
-    padding-top: 30px;
-    font-size: 16px;
-    letter-spacing: 3px;
+    padding-top: 35px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header-text {
+      font-size: 16px;
+      letter-spacing: 3px;
+    }
+
+    .btn-add-playlist {
+      height: 35px;
+      width: 170px;
+      margin-right: 1px;
+      background: transparent;
+      border: 1px solid white;
+      border-radius: 3px;
+      color: white;
+      font-family: Roboto;
+      font-weight: 100;
+      font-size: 12px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: color 0.2s;
+
+      &:hover {
+        border: 2px solid $celest;
+        color: $lightCelest;
+        margin: 0;
+      }
+    }
   }
-}
 
-// PLAYLIST MODAL
-
-.playlist-modal {
-
+  .playlist-title {
+    padding-top: 30px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: $celest;
+  }
 }

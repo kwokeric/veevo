@@ -1,7 +1,6 @@
 import React from 'react';
 
-import PlaylistContainer from '../playlist/playlist_index_container';
-import Carousel from '../carousel/carousel.jsx';
+import PlaylistCarousel from '../carousel/playlist_carousel.jsx';
 
 class PlaylistIndex extends React.Component {
   constructor(props) {
@@ -14,7 +13,7 @@ class PlaylistIndex extends React.Component {
     return(
       <div className="playlist-item" key={`playlist-${idx}`}>
         <h1 className="playlist-title">{playlist.title}</h1>
-        <Carousel videos={playlist.music_videos}/>
+        <PlaylistCarousel videos={playlist.music_videos}/>
       </div>
     );
   }
@@ -31,7 +30,6 @@ class PlaylistIndex extends React.Component {
         </div>
       );
     } else {
-      debugger
       return(
         <div className="playlists-div">
           {Object.keys(this.props.playlists.playlists).map( idx => (

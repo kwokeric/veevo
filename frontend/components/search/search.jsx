@@ -6,6 +6,7 @@ import SearchContainer from './search_container';
 class Search extends React.Component {
   constructor(props) {
     super(props);
+    debugger
   }
 
   clickHandler (mvUrl) {

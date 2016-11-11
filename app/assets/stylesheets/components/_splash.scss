@@ -137,12 +137,13 @@
     font-weight: bold;
     color: white;
     background: transparent;
-    transition: font-size 0.2s;
 
     &:hover {
+      margin-bottom: -2px;
       border-color: $celest;
       color: $celest;
       cursor: pointer;
+      border-width: 3px;
     }
   }
 }

@@ -17,7 +17,6 @@ class SessionForm extends React.Component {
 	  this.selectLogin = this.selectLogin.bind(this);
 	  this.selectSignup = this.selectSignup.bind(this);
 
-	  this.guestLogin = this.guestLogin.bind(this);
 	  this.handleDemo = this.handleDemo.bind(this);
 	}
 
@@ -99,12 +98,6 @@ class SessionForm extends React.Component {
     this.props.login(guest);
   }
 
-  guestLogin () {
-    return(
-      <button className="guest-login" onClick={this.handleDemo}>GUEST LOGIN</button>
-    );
-  }
-
 	render() {
 		return (
 			<div className="login-modal-div">
@@ -128,7 +121,7 @@ class SessionForm extends React.Component {
 						<input className="submit" type="submit" value="CONTINUE" />
 					</div>
 
-					{this.guestLogin()}
+					<button className="guest-login" onClick={this.handleDemo}>GUEST LOGIN</button>
 
 					{this.renderErrors()}
 				</form>

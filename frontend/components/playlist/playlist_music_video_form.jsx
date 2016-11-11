@@ -1,9 +1,9 @@
 import React from 'react';
 var Modal = require("react-modal");
 
-import PlaylistFormContainer from '../playlist/playlist_form_container';
+import PlaylistMusicVideoFormContainer from '../playlist/playlist_music_video_form_container';
 
-class PlaylistForm extends React.Component {
+class PlaylistMusicVideoForm extends React.Component {
   constructor(props) {
     super(props);
 
@@ -13,17 +13,17 @@ class PlaylistForm extends React.Component {
   }
 
   add(playlistId, mvUrl) {
-    this.props.addToPlaylist(playlistId, mvUrl);
+    return( (e) => this.props.addToPlaylist(playlistId, mvUrl));
   }
 
   remove(playlistId, mvUrl) {
-    this.props.removeFromPlaylist(playlistId, mvUrl);
+    return( (e) => this.props.removeFromPlaylist(playlistId, mvUrl));
   }
 
   displayPlaylistItem(playlist) {
     let button;
-debugger
-    if (playlist.map(mv => mv.mv_url).includes(this.props.mvUrl)) {
+
+    if (playlist.music_videos.map(mv => mv.mv_url).includes(this.props.mvUrl)) {
       button = (
                  <a className="mv-btn remove"
                    onClick={this.remove(playlist.id, this.props.mvUrl)}>
@@ -41,7 +41,7 @@ debugger
 
     return(
       <li className="playlist-list-item" key={`${playlist.title}-${playlist.id}`}>
-        {playlist.title}
+        <div className="playlist-title">{playlist.title}</div>
         {button}
       </li>
     );
@@ -65,4 +65,4 @@ debugger
   }
 }
 
-export default PlaylistForm;
+export default PlaylistMusicVideoForm;

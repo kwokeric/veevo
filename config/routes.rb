@@ -15,6 +15,9 @@ Rails.application.routes.draw do
 
     resources :playlists, only: [:index, :show, :create, :update, :destroy]
 
+    post "playlists/:id/add_mv", to: 'playlists#add_mv'
+    delete "playlists/:id/remove_mv", to: 'playlists#remove_mv'
+
     resources :search, only: [:index]
   end
 
