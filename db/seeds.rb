@@ -1096,7 +1096,7 @@ MusicVideo.create({
 MusicVideo.create({
   song_title: "Dark Skies",
   artist_id: 14,
-  mv_url: "KFWFJGfEaNo",
+  mv_url: "XUaAsJCuyqE",
   director: "Greg Jardin",
   writer: "Daniel Stephens, Joseph Ray, Alana Stephens",
   producer: "Garen Barsegian",

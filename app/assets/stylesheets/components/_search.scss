@@ -4,6 +4,8 @@
   min-height: 70vh;
   width: 80%;
   margin: 60px auto 0 auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
 
   .empty-results {
     position: relative;
