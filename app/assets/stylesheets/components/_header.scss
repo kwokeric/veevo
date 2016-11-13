@@ -37,7 +37,7 @@
       background-position: 5px 5px;
       background-size: 20px;
       background-repeat: no-repeat;
-      padding-left: 40px;
+      padding-left: 30px;
       padding-top: 2px;
       color: white;
       -webkit-transition: width 0.4s ease-in-out;
@@ -45,7 +45,7 @@
       cursor: default;
 
       &:focus {
-        width: 40vh;
+        width: 50vh;
         border-bottom: 1px solid $celest;
         letter-spacing: 2px;
         outline: 0;

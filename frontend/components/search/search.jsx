@@ -45,7 +45,7 @@ class Search extends React.Component {
       });
 
       let masonryOptions = {
-        transitionDuration: 1,
+        transitionDuration: '0.5s',
         itemSelector: '.search-item'
       };
 
