@@ -46,8 +46,8 @@ class Search extends React.Component {
 
       let masonryOptions = {
         transitionDuration: 1,
-        fitWidth: true,
-        columnWidth: 300
+        columnWidth: 350,
+        itemSelector: '.search-item'
       };
 
       return (
