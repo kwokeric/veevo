@@ -7,16 +7,14 @@ class SessionForm extends React.Component {
 	constructor(props) {
 	  super(props);
 
-	  this.state = { username: "", password: "", login: true };
+	  this.state = { username: "", password: "", selectedTab: "login" };
 		this.handleSubmit = this.handleSubmit.bind(this);
 
 	  this.disableButton = this.disableButton.bind(this);
 	  this.updateForm = this.updateForm.bind(this);
 	  this.renderErrors = this.renderErrors.bind(this);
 
-	  this.selectLogin = this.selectLogin.bind(this);
-	  this.selectSignup = this.selectSignup.bind(this);
-
+	  this.changeTab = this.changeTab.bind(this);
 	  this.handleDemo = this.handleDemo.bind(this);
 	}
 
@@ -47,14 +45,15 @@ class SessionForm extends React.Component {
 	  }
 	}
 
-	selectLogin() {
-		this.setState({login: true});
-		$(".dropdown").removeClass("selected");
-    $(".dropdown").mouseleave(() => $(".dropdown").addClass("selected"));
-	}
+	changeTab (tab) {
+    return (e) => {
+      e.preventDefault();
+      this.setState({selectedTab: tab});
+    };
+  }
 
-	selectSignup() {
-		this.setState({login: false});
+	isActive (tab) {
+		return ((tab === this.state.selectedTab) ? "active" : "default" );
 	}
 
 	componentDidUpdate() {
@@ -85,7 +84,7 @@ class SessionForm extends React.Component {
 			username: this.state.username,
 			password: this.state.password};
 
-		if (this.state.login) {
+		if (this.state.selectedTab === "login") {
 			this.props.login(user);
 		} else {
 			this.props.signup(user);
@@ -99,12 +98,26 @@ class SessionForm extends React.Component {
   }
 
 	render() {
+		let tabs;
+
+		if (this.state.selectedTab === "login") {
+			tabs = (
+				<div className="buttons">
+					<button className="login disabled">LOG IN</button>
+					<button className="signup" onClick={this.changeTab("signup")}>SIGN UP</button>
+				</div>
+			);
+		} else {
+			tabs = (
+				<div className="buttons">
+					<button className="login" onClick={this.changeTab("login")}>LOG IN</button>
+					<button className="signup disabled">SIGN UP</button>
+				</div>
+			);
+		}
 		return (
 			<div className="login-modal-div">
-				<div className="buttons">
-					<button className="login selected" onClick={this.selectLogin}>LOG IN</button>
-					<button className="signup" onClick={this.selectSignup}>SIGN UP</button>
-				</div>
+				{tabs}
 
 				<form onSubmit={this.handleSubmit} className="modal-form">
 					<div className="input">
