@@ -11,12 +11,14 @@ class IndexCarousels extends React.Component {
     let newVideos = [
       this.props.videos["ANS9sSJA9Yc"],
       this.props.videos["u1ZB_rGFyeU"],
+      this.props.videos["htNmT31AW9U"],
       this.props.videos["b4Bj7Zb-YD4"],
       this.props.videos["-CmadmM5cOk"],
       this.props.videos["B9BLMNn0PrQ"],
       this.props.videos["G5Mv2iV0wkU"],
       this.props.videos["nntGTK2Fhb0"],
       this.props.videos["KFWFJGfEaNo"],
+      this.props.videos["kV6UoK8jXSM"],
       this.props.videos["ru0K8uYEZWw"],
       this.props.videos["YykjpeuMNEk"],
       this.props.videos["v9rdDwH1JAo"],
@@ -25,6 +27,7 @@ class IndexCarousels extends React.Component {
 
     let popularVideos = [
       this.props.videos["EgqUJOudrcM"],
+      this.props.videos["egZrQwtFtik"],
       this.props.videos["-zzP29emgpg"],
       this.props.videos["93ASUImTedo"],
       this.props.videos["_mTRvJ9fugM"],
@@ -35,6 +38,7 @@ class IndexCarousels extends React.Component {
       this.props.videos["la0-5QFLr14"],
       this.props.videos["ugrFTySNeQk"],
       this.props.videos["VPRjCeoBqrI"],
+      this.props.videos["6vopR3ys8Kw"],
       this.props.videos["09R8_2nJtjg"]
     ];
 
@@ -42,11 +46,13 @@ class IndexCarousels extends React.Component {
       this.props.videos["3ArOBAt5Ml0"],
       this.props.videos["4nsKDJlpUbA"],
       this.props.videos["kOkQ4T5WO9E"],
+      this.props.videos["aAEQt7wq44w"],
       this.props.videos["koeW4g8Y-lg"],
       this.props.videos["uxpDa-c-4Mc"],
       this.props.videos["66vdaLrxN8s"],
       this.props.videos["qybUFnY7Y8w"],
       this.props.videos["iiNXf0n_hrA"],
+      this.props.videos["2qPl5P0yBiY"],
       this.props.videos["DzyKSyLavUY"],
       this.props.videos["FyXtoTLLcDk"],
       this.props.videos["aKb9VQpoe_U"],

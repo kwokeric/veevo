@@ -24,6 +24,9 @@ Artist.create({artist_name: "Justin Timberlake"})
 Artist.create({artist_name: "Kaskade"})
 Artist.create({artist_name: "CHVRCHES"})
 Artist.create({artist_name: "Nero"})
+Artist.create({artist_name: "Mat Zo"})
+Artist.create({artist_name: "J. Cole"})
+Artist.create({artist_name: "Flume"})
 
 MusicVideo.create({
   song_title: "Hotline Bling",
@@ -33,7 +36,7 @@ MusicVideo.create({
   writer: "Aubrey Graham, Paul Jefferies, Timmy Thomas",
   producer: "Evan Landry",
   label: "Cash Money Records Inc",
-  view_count: 199867
+  view_count: 1996723
 })
 
 MusicVideo.create({
@@ -44,7 +47,7 @@ MusicVideo.create({
   writer: "Aubrey Graham, M. Samuels, N. Shebib",
   producer: "Dawn Rose, Keith Brown",
   label: "Cash Money Records Inc",
-  view_count: 1346
+  view_count: 1323446
 })
 
 MusicVideo.create({
@@ -55,7 +58,7 @@ MusicVideo.create({
   writer: "Aubrey Graham, M. Samuels, N. Shebib",
   producer: "Oualid Mouaness",
   label: "Cash Money Records Inc",
-  view_count: 9034
+  view_count: 9457034
 })
 
 MusicVideo.create({
@@ -77,7 +80,7 @@ MusicVideo.create({
   writer: "Aubrey Graham, M. Samuels",
   producer: "Roman Pichon Herrera, Jules de Chateleux, Peligroso",
   label: "Cash Money Records Inc",
-  view_count: 84831
+  view_count: 8483451
 })
 
 MusicVideo.create({
@@ -88,7 +91,7 @@ MusicVideo.create({
   writer: "Aubrey Graham, M. Samuels, N. Shebib",
   producer: "Mazin Elsadig, Al Mukadam, Jonathan Malen",
   label: "Cash Money Records Inc",
-  view_count: 2626
+  view_count: 264526
 })
 
 MusicVideo.create({
@@ -99,7 +102,7 @@ MusicVideo.create({
   writer: "Aubrey Graham, M. Samuels, N. Shebib",
   producer: "DJ Dahi",
   label: "Cash Money Records Inc",
-  view_count: 1772
+  view_count: 1323772
 })
 
 MusicVideo.create({
@@ -110,7 +113,7 @@ MusicVideo.create({
   writer: "OK Go",
   producer: "Mori Inc.",
   label: "Paracadute, BMG",
-  view_count: 8242
+  view_count: 823442
 })
 
 MusicVideo.create({
@@ -121,7 +124,7 @@ MusicVideo.create({
   writer: "OK Go",
   producer: "John O’Grady & Melissa Murphy for BOB Industries",
   label: "Paracadute, BMG",
-  view_count: 179
+  view_count: 1734569
 })
 # 10
 MusicVideo.create({
@@ -132,7 +135,7 @@ MusicVideo.create({
   writer: "OK Go",
   producer: "Shirley Moyers",
   label: "Paracadute, BMG",
-  view_count: 10300
+  view_count: 103000
 })
 
 MusicVideo.create({
@@ -143,7 +146,7 @@ MusicVideo.create({
   writer: "OK Go",
   producer: "Garrett Fennelly",
   label: "Paracadute, BMG",
-  view_count: 345
+  view_count: 349951
 })
 
 MusicVideo.create({
@@ -154,7 +157,7 @@ MusicVideo.create({
   writer: "OK Go",
   producer: "Shirley Moyers",
   label: "Paracadute, BMG",
-  view_count: 878
+  view_count: 87800
 })
 
 MusicVideo.create({
@@ -165,7 +168,7 @@ MusicVideo.create({
   writer: "OK Go",
   producer: "Mori Inc.",
   label: "Paracadute, BMG",
-  view_count: 928
+  view_count: 928453
 })
 
 MusicVideo.create({
@@ -176,7 +179,7 @@ MusicVideo.create({
   writer: "Kendrick Lamar, Adam Levine",
   producer: "Benny Blanco, The Arcade, Louie Lastic",
   label: "222 Records/Interscope Records",
-  view_count: 88
+  view_count: 88679
 })
 
 MusicVideo.create({
@@ -187,7 +190,7 @@ MusicVideo.create({
   writer: "Adam Levine, Shellback, Benjamin Levin",
   producer: "Shellback",
   label: "Interscope Records",
-  view_count: 166
+  view_count: 1662354
 })
 
 MusicVideo.create({
@@ -198,7 +201,7 @@ MusicVideo.create({
   writer: "Mike Posner, Adam Levine, Joshua Coleman",
   producer: "Ammo, Cirkut",
   label: "Interscope Records",
-  view_count: 5
+  view_count: 5365700
 })
 
 MusicVideo.create({
@@ -209,7 +212,7 @@ MusicVideo.create({
   writer: "Adam Levine, Jesse Carmichael",
   producer: "Robert John Lange",
   label: "A&M/Octone Records",
-  view_count: 10
+  view_count: 105689
 })
 
 MusicVideo.create({
@@ -220,7 +223,7 @@ MusicVideo.create({
   writer: "Adam Levine, Jesse Carmichael, Mickey Madden",
   producer: "Mark Endert, Maroon 5",
   label: "OctoScope Music, LLC",
-  view_count: 2356
+  view_count: 23256
 })
 
 MusicVideo.create({
@@ -231,7 +234,7 @@ MusicVideo.create({
   writer: "Adam Levine, James Valentine",
   producer: "Matt Wallace",
   label: "OctoScope Music, LLC",
-  view_count: 12
+  view_count: 12623733
 })
 # 20
 MusicVideo.create({
@@ -242,7 +245,7 @@ MusicVideo.create({
   writer: "Calvin Harris, Rihanna",
   producer: "Calvin Harris",
   label: "Sony, Columbia, Westbury Road",
-  view_count: 987
+  view_count: 98902907
 })
 
 MusicVideo.create({
@@ -253,7 +256,7 @@ MusicVideo.create({
   writer: "Calvin Harris, Nathan Duvall, Gavin Koolmon",
   producer: "Calvin Harris, Disciples",
   label: "Deconstruction, Columbia, Fly Eye",
-  view_count: 653
+  view_count: 638353
 })
 
 MusicVideo.create({
@@ -264,7 +267,7 @@ MusicVideo.create({
   writer: "Calvin Harris",
   producer: "Calvin Harris",
   label: "Deconstruction, Columbia, Fly Eye, Ultra",
-  view_count: 1234
+  view_count: 1222634
 })
 
 MusicVideo.create({
@@ -275,7 +278,7 @@ MusicVideo.create({
   writer: "Calvin Harris",
   producer: "Calvin Harris",
   label: "Deconstruction, Columbia, Fly Eye",
-  view_count: 12
+  view_count: 1240400
 })
 
 MusicVideo.create({
@@ -298,7 +301,7 @@ MusicVideo.create({
   writer: "Calvin Harris, Ellie Goulding",
   producer: "Calvin Harris",
   label: "Deconstruction, Fly Eye, Columbia",
-  view_count: 111
+  view_count: 11356741
 })
 
 MusicVideo.create({
@@ -309,7 +312,40 @@ MusicVideo.create({
   writer: "Calvin Harris, Ellie Goulding",
   producer: "Calvin Harris",
   label: "Deconstruction, Fly Eye, Columbia",
-  view_count: 569
+  view_count: 56914
+})
+
+MusicVideo.create({
+  song_title: "Blame Ft. John Newman",
+  artist_id: 4,
+  mv_url: "6ACl8s_tBzE",
+  director: "Emil Nava",
+  writer: "Calvin Harris, John Newman",
+  producer: "Calvin Harris",
+  label: "Sony Music Entertainment UK Limited",
+  view_count: 47867000
+})
+
+MusicVideo.create({
+  song_title: "Thinking About You Ft. Ayah Marar",
+  artist_id: 4,
+  mv_url: "cl3b7dDBLpo",
+  director: "Emil Nava",
+  writer: "Calvin Harris, Ayah Marar",
+  producer: "Calvin Harris",
+  label: "Sony Music Entertainment UK Limited",
+  view_count: 557000
+})
+
+MusicVideo.create({
+  song_title: "Open Wide Ft. Big Sean",
+  artist_id: 4,
+  mv_url: "zVzhpkFBFP8",
+  director: "Bigger Sean",
+  writer: "Calvin Harris, Big Sean",
+  producer: "Calvin Harris",
+  label: "Sony Music Entertainment UK Limited",
+  view_count: 52333007
 })
 
 MusicVideo.create({
@@ -320,7 +356,18 @@ MusicVideo.create({
   writer: "Calvin Harris, Florence Welch, Kid Harpoon",
   producer: "Calvin Harris",
   label: "Deconstruction, Fly Eye, Columbia",
-  view_count: 24251
+  view_count: 242651
+})
+
+MusicVideo.create({
+  song_title: "Under Control With Alesso Ft. Hurts",
+  artist_id: 4,
+  mv_url: "yZqmarGShxg",
+  director: "Vincent Haycock",
+  writer: "Calvin Harris, Alesso, Hurts",
+  producer: "Calvin Harris",
+  label: "Sony Music Entertainment UK Limited",
+  view_count: 12432540
 })
 
 MusicVideo.create({
@@ -331,7 +378,7 @@ MusicVideo.create({
   writer: "Taylor Swift, Max Martin, Shellback",
   producer: "Max Martin, Shellback",
   label: "Big Machine Records, Republic",
-  view_count: 4883
+  view_count: 488390
 })
 
 MusicVideo.create({
@@ -342,7 +389,7 @@ MusicVideo.create({
   writer: "Taylor Swift, Max Martin, Shellback",
   producer: "Max Martin, Shellback",
   label: "Big Machine Records",
-  view_count: 277
+  view_count: 27709
 })
 # 30
 MusicVideo.create({
@@ -353,7 +400,7 @@ MusicVideo.create({
   writer: "Taylor Swift, Liz Rose",
   producer: "Taylor Swift, Nathan Chapman",
   label: "Big Machine Records",
-  view_count: 9
+  view_count: 93788
 })
 
 MusicVideo.create({
@@ -364,7 +411,7 @@ MusicVideo.create({
   writer: "Taylor Swift, Kendrick Lamar, Max Martin, Shellback",
   producer: "Max Martin, Shellback",
   label: "Big Machine Records",
-  view_count: 2
+  view_count: 216456
 })
 
 MusicVideo.create({
@@ -375,7 +422,7 @@ MusicVideo.create({
   writer: "Taylor Swift, Max Martin, Shellback",
   producer: "Max Martin, Shellback",
   label: "Big Machine Records",
-  view_count: 26
+  view_count: 264040
 })
 
 MusicVideo.create({
@@ -397,7 +444,7 @@ MusicVideo.create({
   writer: "Taylor Swift",
   producer: "Taylor Swift, Nathan Chapman",
   label: "Big Machine Records",
-  view_count: 11
+  view_count: 112777
 })
 
 MusicVideo.create({
@@ -430,7 +477,7 @@ MusicVideo.create({
   writer: "Disclosure, Sam Smith",
   producer: "Bullion",
   label: "Universal Island Records",
-  view_count: 686
+  view_count: 686979
 })
 
 MusicVideo.create({
@@ -441,15 +488,15 @@ MusicVideo.create({
   writer: "Disclosure, Sam Smith",
   producer: "Bullion",
   label: "Universal Island Records",
-  view_count: 4
+  view_count: 4082349
 })
 
 MusicVideo.create({
-  song_title: "Magnets Ft. Lourde",
+  song_title: "Magnets Ft. Lorde",
   artist_id: 6,
   mv_url: "b_KfnGBtVeA",
   director: "James Caracal",
-  writer: "Disclosure, Lourde",
+  writer: "Disclosure, Lorde",
   producer: "Bullion",
   label: "Universal Island Records",
   view_count: 30008
@@ -463,7 +510,7 @@ MusicVideo.create({
   writer: "Disclosure, Flume",
   producer: "Toby and Pete",
   label: "Universal Island Records",
-  view_count: 67
+  view_count: 67490
 })
 
 MusicVideo.create({
@@ -485,7 +532,7 @@ MusicVideo.create({
   writer: "Disclosure",
   producer: "Mr Disclosure",
   label: "PMR Records",
-  view_count: 734
+  view_count: 73407698
 })
 
 MusicVideo.create({
@@ -496,7 +543,7 @@ MusicVideo.create({
   writer: "Disclosure",
   producer: "Mr Disclosure",
   label: "Island Records",
-  view_count: 80
+  view_count: 804977
 })
 
 MusicVideo.create({
@@ -507,7 +554,7 @@ MusicVideo.create({
   writer: "Disclosure",
   producer: "Mr Disclosure",
   label: "Island Records",
-  view_count: 90
+  view_count: 903567
 })
 
 MusicVideo.create({
@@ -518,7 +565,7 @@ MusicVideo.create({
   writer: "Coldplay",
   producer: "Nina Dluhy-Miller",
   label: "Island Records",
-  view_count: 91
+  view_count: 915050
 })
 
 MusicVideo.create({
@@ -529,7 +576,7 @@ MusicVideo.create({
   writer: "Coldplay",
   producer: "Avicii, Coldplay",
   label: "Parlophone",
-  view_count: 7367
+  view_count: 7367490
 })
 
 MusicVideo.create({
@@ -540,7 +587,7 @@ MusicVideo.create({
   writer: "Coldplay",
   producer: "Natan Schottenfels and Juliette Larthe",
   label: "Parlophone",
-  view_count: 898
+  view_count: 898100
 })
 
 MusicVideo.create({
@@ -551,7 +598,7 @@ MusicVideo.create({
   writer: "Coldplay",
   producer: "Coldplay",
   label: "Parlophone",
-  view_count: 17
+  view_count: 175049
 })
 
 MusicVideo.create({
@@ -562,7 +609,7 @@ MusicVideo.create({
   writer: "Coldplay",
   producer: "Coldplay",
   label: "Parlophone",
-  view_count: 1998
+  view_count: 19983838
 })
 # 50
 MusicVideo.create({
@@ -573,7 +620,7 @@ MusicVideo.create({
   writer: "Coldplay, Hardwell",
   producer: "Coldplay, Hardwell",
   label: "Parlophone",
-  view_count: 3588
+  view_count: 3588382
 })
 
 MusicVideo.create({
@@ -584,7 +631,7 @@ MusicVideo.create({
   writer: "Coldplay, Audien",
   producer: "Coldplay, Audien",
   label: "Parlophone",
-  view_count: 12
+  view_count: 121728
 })
 
 MusicVideo.create({
@@ -606,7 +653,7 @@ MusicVideo.create({
   writer: "Skrillex and Diplo",
   producer: "Kyle dePinna & George Mays",
   label: "Atlantic, Mad Decent, OWSLA",
-  view_count: 8
+  view_count: 82822
 })
 
 MusicVideo.create({
@@ -639,7 +686,7 @@ MusicVideo.create({
   writer: "Skrillex and Diplo",
   producer: "Nathan Scherrer",
   label: "Atlantic, Mad Decent, OWSLA",
-  view_count: 981
+  view_count: 98134
 })
 
 MusicVideo.create({
@@ -650,7 +697,7 @@ MusicVideo.create({
   writer: "Skrillex and Diplo, Oliver",
   producer: "Oliver probably",
   label: "Atlantic, Mad Decent, OWSLA",
-  view_count: 16
+  view_count: 16345
 })
 
 MusicVideo.create({
@@ -694,7 +741,7 @@ MusicVideo.create({
   writer: "Dillon Francis, Kygo",
   producer: "DJ Hanzel, Not Kygo",
   label: "Columbia Records",
-  view_count: 3217
+  view_count: 32173
 })
 
 MusicVideo.create({
@@ -705,7 +752,7 @@ MusicVideo.create({
   writer: "Dillon Francis, Totally Enormous Extinct Dinosaurs",
   producer: "DJ Hanzel",
   label: "Columbia Records",
-  view_count: 50
+  view_count: 5037
 })
 
 MusicVideo.create({
@@ -716,7 +763,7 @@ MusicVideo.create({
   writer: "Dillon Francis",
   producer: "Ed Buhr",
   label: "Columbia Records",
-  view_count: 2
+  view_count: 22456
 })
 
 MusicVideo.create({
@@ -727,7 +774,7 @@ MusicVideo.create({
   writer: "Dillon Francis, Skrillex",
   producer: "Dillex",
   label: "OWSLA",
-  view_count: 674323462
+  view_count: 67323462
 })
 
 MusicVideo.create({
@@ -760,7 +807,7 @@ MusicVideo.create({
   writer: "The Chainsmokers, ROZES",
   producer: "Flaxman Films",
   label: "Disruptor, Columbia",
-  view_count: 709
+  view_count: 709245
 })
 
 MusicVideo.create({
@@ -771,7 +818,7 @@ MusicVideo.create({
   writer: "The Chainsmokers, ROZES",
   producer: "Steve Vasquez, Alison Lani, Joe Zohar",
   label: "Dim Mak Inc.",
-  view_count: 5
+  view_count: 532752
 })
 
 MusicVideo.create({
@@ -826,7 +873,7 @@ MusicVideo.create({
   writer: "Justin Timberlake, Timothy Mosley, Jerome Harmon, James Fauntleroy",
   producer: "Justin Timberlake, Timbaland, J-Roc",
   label: "RCA, Sony",
-  view_count: 150001
+  view_count: 150301
 })
 
 MusicVideo.create({
@@ -837,7 +884,7 @@ MusicVideo.create({
   writer: "Justin Timberlake, Timothy Mosley, Jerome Harmon, James Fauntleroy",
   producer: "Justin Timberlake, Timbaland",
   label: "RCA, Sony",
-  view_count: 10
+  view_count: 56410
 })
 
 MusicVideo.create({
@@ -848,7 +895,7 @@ MusicVideo.create({
   writer: "Justin Timberlake, Anna Kendrick",
   producer: "Justin Timberlake, Timbaland",
   label: "RCA, Sony",
-  view_count: 10
+  view_count: 102346
 })
 
 MusicVideo.create({
@@ -859,7 +906,7 @@ MusicVideo.create({
   writer: "Justin Timberlake",
   producer: "Justin Timberlake, Timbaland",
   label: "RCA, Sony",
-  view_count: 10
+  view_count: 126230
 })
 
 MusicVideo.create({
@@ -870,7 +917,7 @@ MusicVideo.create({
   writer: "Kaskade, Deadmau5, Skylar Grey",
   producer: "Kaskade, Deadmau5",
   label: "mau5trap",
-  view_count: 100
+  view_count: 106260
 })
 
 MusicVideo.create({
@@ -881,7 +928,7 @@ MusicVideo.create({
   writer: "Kaskade",
   producer: "Kaskade",
   label: "OM Records",
-  view_count: 100
+  view_count: 10230
 })
 
 MusicVideo.create({
@@ -892,7 +939,7 @@ MusicVideo.create({
   writer: "Kaskade, CID",
   producer: "Kaskade, CID",
   label: "OM Records",
-  view_count: 1001
+  view_count: 100541
 })
 # 80
 MusicVideo.create({
@@ -903,7 +950,7 @@ MusicVideo.create({
   writer: "Kaskade, KOLAJ",
   producer: "Kaskade, KOLAJ",
   label: "Warner Brothers, Arkade",
-  view_count: 1001
+  view_count: 421001
 })
 
 MusicVideo.create({
@@ -914,7 +961,7 @@ MusicVideo.create({
   writer: "Kaskade, CID",
   producer: "Kaskade, CID",
   label: "Warner Brothers, Arkade",
-  view_count: 1001
+  view_count: 1004561
 })
 
 MusicVideo.create({
@@ -936,7 +983,7 @@ MusicVideo.create({
   writer: "Kaskade",
   producer: "Kaskade",
   label: "Warner Brothers, Arkade",
-  view_count: 98
+  view_count: 1983471
 })
 
 MusicVideo.create({
@@ -1115,6 +1162,248 @@ MusicVideo.create({
   view_count: 3847842
 })
 
+MusicVideo.create({
+  song_title: "The Thrill (Porter Robinson Remix)",
+  artist_id: 14,
+  mv_url: "UCJHMT0JFnQ",
+  director: "Not Applicable",
+  writer: "Daniel Stephens, Joseph Ray, Alana Stephens, Porter Robinson",
+  producer: "Garen Barsegian",
+  label: "MTA Records",
+  view_count: 983892
+})
+
+MusicVideo.create({
+  song_title: "The Sky Ft. Linnea Schossow",
+  artist_id: 15,
+  mv_url: "iMCcnA9ifqg",
+  director: "Infinity List",
+  writer: "Matan Zohar",
+  producer: "Matan Zohar",
+  label: "Anjunabeats",
+  view_count: 100234
+})
+
+MusicVideo.create({
+  song_title: "Sinful Ft. I See MONSTAS) ",
+  artist_id: 15,
+  mv_url: "kV6UoK8jXSM",
+  director: "Infinity List",
+  writer: "Matan Zohar, I See MONSTAS",
+  producer: "Matan Zohar",
+  label: "Anjunabeats",
+  view_count: 983892
+})
+
+MusicVideo.create({
+  song_title: "Easy (With Porter Robinson)",
+  artist_id: 15,
+  mv_url: "egZrQwtFtik",
+  director: "Danielle Whiteman",
+  writer: "Matan Zohar, Porter Robinson",
+  producer: "Matan Zohar",
+  label: "Anjunabeats",
+  view_count: 3300299
+})
+
+MusicVideo.create({
+  song_title: "Mozart (With Arty)",
+  artist_id: 15,
+  mv_url: "YoERDgLOsBU",
+  director: "Ian Gamester",
+  writer: "Matan Zohar, Arty",
+  producer: "Matan Zohar",
+  label: "Anjunabeats",
+  view_count: 231200
+})
+
+MusicVideo.create({
+  song_title: "Pyramid Scheme Ft. Chuck D.",
+  artist_id: 15,
+  mv_url: "B0bXdMQlrEY",
+  director: "Morgan Wise",
+  writer: "Matan Zohar, Chuck D.",
+  producer: "Finley Wise, Colin Wyatt",
+  label: "Anjunabeats",
+  view_count: 199348
+})
+
+MusicVideo.create({
+  song_title: "Robots Never Lie",
+  artist_id: 15,
+  mv_url: "UJbjWH_GLb0",
+  director: "Tillie Wood, Matt Dodimead",
+  writer: "Matan Zohar",
+  producer: "Finley Wise, Colin Wyatt",
+  label: "Anjunabeats",
+  view_count: 2199
+})
+
+MusicVideo.create({
+  song_title: "Lucid Dreams",
+  artist_id: 15,
+  mv_url: "1FaRqsawrWQ",
+  director: "Not Applicable",
+  writer: "Matan Zohar",
+  producer: "Finley Wise, Colin Wyatt",
+  label: "Anjunabeats",
+  view_count: 212399
+})
+
+MusicVideo.create({
+  song_title: "Wet Dreamz",
+  artist_id: 16,
+  mv_url: "eCGV26aj-mM",
+  director: "Ryan Staake",
+  writer: "Jermaine Lamarr Cole",
+  producer: "Pomp&Clout",
+  label: "Dreamville, Roc Nation, Columbia",
+  view_count: 57370956
+})
+
+MusicVideo.create({
+  song_title: "Crooked Smile Ft. TLC",
+  artist_id: 16,
+  mv_url: "fzzMOMkjm8A",
+  director: "Ryan Staake",
+  writer: "Jermaine Lamarr Cole, TLC",
+  producer: "Pomp&Clout",
+  label: "Dreamville, Roc Nation, Columbia",
+  view_count: 3198238
+})
+
+MusicVideo.create({
+  song_title: "She Knows Ft. Amber Coffman, Cults",
+  artist_id: 16,
+  mv_url: "jYdaQJzcAcw",
+  director: "Ryan Staake",
+  writer: "Jermaine Lamarr Cole, Amber Coffman",
+  producer: "Pomp&Clout",
+  label: "Dreamville, Roc Nation, Columbia",
+  view_count: 40190238
+})
+
+MusicVideo.create({
+  song_title: "Apparently",
+  artist_id: 16,
+  mv_url: "eRaFMlZ1YHA",
+  director: "Ryan Staake",
+  writer: "Jermaine Lamarr Cole",
+  producer: "Pomp&Clout",
+  label: "Dreamville, Roc Nation, Columbia",
+  view_count: 289723
+})
+
+MusicVideo.create({
+  song_title: "Work Out",
+  artist_id: 16,
+  mv_url: "6PN78PS_QsM",
+  director: "Ryan Staake",
+  writer: "Jermaine Lamarr Cole",
+  producer: "Pomp&Clout",
+  label: "Dreamville, Roc Nation, Columbia",
+  view_count: 1909323
+})
+
+MusicVideo.create({
+  song_title: "G.O.M.D.",
+  artist_id: 16,
+  mv_url: "vHU6ZRQJ50Q",
+  director: "Ryan Staake",
+  writer: "Jermaine Lamarr Cole",
+  producer: "Pomp&Clout",
+  label: "Dreamville, Roc Nation, Columbia",
+  view_count: 41699275
+})
+
+MusicVideo.create({
+  song_title: "Say It Ft. Tove lo",
+  artist_id: 17,
+  mv_url: "htNmT31AW9U",
+  director: "Nez",
+  writer: "Harley Edward Streten",
+  producer: "Rik Green",
+  label: "Future Classic",
+  view_count: 4770847
+})
+
+MusicVideo.create({
+  song_title: "Sleepless Ft. Jezzabell Doran",
+  artist_id: 17,
+  mv_url: "aAEQt7wq44w",
+  director: "Damon Cameron",
+  writer: "Harley Edward Streten",
+  producer: "Rik Green",
+  label: "Future Classic",
+  view_count: 1873789
+})
+
+MusicVideo.create({
+  song_title: "On Top Ft. T.Shirt",
+  artist_id: 17,
+  mv_url: "bnUhA3TOv_k",
+  director: "Angus Lee Forbes",
+  writer: "Harley Edward Streten, T.Shirt",
+  producer: "Steve Mccallum",
+  label: "Future Classic",
+  view_count: 1243709
+})
+
+MusicVideo.create({
+  song_title: "Insane Ft. Moon Holiday",
+  artist_id: 17,
+  mv_url: "2qPl5P0yBiY",
+  director: "Angus Lee Forbes",
+  writer: "Harley Edward Streten, Alexadra Ward",
+  producer: "Steve Mccallum",
+  label: "Future Classic",
+  view_count: 930099
+})
+
+MusicVideo.create({
+  song_title: "Never Be Like You Ft. Kai",
+  artist_id: 17,
+  mv_url: "-KPnyf8vwXI",
+  director: "Clemens Habicht",
+  writer: "Harley Edward Streten, Kai",
+  producer: "Rachael Ford-Davies",
+  label: "Future Classic",
+  view_count: 22943989
+})
+
+MusicVideo.create({
+  song_title: "Drop The Game Ft. Chet Faker",
+  artist_id: 17,
+  mv_url: "6vopR3ys8Kw",
+  director: "Lorin Askill",
+  writer: "Harley Edward Streten, Chet Faker",
+  producer: "Garen Barsegian",
+  label: "Future Classic",
+  view_count: 79752269
+})
+
+MusicVideo.create({
+  song_title: "Lorde - Tennis Court (Flume Remix)",
+  artist_id: 17,
+  mv_url: "8ATu1BiOPZA",
+  director: "Lorin Askill",
+  writer: "Lorde, Harley Edward Streten",
+  producer: "Garen Barsegian",
+  label: "Future Classic",
+  view_count: 43375990
+})
+
+MusicVideo.create({
+  song_title: "Some Minds Ft. Andrew Wyatt",
+  artist_id: 17,
+  mv_url: "IfLqsNRkBIo",
+  director: "People Love Flume",
+  writer: "Harley Edward Streten, Andrew Wyatt",
+  producer: "Garen Barsegian",
+  label: "Future Classic",
+  view_count: 2719005
+})
+
 Playlist.create({ user_id: 2,
   playlist_title: "Bangerz",
   description: "A playlist of tunez that bang. What can I say about this playlist that hasn't already been said about the wheel, nuclear fission, or sliced bread?",
@@ -1134,11 +1423,13 @@ PlaylistMusicVideo.create({ playlist_id: 1, mv_mv_url: "aKb9VQpoe_U" })
 PlaylistMusicVideo.create({ playlist_id: 1, mv_mv_url: "-zzP29emgpg" })
 PlaylistMusicVideo.create({ playlist_id: 1, mv_mv_url: "dGghkjpNCQ8" })
 PlaylistMusicVideo.create({ playlist_id: 1, mv_mv_url: "b_KfnGBtVeA" })
+PlaylistMusicVideo.create({ playlist_id: 1, mv_mv_url: "8ATu1BiOPZA" })
 PlaylistMusicVideo.create({ playlist_id: 1, mv_mv_url: "8ahzUa1hG1M" })
 PlaylistMusicVideo.create({ playlist_id: 1, mv_mv_url: "v9rdDwH1JAo" })
 PlaylistMusicVideo.create({ playlist_id: 1, mv_mv_url: "G5Mv2iV0wkU" })
 PlaylistMusicVideo.create({ playlist_id: 1, mv_mv_url: "e2rz2DPdn6Y" })
 PlaylistMusicVideo.create({ playlist_id: 1, mv_mv_url: "zjVSewbKllk" })
+PlaylistMusicVideo.create({ playlist_id: 1, mv_mv_url: "2qPl5P0yBiY" })
 PlaylistMusicVideo.create({ playlist_id: 1, mv_mv_url: "C9slkeFXogU" })
 PlaylistMusicVideo.create({ playlist_id: 1, mv_mv_url: "U5pzmGX8Ztg" })
 
@@ -1146,6 +1437,7 @@ PlaylistMusicVideo.create({ playlist_id: 2, mv_mv_url: "J9NQFACZYEU" })
 PlaylistMusicVideo.create({ playlist_id: 2, mv_mv_url: "uxpDa-c-4Mc" })
 PlaylistMusicVideo.create({ playlist_id: 2, mv_mv_url: "09R8_2nJtjg" })
 PlaylistMusicVideo.create({ playlist_id: 2, mv_mv_url: "b4Bj7Zb-YD4" })
+PlaylistMusicVideo.create({ playlist_id: 2, mv_mv_url: "-KPnyf8vwXI" })
 PlaylistMusicVideo.create({ playlist_id: 2, mv_mv_url: "VPRjCeoBqrI" })
 PlaylistMusicVideo.create({ playlist_id: 2, mv_mv_url: "e-ORhEE9VVg" })
 PlaylistMusicVideo.create({ playlist_id: 2, mv_mv_url: "93ASUImTedo" })
