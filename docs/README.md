@@ -1,6 +1,6 @@
-# veevo
+# Veevo
 
-Original website: [vevo](https://www.vevo.com)
+Original website: [Vevo](https://www.vevo.com)
 
 Progress tracking: [Trello](https://trello.com/b/o3xvBEvg/veevo-full-stack-project)
 
