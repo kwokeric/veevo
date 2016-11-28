@@ -1,8 +1,8 @@
-# veevo
+# Veevo
 
-Live clone: [vevo](https://www.vevo.com)
+Live clone: [Veevo](https://veevo.herokuapp.com/)
 
-Original website: [vevo](https://www.vevo.com)
+Original website: [Vevo](https://www.vevo.com)
 
 Veevo is a full-stack web application inspired by Vevo, an online music video playing application. It utilizes Ruby on Rails on the backend, a PostgreSQL database, and React.js with a Redux architectural framework on the frontend.
 
