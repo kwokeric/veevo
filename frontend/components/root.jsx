@@ -24,11 +24,6 @@ const Root = ({ store }) => {
   const populateRelatedVideos = (nextState) => {
     store.dispatch(fetchRelatedVideos(nextState.params.mvUrl));
   };
-  // const redirectIfNotCurrentUser = (nextState, replace) => {
-  //   if (store.getState().session.currentUser.id !== parseInt(nextState.params.userId)) {
-  //     replace("/");
-  //   }
-  // };
 
   return(
     <Provider store={store}>
@@ -46,3 +41,10 @@ const Root = ({ store }) => {
 };
 
 export default Root;
+
+
+// const redirectIfNotCurrentUser = (nextState, replace) => {
+//   if (store.getState().session.currentUser.id !== parseInt(nextState.params.userId)) {
+//     replace("/");
+//   }
+// };
