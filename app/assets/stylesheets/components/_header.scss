@@ -26,6 +26,10 @@
   .search {
     font-family: Roboto;
 
+    .search-item {
+      cursor: pointer;
+    }
+
     input[type=text] {
       width: 30px;
       height: 30px;
@@ -42,13 +46,14 @@
       color: white;
       -webkit-transition: width 0.4s ease-in-out;
       transition: width 0.4s ease-in-out;
-      cursor: default;
+      cursor: pointer;
 
       &:focus {
         width: 50vh;
         border-bottom: 1px solid $celest;
         letter-spacing: 2px;
         outline: 0;
+        cursor: default;
       }
     }
   }
@@ -73,10 +78,10 @@
   color: black;
   background-color: white;
   border-radius: 3px;
+  cursor: pointer;
 
   &:hover {
     background: linear-gradient(0deg, $celest, $lightCelest);
-    cursor: pointer;
   }
 }
 

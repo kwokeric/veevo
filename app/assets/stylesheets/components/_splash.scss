@@ -130,20 +130,26 @@
     width: 100px;
     height: 20px;
     padding: 8px 20px;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 3px;
     font-size: 12px;
     letter-spacing: 2px;
     font-weight: bold;
     color: white;
     background: transparent;
+    transition: 0.4s;
 
     &:hover {
-      margin-bottom: -2px;
       border-color: $celest;
       color: $celest;
       cursor: pointer;
-      border-width: 3px;
     }
+  }
+
+  .fa-chevron-down {
+    position: absolute;
+    font-size: 30px;
+    opacity: 0.5;
+    bottom: 5%;
   }
 }

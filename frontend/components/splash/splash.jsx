@@ -7,6 +7,7 @@ class Splash extends React.Component {
     super(props);
 
     this.handleDemo = this.handleDemo.bind(this);
+    this.handleScroll = this.handleScroll.bind(this);
     this.demo = this.demo.bind(this);
   }
 
@@ -14,6 +15,14 @@ class Splash extends React.Component {
     e.preventDefault();
     const guest = {username: "guest", password: "password"};
     this.props.login(guest);
+  }
+
+  handleScroll(e) {
+    e.preventDefault();
+
+    $('html, body').animate({
+      scrollTop: $(".carousel-title").offset().top
+    }, 1000);
   }
 
   headline () {
@@ -50,6 +59,7 @@ class Splash extends React.Component {
         <div className="splash">
           {this.headline()}
           {this.demo()}
+          <i className="fa fa-chevron-down" aria-hidden="true" onCLick={this.handleScroll}></i>
         </div>
 
         <IndexCarousels videos={this.props.videos}/>
