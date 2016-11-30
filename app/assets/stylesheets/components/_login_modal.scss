@@ -29,7 +29,7 @@
       font-weight: bold;
       letter-spacing: 2px;
       cursor: pointer;
-      transition: all 0.5s;
+      transition: all 0.4s;
 
       &:hover { background-color: $xLightGray }
     }
@@ -74,14 +74,13 @@
       font-weight: bold;
       background-color: $celest;
       border-radius: 3px;
-      transition: font 0.3s;
+      transition: 0.4s;
+      cursor: pointer;
 
       &:focus { outline: 0; }
 
       &:hover {
-        background: linear-gradient(0deg, $celest, $lightCelest);
-        cursor: pointer;
-        font-size: 12px;
+        background-color: #5a9697;
       }
     }
   }
@@ -92,19 +91,18 @@
     margin-bottom: 20px;
     width: 100%;
     height: 35px;
-    background-color: $darkGray;
+    background-color: $lightGray;
     color: white;
     letter-spacing: 2px;
     font-weight: bold;
     font-weight: 300;
-    transition: all 0.2s;
+    transition: 0.4s;
+    cursor: pointer;
 
     &:focus { outline: 0; }
 
     &:hover {
-      background: linear-gradient(0deg, $darkGray, $lightGray);
-      cursor: pointer;
-      font-size: 12px;
+      background-color: #444;
     }
   }
 

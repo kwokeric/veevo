@@ -79,9 +79,10 @@
   background-color: white;
   border-radius: 3px;
   cursor: pointer;
+  transition: 0.4s;
 
   &:hover {
-    background: linear-gradient(0deg, $celest, $lightCelest);
+    background-color: $celest;
   }
 }
 
