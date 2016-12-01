@@ -1,10 +1,10 @@
 # Veevo
 
-Live clone: [Veevo](https://veevo.herokuapp.com/)
-
-Original website: [Vevo](https://www.vevo.com)
+[Live](https://veevo.online/)
 
 Veevo is a full-stack web application inspired by Vevo, an online music video playing application. It utilizes Ruby on Rails on the backend, a PostgreSQL database, and React.js with a Redux architectural framework on the frontend.
+
+![Screenshot](./docs/screenshot_1.png)
 
 ## Features & Implementation
 
@@ -38,4 +38,4 @@ User's can search for music videos. Search API calls are made dynamically each u
 
 Veevo's smooth, desktop app-like interface was created with user experience in and functionality in mind. This was largely accomplished via the React/Redux architectural pattern, which rendered expensive full page refreshes unnecessary.
 
-To make navigating around the website more responsive, some data &mdash; such as music video and user's playlist's information &mdash; is pre-fetched and loaded into the application's state. This makes many further AJAX requests unnecessary as users navigate and browse through the app.
+To make navigating around the website more responsive, some data - such as music video and user's playlist's information - is pre-fetched and loaded into the application's state. This makes many further AJAX requests unnecessary as users navigate and browse through the app.
