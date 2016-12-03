@@ -40,6 +40,10 @@ class Splash extends React.Component {
     e.preventDefault();
     const guest = {username: "guest", password: "password"};
     this.props.login(guest);
+
+    $('html, body').animate({
+      scrollTop: $(".carousel-title").offset().top - 10
+    }, 800);
   }
 
   handleScroll(e) {
@@ -83,7 +87,7 @@ class Splash extends React.Component {
       <div className="index">
         <div className="splash">
           <div className="splash-filter"></div>
-          
+
           {this.headline()}
           {this.demo()}
           <i className="fa fa-chevron-down" aria-hidden="true" onClick={this.handleScroll}></i>

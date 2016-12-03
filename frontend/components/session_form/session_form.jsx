@@ -95,6 +95,10 @@ class SessionForm extends React.Component {
     e.preventDefault();
     const guest = {username: "guest", password: "password"};
     this.props.login(guest);
+
+    $('html, body').animate({
+      scrollTop: $(".carousel-title").offset().top - 10
+    }, 800);
   }
 
 	render() {
