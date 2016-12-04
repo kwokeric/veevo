@@ -32,14 +32,13 @@
     letter-spacing: 2px;
     background-color: $celest;
     border-radius: 3px;
-    transition: font 0.3s;
+    transition: 0.3s;
+    cursor: pointer;
 
     &:focus { outline: 0; }
 
     &:hover {
-      background: linear-gradient(0deg, $celest, $lightCelest);
-      cursor: pointer;
-      font-size: 12px;
+      background-color: $lightCelest;
     }
   }
 

@@ -46,6 +46,10 @@
   .video-info-more {
     text-align: right;
 
+    .add-to {
+      position: relative;
+    }
+
     .add-to:hover {
       color: $celest;
       cursor: pointer;
@@ -53,9 +57,9 @@
 
     .plus {
       position: absolute;
-      float: left;
-      margin-top: -14px;
-      font-size: 35px;
+      right: 45px;
+      margin-top: -3px;
+      font-size: 20px;
     }
   }
 }
@@ -96,7 +100,7 @@
   .new-tab {
     display: block;
     height: 350px;
-    padding: 35px 15px;
+    padding: 35px 0;
   }
 
   .detail-tab {
