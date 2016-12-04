@@ -46,21 +46,38 @@ class PlaylistMusicVideoForm extends React.Component {
     );
   }
 
+  errorModal() {
+
+  }
+
   render () {
     let playlists = this.props.playlists.playlists.sort(function(a,b) { return parseInt(a.id) - parseInt(b.id); } );
 
-    return(
-      <div className="playlist-mv-modal-div">
-        <div className="title-div">ADD TO PLAYLIST</div>
+    if (this.props.currentUser === null) {
+      return(
+        <div className="playlist-mv-modal-div">
+          <div className="title-div">
+            <br></br>
+            Log in to add to playlist
+          </div>
 
-        <div className="playlist-mv-form">
-          <ul>
-            {Object.keys(playlists).map( idx => this.displayPlaylistItem(playlists[idx]))}
-          </ul>
-          <button className="button-close" onClick={this.props.closeModal.bind(this)}>DONE</button>
+          <button className="button-close" onClick={this.props.closeModal.bind(this)}>OKAY</button>
         </div>
-      </div>
-    );
+      );
+    } else {
+      return(
+        <div className="playlist-mv-modal-div">
+          <div className="title-div">ADD TO PLAYLIST</div>
+
+          <div className="playlist-mv-form">
+            <ul>
+              {Object.keys(playlists).map( idx => this.displayPlaylistItem(playlists[idx]))}
+            </ul>
+            <button className="button-close" onClick={this.props.closeModal.bind(this)}>DONE</button>
+          </div>
+        </div>
+      );
+    }
   }
 }
 

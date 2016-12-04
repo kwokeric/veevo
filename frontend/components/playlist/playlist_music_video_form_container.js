@@ -3,8 +3,10 @@ import { connect } from 'react-redux';
 import PlaylistMusicVideoForm from './playlist_music_video_form';
 import { addPlaylistMV, deletePlaylistMV } from '../../actions/playlist_actions';
 
-const mapStateToProps = ({ playlists }, ownProps) => ({
-  playlists,
+// const mapStateToProps = ({ playlists }, ownProps) => {
+const mapStateToProps = (props, ownProps) => ({
+  currentUser: props.session.currentUser,
+  playlists: props.playlists,
   myUrl: ownProps.mvUrl,
   closeModal: ownProps.closeModal
 });
