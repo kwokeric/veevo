@@ -59,7 +59,7 @@ class PlayerTabs extends React.Component {
         </div>
       );
     } else if (this.state.selectedTab === "next") {
-      let playlistVideos = this.props.currentMV.playlist_videos;
+      let playlistVideos = this.props.currentPlaylist.music_videos;
 
       tab = (
         <div className="next-tab">

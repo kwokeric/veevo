@@ -76,6 +76,7 @@ class PlaylistCarousel extends React.Component {
     };
 
     if (!this.props.videos || !this.props.videos[0]) {
+      
       return (
         <div className="loading">
           <div className="loader">
