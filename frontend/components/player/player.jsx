@@ -41,8 +41,13 @@ class VideoPlayer extends React.Component {
         </ul>
 
         <ul className="video-info-more">
-          <li className="add-to" onClick={this.openModal}><div className="plus">+</div> Add</li>
-          <li>{this.numberWithCommas(this.props.currentMV.view_count)} <span className="small-text">Views</span></li>
+          <li className="add-to" onClick={this.openModal}>
+            <div className="plus"><i className="fa fa-plus-circle" aria-hidden="true"></i></div> Add
+          </li>
+          <li>
+            {this.numberWithCommas(this.props.currentMV.view_count)}
+            <span className="small-text"> Views</span>
+          </li>
         </ul>
       </div>
     );
