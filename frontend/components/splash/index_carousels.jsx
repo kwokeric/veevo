@@ -11,10 +11,10 @@ class IndexCarousels extends React.Component {
     let newVideos = [
       this.props.videos["ANS9sSJA9Yc"],
       this.props.videos["u1ZB_rGFyeU"],
-      this.props.videos["htNmT31AW9U"],
       this.props.videos["b4Bj7Zb-YD4"],
       this.props.videos["-CmadmM5cOk"],
-      this.props.videos["B9BLMNn0PrQ"],
+      this.props.videos["gM89Q5Eng_M"],
+      this.props.videos["htNmT31AW9U"],
       this.props.videos["G5Mv2iV0wkU"],
       this.props.videos["nntGTK2Fhb0"],
       this.props.videos["KFWFJGfEaNo"],
@@ -28,20 +28,22 @@ class IndexCarousels extends React.Component {
     ];
 
     let popularVideos = [
+
+      this.props.videos["VPRjCeoBqrI"],
+      this.props.videos["6vopR3ys8Kw"],
       this.props.videos["EgqUJOudrcM"],
-      this.props.videos["egZrQwtFtik"],
       this.props.videos["-zzP29emgpg"],
-      this.props.videos["93ASUImTedo"],
-      this.props.videos["_mTRvJ9fugM"],
-      this.props.videos["fDrTbLXHKu8"],
-      this.props.videos["8ELh8eOzq_0"],
-      this.props.videos["5AOtEnH87Mg"],
-      this.props.videos["llDikI2hTtk"],
-      this.props.videos["aKb9VQpoe_U"],
       this.props.videos["la0-5QFLr14"],
       this.props.videos["ugrFTySNeQk"],
       this.props.videos["eCGV26aj-mM"],
-      this.props.videos["VPRjCeoBqrI"],
+      this.props.videos["fDrTbLXHKu8"],
+      this.props.videos["93ASUImTedo"],
+      this.props.videos["_mTRvJ9fugM"],
+      this.props.videos["5AOtEnH87Mg"],
+      this.props.videos["egZrQwtFtik"],
+      this.props.videos["llDikI2hTtk"],
+      this.props.videos["aKb9VQpoe_U"],
+      this.props.videos["8ELh8eOzq_0"],
       this.props.videos["6vopR3ys8Kw"],
       this.props.videos["09R8_2nJtjg"]
     ];

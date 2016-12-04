@@ -29,10 +29,10 @@ class Splash extends React.Component {
         backgrounds[current = ++current % backgrounds.length]
       );
 
-      setTimeout(nextBackground, 5500);
+      setTimeout(nextBackground, 5490);
     }
 
-    setTimeout(nextBackground, 5500);
+    setTimeout(nextBackground, 5490);
     splash.css("background-image", backgrounds[0]);
   }
 
@@ -82,6 +82,18 @@ class Splash extends React.Component {
     }
   }
 
+  preload () {
+    return(
+      <div className="preloader">
+        <img src="http://res.cloudinary.com/kwokeric/image/upload/v1480631437/coldplay_cjnxvj.gif" width="1" height="1" />
+        <img src="http://res.cloudinary.com/kwokeric/image/upload/v1480629473/flume_fxgefz.gif" width="1" height="1" />
+        <img src="http://res.cloudinary.com/kwokeric/image/upload/v1480628748/major_lazer_dj_snake_anufhr.gif" width="1" height="1" />
+        <img src="http://res.cloudinary.com/kwokeric/image/upload/v1480630310/kendrick_c3xohm.gif" width="1" height="1" />
+        <img src="http://res.cloudinary.com/kwokeric/image/upload/v1480629719/ok_go_dvb7ig.gif" width="1" height="1" />
+      </div>
+    );
+  }
+
   render () {
     return(
       <div className="index">
@@ -94,6 +106,7 @@ class Splash extends React.Component {
         </div>
 
         <IndexCarousels videos={this.props.videos}/>
+        {this.preload()}
       </div>
     );
   }
