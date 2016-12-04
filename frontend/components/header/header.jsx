@@ -21,11 +21,11 @@ class Header extends React.Component {
     this.handleSearchQuery = this.handleSearchQuery.bind(this);
   }
 
-  componentWillReceiveProps(nextProps) {
-    if (!nextProps.currentUser) {
-      hashHistory.push("/");
-    }
-  }
+  // componentWillReceiveProps(nextProps) {
+  //   if (!nextProps.currentUser) {
+  //     hashHistory.push("/");
+  //   }
+  // }
 
   closeLoginModal() {
     this.setState({ loginModalOpen: false });
