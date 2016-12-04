@@ -27,6 +27,7 @@ Artist.create({artist_name: "Nero"})
 Artist.create({artist_name: "Mat Zo"})
 Artist.create({artist_name: "J. Cole"})
 Artist.create({artist_name: "Flume"})
+Artist.create({artist_name: "Beyoncé"})
 
 MusicVideo.create({
   song_title: "Hotline Bling",
@@ -1262,6 +1263,17 @@ MusicVideo.create({
 })
 
 MusicVideo.create({
+  song_title: "False Prophets (Be Like This)",
+  artist_id: 16,
+  mv_url: "QNsgIBgpuGQ",
+  director: "Ryan Staake",
+  writer: "Jermaine Lamarr Cole",
+  producer: "Kwali",
+  label: "Dreamville, Roc Nation, Columbia",
+  view_count: 2370059
+})
+
+MusicVideo.create({
   song_title: "Crooked Smile Ft. TLC",
   artist_id: 16,
   mv_url: "fzzMOMkjm8A",
@@ -1404,16 +1416,187 @@ MusicVideo.create({
   view_count: 2719005
 })
 
+MusicVideo.create({
+  song_title: "All Night",
+  artist_id: 18,
+  mv_url: "gM89Q5Eng_M",
+  director: "Jaramye Daniels",
+  writer: "Beyoncé Knowles Carter, Henry Allen",
+  producer: "Diplo, Beyoncé, Henry Allen",
+  label: "Parkwood, Columbia",
+  view_count: 155187786
+})
+
+MusicVideo.create({
+  song_title: "Sorry",
+  artist_id: 18,
+  mv_url: "QxsmWxxouIM",
+  director: "Kahlil Joseph, Beyoncé Knowles Carter",
+  writer: "Beyoncé Knowles Carter",
+  producer: "Onye Anyanwu",
+  label: "Parkwood, Columbia",
+  view_count: 162656773
+})
+
+MusicVideo.create({
+  song_title: "7/11",
+  artist_id: 18,
+  mv_url: "k4YRWT_Aldo",
+  director: "Marni Senofonte",
+  writer: "Beyoncé Knowles Carter",
+  producer: "Bill Yukich",
+  label: "Parkwood, Columbia",
+  view_count: 385645673
+})
+
+MusicVideo.create({
+  song_title: "Halo",
+  artist_id: 18,
+  mv_url: "bnVUHWCynig",
+  director: "Who Knows",
+  writer: "Beyoncé Knowles Carter",
+  producer: "Bill Yukich",
+  label: "Parkwood, Columbia",
+  view_count: 450514917
+})
+
+MusicVideo.create({
+  song_title: "Run the World (Girls)",
+  artist_id: 18,
+  mv_url: "VBmMU_iwe6U",
+  director: "Some Guy",
+  writer: "Beyoncé Knowles Carter",
+  producer: "Bill Yukich",
+  label: "Parkwood, Columbia",
+  view_count: 499010932
+})
+
+MusicVideo.create({
+  song_title: "Single Ladies (Put a Ring on It)",
+  artist_id: 18,
+  mv_url: "4m1EFMoRFvY",
+  director: "Kanye West",
+  writer: "Beyoncé Knowles Carter",
+  producer: "Bill Yukich",
+  label: "Parkwood, Columbia",
+  view_count: 532358833
+})
+
+MusicVideo.create({
+  song_title: "Love On Top",
+  artist_id: 18,
+  mv_url: "Ob7vObnFUJc",
+  director: "Kanye West",
+  writer: "Beyoncé Knowles Carter",
+  producer: "Jay-Z",
+  label: "Parkwood, Columbia",
+  view_count: 258454884
+})
+
+MusicVideo.create({
+  song_title: "Hold Up",
+  artist_id: 18,
+  mv_url: "PeonBmeFR8o",
+  director: "Kanye West",
+  writer: "Beyoncé Knowles Carter",
+  producer: "Diplo",
+  label: "Parkwood, Columbia",
+  view_count: 55187786
+})
+
+MusicVideo.create({
+  song_title: "Ghost",
+  artist_id: 18,
+  mv_url: "aY9vZv7HCvo",
+  director: "Kanye West",
+  writer: "Beyoncé Knowles Carter",
+  producer: "Jack White",
+  label: "Columbia Records",
+  view_count: 8891511
+})
+
+MusicVideo.create({
+  song_title: "Grown Woman",
+  artist_id: 18,
+  mv_url: "y3MjxWn5W9M",
+  director: "Kanye West",
+  writer: "Beyoncé Knowles Carter",
+  producer: "Jack White",
+  label: "Columbia Records",
+  view_count: 61608941
+})
+
+MusicVideo.create({
+  song_title: "Heaven",
+  artist_id: 18,
+  mv_url: "QyOok1myLjw",
+  director: "Kanye West",
+  writer: "Beyoncé Knowles Carter",
+  producer: "Jack White",
+  label: "Columbia Records",
+  view_count: 14279009
+})
+
+MusicVideo.create({
+  song_title: "Mine Ft. Drake",
+  artist_id: 18,
+  mv_url: "IDvu1ehPq0g",
+  director: "Kanye West",
+  writer: "Beyoncé Knowles Carter",
+  producer: "Jack White",
+  label: "Columbia Records",
+  view_count: 25787681
+})
+
+MusicVideo.create({
+  song_title: "Jealous",
+  artist_id: 18,
+  mv_url: "WQmYVfHrNxA",
+  director: "Kanye West",
+  writer: "Beyoncé Knowles Carter",
+  producer: "Jack White",
+  label: "Columbia Records",
+  view_count: 23541420
+})
+
+MusicVideo.create({
+  song_title: "Haunted",
+  artist_id: 18,
+  mv_url: "K4r4lysSgLE",
+  director: "Kanye West",
+  writer: "Beyoncé Knowles Carter",
+  producer: "Jack White",
+  label: "Columbia Records",
+  view_count: 23541420
+})
+
+MusicVideo.create({
+  song_title: "Pretty Hurts",
+  artist_id: 18,
+  mv_url: "LXXQLa-5n5w",
+  director: "Kanye West",
+  writer: "Beyoncé Knowles Carter",
+  producer: "Elad Marish",
+  label: "Columbia Records",
+  view_count: 160873952
+})
+
 Playlist.create({ user_id: 2,
   playlist_title: "Bangerz",
   description: "A playlist of tunez that bang. What can I say about this playlist that hasn't already been said about the wheel, nuclear fission, or sliced bread?",
-  playlist_image_url: "http://res.cloudinary.com/kwokeric/image/upload/v1478808445/headphonesdog_na7uqp.jpg"
+  playlist_image_url: "http://res.cloudinary.com/kwokeric/image/upload/v1480829616/headphonesdog_na7uqp.jpg"
 })
 
 Playlist.create({ user_id: 2,
   playlist_title: "Top 40",
   description: "Top 40 be a noize industry shorthand fo' tha currently most-popular joints up in a particular genre. When used without qualification it refers ta tha best-pimpin or most frequently broadcast ghettofab beatz. Drop dis like itz hot! Da term is derived from record noize charts, all dem of which traditionally consist of a total of 40 joints, n' you can put dat on yo' toast. Top 40 be also a alternatizzle term fo' tha radio format of such beatz, also known as Contemporary hit radio.",
   playlist_image_url: "http://res.cloudinary.com/kwokeric/image/upload/c_scale,w_300/v1478807553/top40_ro1ohd.png"
+})
+
+Playlist.create({ user_id: 2,
+  playlist_title: "Queen B",
+  description: "Yo, Taylor, I'm really happy for you, I'ma let you finish, but Beyoncé had one of the best videos of all time! One of the best videos of all time!",
+  playlist_image_url: "http://res.cloudinary.com/kwokeric/image/upload/v1480828879/kanye_taylor_zje8iq.jpg"
 })
 
 PlaylistMusicVideo.create({ playlist_id: 1, mv_mv_url: "66vdaLrxN8s" })
@@ -1449,3 +1632,19 @@ PlaylistMusicVideo.create({ playlist_id: 2, mv_mv_url: "PT2_F-1esPk" })
 PlaylistMusicVideo.create({ playlist_id: 2, mv_mv_url: "ru0K8uYEZWw" })
 PlaylistMusicVideo.create({ playlist_id: 2, mv_mv_url: "sXQVicNodMw" })
 PlaylistMusicVideo.create({ playlist_id: 2, mv_mv_url: "_mTRvJ9fugM" })
+
+PlaylistMusicVideo.create({ playlist_id: 3, mv_mv_url: "gM89Q5Eng_M" })
+PlaylistMusicVideo.create({ playlist_id: 3, mv_mv_url: "QxsmWxxouIM" })
+PlaylistMusicVideo.create({ playlist_id: 3, mv_mv_url: "k4YRWT_Aldo" })
+PlaylistMusicVideo.create({ playlist_id: 3, mv_mv_url: "bnVUHWCynig" })
+PlaylistMusicVideo.create({ playlist_id: 3, mv_mv_url: "VBmMU_iwe6U" })
+PlaylistMusicVideo.create({ playlist_id: 3, mv_mv_url: "4m1EFMoRFvY" })
+PlaylistMusicVideo.create({ playlist_id: 3, mv_mv_url: "Ob7vObnFUJc" })
+PlaylistMusicVideo.create({ playlist_id: 3, mv_mv_url: "PeonBmeFR8o" })
+PlaylistMusicVideo.create({ playlist_id: 3, mv_mv_url: "aY9vZv7HCvo" })
+PlaylistMusicVideo.create({ playlist_id: 3, mv_mv_url: "y3MjxWn5W9M" })
+PlaylistMusicVideo.create({ playlist_id: 3, mv_mv_url: "QyOok1myLjw" })
+PlaylistMusicVideo.create({ playlist_id: 3, mv_mv_url: "IDvu1ehPq0g" })
+PlaylistMusicVideo.create({ playlist_id: 3, mv_mv_url: "WQmYVfHrNxA" })
+PlaylistMusicVideo.create({ playlist_id: 3, mv_mv_url: "K4r4lysSgLE" })
+PlaylistMusicVideo.create({ playlist_id: 3, mv_mv_url: "LXXQLa-5n5w" })
