@@ -145,39 +145,37 @@
   z-index: 10;
   cursor: pointer;
   background-color: black;
+  opacity: 0;
+  transition: all 0.2s;
 
   top: 50%;
-  width: 50px;
+  width: 70px;
   height: 100%;
 }
 
 .slick-prev {
   left: 0;
-  opacity: 0;
-  transition: all 0.2s;
 
   &:hover {
     background-image: url("http://res.cloudinary.com/kwokeric/image/upload/v1478472279/back_rk29no.png");
-    background-size: 100% 80px;
+    background-size: 100% 90px;
     background-repeat: no-repeat;
-    background-position-y: 50%;
+    background-position-y: 55%;
     background-color: black;
-    opacity: 0.6;
+    opacity: 0.5;
   }
 }
 
 .slick-next {
   right: 0;
-  opacity: 0;
-  transition: all 0.2s;
 
   &:hover {
     background-image: url("http://res.cloudinary.com/kwokeric/image/upload/v1478472278/next_qrovpt.png");
-    background-size: 100% 80px;
+    background-size: 100% 90px;
     background-repeat: no-repeat;
-    background-position-y: 50%;
+    background-position-y: 55%;
     background-color: black;
-    opacity: 0.6;
+    opacity: 0.5;
   }
 }
 
