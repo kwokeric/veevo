@@ -10,13 +10,13 @@ class IndexCarousels extends React.Component {
   render () {
     let newVideos = [
       this.props.videos["ANS9sSJA9Yc"],
-      this.props.videos["u1ZB_rGFyeU"],
+      this.props.videos["nntGTK2Fhb0"],
       this.props.videos["b4Bj7Zb-YD4"],
       this.props.videos["-CmadmM5cOk"],
       this.props.videos["gM89Q5Eng_M"],
       this.props.videos["htNmT31AW9U"],
       this.props.videos["G5Mv2iV0wkU"],
-      this.props.videos["nntGTK2Fhb0"],
+      this.props.videos["u1ZB_rGFyeU"],
       this.props.videos["KFWFJGfEaNo"],
       this.props.videos["eRaFMlZ1YHA"],
       this.props.videos["kV6UoK8jXSM"],
@@ -24,6 +24,10 @@ class IndexCarousels extends React.Component {
       this.props.videos["YykjpeuMNEk"],
       this.props.videos["zr9Q4QL7w9A"],
       this.props.videos["v9rdDwH1JAo"],
+      this.props.videos["VPRjCeoBqrI"],
+      this.props.videos["b_KfnGBtVeA"],
+      this.props.videos["PT2_F-1esPk"],
+      this.props.videos["Ka4BxFizU7I"],
       this.props.videos["zjVSewbKllk"]
     ];
 
@@ -39,13 +43,16 @@ class IndexCarousels extends React.Component {
       this.props.videos["fDrTbLXHKu8"],
       this.props.videos["93ASUImTedo"],
       this.props.videos["_mTRvJ9fugM"],
-      this.props.videos["5AOtEnH87Mg"],
       this.props.videos["egZrQwtFtik"],
       this.props.videos["llDikI2hTtk"],
       this.props.videos["aKb9VQpoe_U"],
       this.props.videos["8ELh8eOzq_0"],
       this.props.videos["6vopR3ys8Kw"],
-      this.props.videos["09R8_2nJtjg"]
+      this.props.videos["09R8_2nJtjg"],
+      this.props.videos["6ACl8s_tBzE"],
+      this.props.videos["4nsKDJlpUbA"],
+      this.props.videos["v9rdDwH1JAo"],
+      this.props.videos["sXQVicNodMw"]
     ];
 
     let staffVideos = [
@@ -60,11 +67,15 @@ class IndexCarousels extends React.Component {
       this.props.videos["iiNXf0n_hrA"],
       this.props.videos["2qPl5P0yBiY"],
       this.props.videos["DzyKSyLavUY"],
+      this.props.videos["bkk2H3Ztrfk"],
       this.props.videos["FyXtoTLLcDk"],
       this.props.videos["B0bXdMQlrEY"],
       this.props.videos["JyqemIbjcfg"],
       this.props.videos["UCJHMT0JFnQ"],
-      this.props.videos["6byaTlhGJXM"]
+      this.props.videos["htNmT31AW9U"],
+      this.props.videos["3mmTMSZkXQY"],
+      this.props.videos["9NwZdxiLvGo"],
+      this.props.videos["s8XIgR5OGJc"]
     ];
 
     return (
