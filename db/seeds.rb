@@ -1263,9 +1263,9 @@ MusicVideo.create({
 })
 
 MusicVideo.create({
-  song_title: "False Prophets (Be Like This)",
+  song_title: "Love Yourz",
   artist_id: 16,
-  mv_url: "QNsgIBgpuGQ",
+  mv_url: "Ka4BxFizU7I",
   director: "Ryan Staake",
   writer: "Jermaine Lamarr Cole",
   producer: "Kwali",
