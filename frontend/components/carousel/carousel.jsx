@@ -42,27 +42,27 @@ class Carousel extends React.Component {
       infinite: true,
       speed: 500,
       slidesToShow: 5,
-      slidesToScroll: 2,
+      slidesToScroll: 5,
       responsive: [
         {
         breakpoint: 1200,
           settings: {
             slidesToShow: 4,
-            slidesToScroll: 2
+            slidesToScroll: 4
           }
         },
         {
         breakpoint: 1000,
           settings: {
             slidesToShow: 3,
-            slidesToScroll: 1
+            slidesToScroll: 3
           }
         },
         {
         breakpoint: 750,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 1
+            slidesToScroll: 2
           }
         },
         {
