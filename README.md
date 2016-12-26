@@ -10,7 +10,7 @@ Veevo is a full-stack web application inspired by Vevo, an online music video pl
 
 ### Music Video playing
 
-Users can stream video content while navigating around the player webpage's tabs and adding music videos to playlists. This is due frontend architecture; it is a single-page web app that dynamically renders React components.
+Users can stream video content while navigating around the player webpage's tabs and adding music videos to playlists. This is due front-end architecture; it is a single-page web app that dynamically renders React components.
 
 The video show page has three tabs underneath the player depending on whether a video or playlist is being played. "Related Videos", "Up Next", and "New Videos" carousels show links to other videos.
 
