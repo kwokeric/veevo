@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     store = configureStore();
   }
+  
   window.store = store;
   window.fetchPlaylists = fetchPlaylists;
 
