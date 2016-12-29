@@ -1,6 +1,6 @@
 # Veevo
 
-[Live](https://veevo.online/)
+#### [Live](https://veevo.online/)
 
 Veevo is a full-stack web application inspired by Vevo, an online music video playing application. It utilizes Ruby on Rails on the backend, a PostgreSQL database, and React.js with a Redux architectural framework on the frontend.
 
