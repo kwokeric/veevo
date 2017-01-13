@@ -16,9 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     store = configureStore();
   }
-  
-  window.store = store;
-  window.fetchPlaylists = fetchPlaylists;
 
   const root = document.getElementById('root');
   Modal.setAppElement(document.body);
