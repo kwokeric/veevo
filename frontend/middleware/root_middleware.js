@@ -5,16 +5,14 @@ import PlayerMiddleware from '../middleware/player_middleware';
 import SearchMiddleware from '../middleware/search_middleware';
 import PlaylistMiddleware from '../middleware/playlist_middleware';
 
-import createLogger from 'redux-logger';
-
-const loggerMiddleware = createLogger();
+// import createLogger from 'redux-logger';
+// const loggerMiddleware = createLogger();
 
 const RootMiddleware = applyMiddleware(
   SessionMiddleware,
   PlayerMiddleware,
   SearchMiddleware,
-  PlaylistMiddleware,
-  loggerMiddleware
+  PlaylistMiddleware
 );
 
 export default RootMiddleware;
